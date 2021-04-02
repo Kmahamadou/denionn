@@ -25,7 +25,7 @@ class cartController extends Controller
 
         $product = product::find($request->livre_id);
         Cart::add($product->id,$product->title, 1, $product->prix)
-        ->associate('App\Product');
+        ->associate('App\Models\product');
         return redirect()->route('cart.index')->with('success','le produit a ete ajouter avec succes');
 
     }
