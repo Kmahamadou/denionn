@@ -29,7 +29,7 @@
 
 @section('extra-js')
 <script>
-    var stripe = Stripe('pk_test_51ISUrpL2XLZciAzuOa9zniykfGD3QU0fztfYglxvaPQ63DXcYkta44doPPYrBQk4y0o6OZiJtdTAI67Hdi8tqTB6002ElYwvSv');
+    var stripe = Stripe('');
     var elements = stripe.elements();
     var style = {
         base: {
