@@ -73,7 +73,7 @@ class productController extends Controller
         
         $base= product::all();
 
-        dd('okay')
+        dd('okay');
     }
 
 
