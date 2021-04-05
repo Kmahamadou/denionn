@@ -29,6 +29,8 @@ class productController extends Controller
 
                     'title'=>'required',
                     'auteur' => 'required',
+                    'image' => 'required|file|image|max:4096',
+                    'livre' => 'required|file',
                     'categorie'=>'required',
                     'isbn'=>'required',
                     'prix'=>'required',
