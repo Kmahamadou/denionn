@@ -36,6 +36,8 @@ class productController extends Controller
                     'description'=>'required',
                         
                         ]);
+
+        dd($validatedData);
         if(isset($validatedData['title'])){
             //Preparation image
             $insertingRow = new product();
