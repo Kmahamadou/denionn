@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\product;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
-use App\Models\product;
+
 class cartController extends Controller
 {
     public function index()
@@ -24,7 +25,7 @@ class cartController extends Controller
 
         $product = product::find($request->livre_id);
         Cart::add($product->id,$product->title, 1, $product->prix)
-        ->associate('App\Models\Product');
+        ->associate('App\Models\product');
         return redirect()->route('cart.index')->with('success','le produit a ete ajouter avec succes');
 
     }

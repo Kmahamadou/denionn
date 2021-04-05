@@ -47,8 +47,7 @@
                             <strong>Date: </strong>{{date('Y-m-d H:i:s')}}
                             <br/>
                             <strong style="color: red">Prix : </strong> {{$livre->prix}} f cfa 
-                            <br/>
-                            
+                            <br/> 
                         </p>
                         <p>{{$livre->description}}</p>
                     <form method="post" action="{{route('cart.store')}}">
