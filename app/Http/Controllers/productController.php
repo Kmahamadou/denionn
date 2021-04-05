@@ -30,7 +30,7 @@ class productController extends Controller
                     'title'=>'required',
                     'auteur' => 'required',
                     'image' => 'required|file|image|max:4096',
-                    'livre' => 'required|file',
+                    'livre' => 'required',
                     'categorie'=>'required',
                     'isbn'=>'required',
                     'prix'=>'required',
@@ -56,6 +56,8 @@ class productController extends Controller
 
             // Store product image
             $product = $this->storeProductImage($product); 
+
+            // Store product content
             $this->storeProductContent($product); 
 
             // $image = $request->file('image');
