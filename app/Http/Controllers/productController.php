@@ -25,21 +25,24 @@ class productController extends Controller
 
     public function store(Request $request)
     {   
+
+        dd($request);
          $validatedData = request()->validate([
 
-                    'title'=>'required',
-                    'auteur' => 'required',
-                    'image' => 'required|file|image|max:4096',
-                    'livre' => 'required',
-                    'categorie'=>'required',
-                    'isbn'=>'required',
-                    'prix'=>'required',
-                    'quantite'=>'required',
-                    'description'=>'required',
+                            'title'         =>'required',
+                            'auteur'        =>'required',
+                            'image'         =>'required|file|image|max:4096',
+                            'livre'         =>'required',
+                            'categorie'     =>'required',
+                            'isbn'          =>'required',
+                            'prix'          =>'required',
+                            'quantite'      =>'required',
+                            'description'   =>'required',
                         
                         ]);
 
-        dd($validatedData);
+
+
         if(isset($validatedData['title'])){
             //Preparation image
             $insertingRow = new product();
