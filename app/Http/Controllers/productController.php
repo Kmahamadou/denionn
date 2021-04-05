@@ -36,21 +36,8 @@ class productController extends Controller
                     'description'=>'required',
                         
                         ]);
-                        if(isset($validatedData['title'])){
-                                //Preparation image
-            $image = $request->file('image');
-            $uploadedImage = time().'.'.$image->getClientOriginalExtension();
-            $destinationPath = public_path('livre/image');
-            $image->move($destinationPath, $uploadedImage);
-            $validatedData['image'] = $uploadedImage;
-                        //Preparation livre
-            $livre = $request->file('livre');
-            $uploadedLivre = time().'.'.$livre->getClientOriginalExtension();
-            $destinationPath = public_path('livre/livre');
-            $livre->move($destinationPath, $uploadedLivre);
-            $validatedData['livre'] = $uploadedLivre;
-                //Ajout dans la base
-
+        if(isset($validatedData['title'])){
+            //Preparation image
             $insertingRow = new product();
             $insertingRow->title = $validatedData['title'];
             $insertingRow->auteur = $validatedData['auteur'];
@@ -61,14 +48,54 @@ class productController extends Controller
             $insertingRow->quantite = $validatedData['quantite'];
             $insertingRow->description = $validatedData['description'];
             $insertingRow->isbn = $validatedData['isbn'];
-                        product::create($validatedData);
+            $product = product::create($validatedData);
+
+            // Store product image
+            $this->storeProductImage($product); 
+            $this->storeProductContent($product); 
+
+            // $image = $request->file('image');
+            // $uploadedImage = time().'.'.$image->getClientOriginalExtension();
+            // $destinationPath = public_path('livre/image');
+            // $image->move($destinationPath, $uploadedImage);
+            // $validatedData['image'] = $uploadedImage;
+                        //Preparation livre
+            // $livre = $request->file('livre');
+            // $uploadedLivre = time().'.'.$livre->getClientOriginalExtension();
+            // $destinationPath = public_path('livre/livre');
+            // $livre->move($destinationPath, $uploadedLivre);
+            // $validatedData['livre'] = $uploadedLivre;
+                //Ajout dans la base
+
 
                         
-                    };
-                    $base= product::all();
-                        }
+        };
+        
+        $base= product::all();
+    }
         public function show($id)
-    {   $livre = product::where('id', $id)->firstOrfail();
-        return view('livre.show')->with('livre', $livre);
-           }
+        {   
+            $livre = product::where('id', $id)->firstOrfail();
+            return view('livre.show')->with('livre', $livre);
+        }
+
+
+
+        private function storeProductImage($product)
+        {
+            if (request()->has('image')) {
+                $product->update([
+                    'image' => request()->image->store('livre/image', 's3'),
+                ]);
+            }
+        }
+
+        private function storeProductContent($product)
+        {
+            if (request()->has('livre')) {
+                $product->update([
+                    'livre' => request()->livre->store('livre/livre', 's3'),
+                ]);
+            }
+        }
 	}
