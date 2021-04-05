@@ -20,20 +20,20 @@ class cartController extends Controller
             return $cartItem->id == $request->livre_id;
         });
         if($verification->isNotEmpty()){
-                    return redirect()->route('cart.index')->with('error','le produit à ete deja ajouter au panier, Vous pouvez augmenter la quantité dans le pannier ');
+                    return redirect()->route('cart.index')->with('error','Produit déja ajouté au panier, Vous voulez augmenter la quantité?');
         }         
 
         $product = product::find($request->livre_id);
         Cart::add($product->id,$product->title, 1, $product->prix)
         ->associate('App\Models\product');
-        return redirect()->route('cart.index')->with('success','le produit a ete ajouter avec succes');
+        return redirect()->route('cart.index')->with('success','Produit ajouté avec succès');
 
     }
 
      public function destroy($rowId)
     {
         Cart::remove($rowId);
-        return back()->with('success','le produit a été supprimé avec succès');
+        return back()->with('success','Produit supprimé avec succès');
     }
     public function retour(){
             return back()->withInput();
