@@ -51,7 +51,7 @@ class productController extends Controller
             $product = product::create($validatedData);
 
             // Store product image
-            $this->storeProductImage($product); 
+            $product = $this->storeProductImage($product); 
             $this->storeProductContent($product); 
 
             // $image = $request->file('image');
@@ -72,30 +72,35 @@ class productController extends Controller
         };
         
         $base= product::all();
+
+        dd('okay')
     }
-        public function show($id)
-        {   
-            $livre = product::where('id', $id)->firstOrfail();
-            return view('livre.show')->with('livre', $livre);
+
+
+    public function show($id)
+    {   
+        $livre = product::where('id', $id)->firstOrfail();
+        return view('livre.show')->with('livre', $livre);
+    }
+
+
+
+    private function storeProductImage($product)
+    {
+        if (request()->has('image')) {
+            $product->update([
+                'image' => request()->image->store('livre/image', 's3'),
+            ]);
         }
+    }
 
-
-
-        private function storeProductImage($product)
-        {
-            if (request()->has('image')) {
-                $product->update([
-                    'image' => request()->image->store('livre/image', 's3'),
-                ]);
-            }
+    private function storeProductContent($product)
+    {
+        if (request()->has('livre')) {
+            $product->update([
+                'livre' => request()->livre->store('livre/livre', 's3'),
+            ]);
         }
+    }
 
-        private function storeProductContent($product)
-        {
-            if (request()->has('livre')) {
-                $product->update([
-                    'livre' => request()->livre->store('livre/livre', 's3'),
-                ]);
-            }
-        }
-	}
+}
