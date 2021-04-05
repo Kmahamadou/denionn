@@ -58,10 +58,10 @@ class productController extends Controller
             $product = product::create($validatedData);
 
             // Store product image
-            $product = $this->storeProductImage($product); 
+            $product = $this->storeProductFiles($product); 
 
             // Store product content
-            $this->storeProductContent($product); 
+            //$this->storeProductContent($product); 
 
             // $image = $request->file('image');
             // $uploadedImage = time().'.'.$image->getClientOriginalExtension();
@@ -94,20 +94,24 @@ class productController extends Controller
 
 
 
-    private function storeProductImage($product)
-    {
-        if (request()->has('image')) {
-            $product->update([
-                'image' => request()->image->store('livre/image', 's3'),
-            ]);
-        }
-    }
+    // private function storeProductImage($product)
+    // {
+    //     if (request()->has('image')) {
+    //         $product->update([
+    //             'image' => request()->image->store('livre/image', 's3'),
+    //         ]);
+    //     }
+    // }
 
-    private function storeProductContent($product)
+    private function storeProductFiles($product)
     {
-        if (request()->has('livre')) {
+        if (request()->has('livre') && request()->has('image')) {
             $product->update([
-                'livre' => request()->livre->store('livre/livre', 's3'),
+                'livre' => request()->livre->store('livre/livres', 's3'),
+            ]);
+
+            $product->update([
+                'image' => request()->livre->store('livre/images', 's3'),
             ]);
         }
     }
