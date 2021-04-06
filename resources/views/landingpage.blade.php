@@ -3,7 +3,7 @@
 
 
 
-    <section class="page-section" id="intro">
+    <section class="page-section" id="intro" style="background-image: src('{{ asset('img/DenionnAgenda.png') }}')">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 img {vertical-align: middle;}
@@ -46,9 +46,9 @@ img {vertical-align: middle;}
   transition: background-color 10s ease;
 }
 
-.active {
+/*.active {
   background-color: #717171;
-}
+}*/
 
 /* Fading animation */
 .fade {
