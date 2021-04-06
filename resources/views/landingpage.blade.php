@@ -79,19 +79,19 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade" style="margin-top: -10px;">
   <div class="numbertext">1 / 3</div>
-  <img src="{{ asset('img/DenionnBlocnote.png') }}" style="width:100%; height: 80%">
+  <img src="{{ secure_asset('img/DenionnBlocnote.png') }}" style="width:100%; height: 80%">
   <div class="text">Caption Text</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="{{ asset('img/DenionnAgenda.png') }}" style="width:100%; height:80%">
+  <img src="{{ secure_asset('img/DenionnAgenda.png') }}" style="width:100%; height:80%">
   <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="{{ asset('img/DenionnNotebook.png') }}" style="width:100%; height: 80%">
+  <img src="{{ secure_asset('img/DenionnNotebook.png') }}" style="width:100%; height: 80%">
   <div class="text">Caption Three</div>
 </div>
 
