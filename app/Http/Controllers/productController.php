@@ -61,8 +61,8 @@ class productController extends Controller
 
              $image = $request->file('image');
              $livre = $request->file('livre');
-             $livre_image_aws_storage_path   = 'uploads/livre/images/' . time() .'.'. $image->getClientOriginalExtension();
-             $livre_content_aws_storage_path = 'uploads/livre/livres/' . time() .'.'. $livre->getClientOriginalExtension();
+             $livre_image_aws_storage_path   = 'denionn/livre/images/' . time() .'.'. $image->getClientOriginalExtension();
+             $livre_content_aws_storage_path = 'denionn/livre/livres/' . time() .'.'. $livre->getClientOriginalExtension();
 
              \Storage::disk('s3')->put($livre_image_aws_storage_path, $validatedData['image']);
              \Storage::disk('s3')->put($livre_content_aws_storage_path, $validatedData['livre']);
@@ -107,13 +107,13 @@ class productController extends Controller
 
 
 
-    private function storeProductImage($product)
-    {
-        if (request()->has('image')) {
-            $product->update([
-                'image' => request()->image->store('livre/image', 's3'),
-            ]);
-        }
-    }
+    // private function storeProductImage($product)
+    // {
+    //     if (request()->has('image')) {
+    //         $product->update([
+    //             'image' => request()->image->store('livre/image', 's3'),
+    //         ]);
+    //     }
+    // }
 
 }
