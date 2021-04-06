@@ -78,7 +78,7 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="{{ asset('img/now.png') }}" style="width:100%">
+  <img src="{{ asset('img/DenionnBlocnote.png') }}" style="width:100%">
   <div class="text">Caption Text</div>
 </div>
 
@@ -90,7 +90,7 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="img_mountains_wide.jpg" style="width:100%">
+  <img src="{{ asset('img/DenionnNotebook.png') }}" style="width:100%">
   <div class="text">Caption Three</div>
 </div>
 
