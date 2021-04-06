@@ -78,7 +78,7 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="livre/image/img.jpg" style="width:100%">
+  <img src="{{ asset('img/now.png') }}" style="width:100%">
   <div class="text">Caption Text</div>
 </div>
 
