@@ -4,10 +4,6 @@
 
 
     <section class="page-section" id="intro">
-        <div class="col-lg-12" >
-           <!DOCTYPE html>
-<html>
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box;}
@@ -80,8 +76,6 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 </style>
-</head>
-<body>
 
 <div class="slideshow-container">
 
@@ -133,13 +127,6 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
-
-</body>
-</html> 
-
-        </div>
-        
-
     </section>
 
 
