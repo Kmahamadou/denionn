@@ -186,7 +186,7 @@ function showSlides() {
                             <div class="col-md-2 isotopeSelector photography">
                         <figure class="col-md-2" >
                         <article>
-                                <img src="{{ asset('livre/image/'.$product->image) }}" alt="" style="">
+                                <img src="{{ asset('livre/images/'.$product->image) }}" alt="" style="">
                                 <div class="overlay-background">
                                     <div class="inner"></div>
                                 </div>
