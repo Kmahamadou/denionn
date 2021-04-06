@@ -1,5 +1,5 @@
     
-        <div class="container">
+        <div class="container" style="background-color: #666666">
             <div class="row">
                 <!-- Copyright -->
                 <div class="col-xs-6">
