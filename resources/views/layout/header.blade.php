@@ -63,7 +63,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="index.html">
-                    <img class="logo" src="{{asset('img/Capture.PNG')}}" alt="Logo"></a>
+                    <img class="logo" src="{{asset('img/denionn.png')}}" alt="Logo"></a>
  
             </div>
             <nav class="collapse navbar-collapse navbar-ex1-collapse">
@@ -123,7 +123,7 @@
                         </ul> --}}
                     </li>
                     <li>
-                        <a  href="{{Route('cart.index')}}">Panier <span class="badge badge-pill badge-dark" style="color: red">{{Cart::count()}}</span> 
+                        <a  href="{{Route('cart.index')}}">Panier <span class="badge badge-pill badge-dark" style="color: white">{{Cart::count()}}</span> 
                             </a></li>
                 </ul>
             </nav>
