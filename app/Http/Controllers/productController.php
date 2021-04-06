@@ -67,12 +67,8 @@ class productController extends Controller
              \Storage::disk('s3')->put($livre_image_aws_storage_path, $validatedData['image']);
              \Storage::disk('s3')->put($livre_content_aws_storage_path, $validatedData['livre']);
 
-
-             $product->update([
-                'livre_image_aws_storage_path'   => $livre_image_aws_storage_path,
-                'livre_content_aws_storage_path' => $livre_content_aws_storage_path
-             ]);
-
+            $product->livre_image_aws_storage_path   = $livre_image_aws_storage_path
+            $product->livre_content_aws_storage_path = $livre_content_aws_storage_path
             $product->save();
 
              dd($product);
