@@ -58,7 +58,21 @@ class productController extends Controller
             $product = product::create($validatedData);
 
             // Store product image
-            $product = $this->storeProductFiles($product); 
+
+             $livre_image_aws_storage_path   = '/livre/images/' . time() . '.png';
+             $livre_content_aws_storage_path = '/livre/livres/' . time() . '.png';
+
+             \Storage::disk('s3')->put($livre_image_aws_storage_path, $validatedData['image']);
+             \Storage::disk('s3')->put($livre_content_aws_storage_path, $validatedData['livre']);
+
+
+             $product->update([
+                'livre_image_aws_storage_path'   = $livre_image_aws_storage_path;
+                'livre_content_aws_storage_path' = $livre_content_aws_storage_path
+             ]);
+
+             dd($product);
+            // $product = $this->storeProductFiles($product); 
 
             // Store product content
             //$this->storeProductContent($product); 
