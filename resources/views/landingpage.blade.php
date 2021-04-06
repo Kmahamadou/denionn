@@ -53,9 +53,9 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 20s;
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 20s;
 }
 
 @-webkit-keyframes fade {
@@ -121,7 +121,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 10000); // Change image every 2 seconds
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
     </section>
