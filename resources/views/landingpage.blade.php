@@ -77,7 +77,7 @@ img {vertical-align: middle;}
 
 <div class="slideshow-container"style="margin-top: -10%;">
 
-<div class="mySlides fade" style="width: 90%" >
+<div class="mySlides fade" style="" >
   <div class="numbertext">1 / 3</div>
   <img src="{{ secure_asset('img/DenionnBlocnote.png') }}" style="width:100%;">
   <div class="text">Caption Text</div>
