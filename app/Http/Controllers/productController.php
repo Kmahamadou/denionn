@@ -57,9 +57,12 @@ class productController extends Controller
             $insertingRow->isbn = $validatedData['isbn'];
             $product = product::create($validatedData);
 
-            // Store product image
-             $livre_image_aws_storage_path   = '/livre/images/' . time() . '.png';
-             $livre_content_aws_storage_path = '/livre/livres/' . time() . '.png';
+            // Store product image and content
+
+             $image = $request->file('image');
+             $livre = $request->file('livre');
+             $livre_image_aws_storage_path   = '/livre/images/' . time() . $image->getClientOriginalExtension();
+             $livre_content_aws_storage_path = '/livre/livres/' . time() . $livre->getClientOriginalExtension();
 
              \Storage::disk('s3')->put($livre_image_aws_storage_path, $validatedData['image']);
              \Storage::disk('s3')->put($livre_content_aws_storage_path, $validatedData['livre']);
@@ -69,6 +72,8 @@ class productController extends Controller
                 'livre_image_aws_storage_path'   => $livre_image_aws_storage_path,
                 'livre_content_aws_storage_path' => $livre_content_aws_storage_path
              ]);
+
+            $product->save();
 
              dd($product);
             // $product = $this->storeProductFiles($product); 
