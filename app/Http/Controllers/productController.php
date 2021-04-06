@@ -64,8 +64,8 @@ class productController extends Controller
              $livre_image_aws_storage_path   = 'denionn/livre/images/' . time() .'.'. $image->getClientOriginalExtension();
              $livre_content_aws_storage_path = 'denionn/livre/livres/' . time() .'.'. $livre->getClientOriginalExtension();
 
-             \Storage::disk('s3')->putFileAs($livre_image_aws_storage_path, $validatedData['image']);
-             \Storage::disk('s3')->putFileAs($livre_content_aws_storage_path, $validatedData['livre']);
+             \Storage::disk('s3')->putFileAs($livre_image_aws_storage_path, $validatedData['image'], 'public');
+             \Storage::disk('s3')->putFileAs($livre_content_aws_storage_path, $validatedData['livre'], 'public');
 
             $product->livre_image_aws_storage_path   = $livre_image_aws_storage_path;
             $product->livre_content_aws_storage_path = $livre_content_aws_storage_path;
