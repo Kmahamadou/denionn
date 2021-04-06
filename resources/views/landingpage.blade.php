@@ -20,7 +20,7 @@ img {vertical-align: middle;}
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 0px 12px;
+  padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -75,7 +75,7 @@ img {vertical-align: middle;}
 }
 </style>
 
-<div class="slideshow-container">
+<div class="slideshow-container" style="margin-top: 0px;">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
