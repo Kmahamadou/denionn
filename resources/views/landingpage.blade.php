@@ -43,7 +43,7 @@ img {vertical-align: middle;}
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 5s ease;
+  transition: background-color 1s ease;
 }
 
 .active {
@@ -53,9 +53,9 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 4s;
+  -webkit-animation-duration: 2s;
   animation-name: fade;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes fade {
