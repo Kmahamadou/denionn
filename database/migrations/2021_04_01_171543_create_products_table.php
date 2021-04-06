@@ -24,6 +24,8 @@ class CreateProductsTable extends Migration
             $table->integer('quantite');
             $table->string('description');
             $table->string('image');
+            $table->string('livre_image_aws_storage_path')->nullable();
+            $table->string('livre_content_aws_storage_path')->nullable();
             $table->timestamps();
         });
     }

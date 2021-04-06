@@ -57,8 +57,23 @@ class productController extends Controller
             $insertingRow->isbn = $validatedData['isbn'];
             $product = product::create($validatedData);
 
-            // Store product image
-            $product = $this->storeProductFiles($product); 
+            // Store product image and content
+
+             $image = $request->file('image');
+             $livre = $request->file('livre');
+             $livre_image_aws_storage_path   = 'denionn/livre/images/' . time() .'.'. $image->getClientOriginalExtension();
+             $livre_content_aws_storage_path = 'denionn/livre/livres/' . time() .'.'. $livre->getClientOriginalExtension();
+
+             \Storage::disk('s3')->put($livre_image_aws_storage_path, $validatedData['image']);
+             \Storage::disk('s3')->put($livre_content_aws_storage_path, $validatedData['livre']);
+
+            $product->livre_image_aws_storage_path   = $livre_image_aws_storage_path;
+            $product->livre_content_aws_storage_path = $livre_content_aws_storage_path;
+
+            $product->save();
+
+             dd($product);
+            // $product = $this->storeProductFiles($product); 
 
             // Store product content
             //$this->storeProductContent($product); 
@@ -81,8 +96,6 @@ class productController extends Controller
         };
         
         $base= product::all();
-
-        dd('okay');
     }
 
 
@@ -102,18 +115,5 @@ class productController extends Controller
     //         ]);
     //     }
     // }
-
-    private function storeProductFiles($product)
-    {
-        if (request()->has('livre') && request()->has('image')) {
-            $product->update([
-                'livre' => request()->livre->store('livre/livres', 's3'),
-            ]);
-
-            $product->update([
-                'image' => request()->livre->store('livre/images', 's3'),
-            ]);
-        }
-    }
 
 }
