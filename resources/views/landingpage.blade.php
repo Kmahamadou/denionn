@@ -10,7 +10,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -84,7 +84,7 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="img_snow_wide.jpg" style="width:100%">
+  <img src="{{ asset('img/DenionnAgenda.png') }}" style="width:100%">
   <div class="text">Caption Two</div>
 </div>
 
