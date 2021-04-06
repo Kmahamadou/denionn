@@ -43,7 +43,7 @@ img {vertical-align: middle;}
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 1s ease;
+  transition: background-color 10s ease;
 }
 
 .active {
