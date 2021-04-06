@@ -3,7 +3,7 @@
 
 
 
-    <section class="page-section" id="intro" style="background-color: gray; margin-top: 0">
+    <section class="page-section" id="intro" style="background-color: #DAE1E0; margin-top: 0">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 img {vertical-align: middle;}
