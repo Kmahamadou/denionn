@@ -58,7 +58,6 @@ class productController extends Controller
             $product = product::create($validatedData);
 
             // Store product image
-
              $livre_image_aws_storage_path   = '/livre/images/' . time() . '.png';
              $livre_content_aws_storage_path = '/livre/livres/' . time() . '.png';
 
@@ -95,8 +94,6 @@ class productController extends Controller
         };
         
         $base= product::all();
-
-        dd('okay');
     }
 
 
@@ -116,18 +113,5 @@ class productController extends Controller
     //         ]);
     //     }
     // }
-
-    private function storeProductFiles($product)
-    {
-        if (request()->has('livre') && request()->has('image')) {
-            $product->update([
-                'livre' => request()->livre->store('livre/livres', 's3'),
-            ]);
-
-            $product->update([
-                'image' => request()->livre->store('livre/images', 's3'),
-            ]);
-        }
-    }
 
 }
