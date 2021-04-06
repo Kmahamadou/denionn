@@ -64,7 +64,7 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 1} 
   to {opacity: 1}
 }
 
