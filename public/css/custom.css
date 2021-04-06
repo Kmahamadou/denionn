@@ -381,8 +381,8 @@
 
     .popular .pricing-footer .btn-primary:focus,
     .popular .pricing-footer .btn-primary.focus {
-        background-color: #312FE0;
-        border-color: #312FE0;
+        background-color: #666666;
+        border-color: #666666;
     }
 
     .popular .pricing-footer .btn-primary:hover {
@@ -392,7 +392,7 @@
 
     .popular .pricing-footer .btn-primary:active,
     .popular .pricing-footer .btn-primary.activey {
-        background-color: #312FE0;
+        background-color: #666666;
         border-color: #312FE0;
     }
 
@@ -402,7 +402,7 @@
     .popular .pricing-footer .btn-primary.active:focus,
     .popular .pricing-footer .btn-primary:active.focus,
     .popular .pricing-footer .btn-primary.active.focus {
-        background-color: #312FE0;
+        background-color: #666666;
         border-color: #312FE0;
     }
 

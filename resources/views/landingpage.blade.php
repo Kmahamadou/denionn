@@ -3,50 +3,128 @@
 
 
 
-    <section class="page-section" id="intro">
-      <div class="col-lg-12" >
+    <section class="page-section" id="intro" style="background-color: #DAE1E0; margin-top: 0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {vertical-align: middle;}
 
-        <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 0px;
+}
 
-          </ol>
-          <div class="carousel-inner" role="listbox" >
-            <div class="carousel-item active">
-              <img class="d-block img-fluid"  src="{{asset('img/test.png')}}" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src="{{asset('img/test.png')}}" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src="{{asset('img/test.png')}}" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src="{{asset('img/test.png')}}" alt="four slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src="{{asset('img/test.png')}}" alt="Five slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src="{{asset('img/test.png')}}" alt="seven slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div> 
-        
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 10s ease;
+}
+
+/*.active {
+  background-color: #717171;
+}*/
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 20s;
+  animation-name: fade;
+  animation-duration: 20s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<div class="slideshow-container"style="margin-top: -10%; margin-bottom: -10%" >
+
+<div class="mySlides fade" style="" >
+  <div class="numbertext">1 / 3</div>
+  <img src="{{ secure_asset('img/DenionnBlocnote.png') }}" style="width:100%;">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="{{ secure_asset('img/DenionnAgenda.png') }}" style="width:100%;">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="{{ secure_asset('img/DenionnNotebook.png') }}" style="width:100%;">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+</script>
     </section>
 
 
@@ -263,13 +341,13 @@
                         <p>
                             Ecoutez pendant 5 minutes et vous vous endormez aussitôt
                         </p>
-                        
-                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                        <a href="bl                        
+og-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
                     </article>
                 
-                  </div>
-                                    <div class="col-md-6">
+                  </div> <div class="col-md-6">
                     <article>
+                                   
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/ktEmA1PTNM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h2> Relaxing Music</h2>
                         <hr class="title-underline">
