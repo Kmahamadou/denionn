@@ -66,8 +66,8 @@ class productController extends Controller
 
 
              $product->update([
-                'livre_image_aws_storage_path'   = $livre_image_aws_storage_path;
-                'livre_content_aws_storage_path' = $livre_content_aws_storage_path
+                'livre_image_aws_storage_path'   => $livre_image_aws_storage_path;
+                'livre_content_aws_storage_path' => $livre_content_aws_storage_path
              ]);
 
              dd($product);
