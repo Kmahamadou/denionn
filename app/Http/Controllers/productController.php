@@ -66,7 +66,7 @@ class productController extends Controller
 
 
              $product->update([
-                'livre_image_aws_storage_path'   => $livre_image_aws_storage_path;
+                'livre_image_aws_storage_path'   => $livre_image_aws_storage_path,
                 'livre_content_aws_storage_path' => $livre_content_aws_storage_path
              ]);
 
@@ -105,13 +105,13 @@ class productController extends Controller
 
 
 
-    // private function storeProductImage($product)
-    // {
-    //     if (request()->has('image')) {
-    //         $product->update([
-    //             'image' => request()->image->store('livre/image', 's3'),
-    //         ]);
-    //     }
-    // }
+    private function storeProductImage($product)
+    {
+        if (request()->has('image')) {
+            $product->update([
+                'image' => request()->image->store('livre/image', 's3'),
+            ]);
+        }
+    }
 
 }
