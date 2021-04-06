@@ -107,13 +107,13 @@ class productController extends Controller
 
 
 
-    private function storeProductImage($product)
-    {
-        if (request()->has('image')) {
-            $product->update([
-                'image' => request()->image->store('livre/image', 's3'),
-            ]);
-        }
-    }
+    // private function storeProductImage($product)
+    // {
+    //     if (request()->has('image')) {
+    //         $product->update([
+    //             'image' => request()->image->store('livre/image', 's3'),
+    //         ]);
+    //     }
+    // }
 
 }
