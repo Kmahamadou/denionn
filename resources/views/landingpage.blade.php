@@ -186,7 +186,7 @@ function showSlides() {
                             <div class="col-md-2 isotopeSelector photography">
                         <figure class="col-md-2" >
                         <article>
-                                <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/denionn/livre/images/{{.$product->livre_image_aws_storage_path) }}" alt="" style="">
+                                <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/denionn/livre/images/{{$product->livre_image_aws_storage_path) }}" alt="" style="">
                                 <div class="overlay-background">
                                     <div class="inner"></div>
                                 </div>
