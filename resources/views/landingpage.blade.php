@@ -199,7 +199,7 @@ function showSlides() {
                                             </div>
                                             <div class="col-md-12 info">
                                                 <p>{{$product->description}}</p>
-                                                <p><a title="{{$product->title}}" class="fancybox-pop fancybox.image " href="{{ asset('livre/image/'.$product->image) }}"><i class="fa fa-search fa-border fa-2x"></i></a>
+                                                <p><a title="{{$product->title}}" class="fancybox-pop fancybox.image " href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}}"><i class="fa fa-search fa-border fa-2x"></i></a>
                                                     <a title="{{$product->title}}" class="fancybox-pop fancybox.text"
                                                         href="{{$product->description}}"><i class="fa fa-link fa-border fa-2x"></i></a></p>
                                             </div>
@@ -264,7 +264,7 @@ function showSlides() {
                     <div class="col-md-3 col-sm-6 ">
                         <div>
                             <div>
-                            <img src="{{ asset('livre/image/'.$product->image) }}" alt="" style="width: 90%"></div>
+                            <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}}" alt="" style="width: 90%"></div>
                             <label><strong></strong>
                                 <br/>{{$product->title}}</label>
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
