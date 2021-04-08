@@ -56,7 +56,7 @@
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle=" collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -66,7 +66,7 @@
                     <img class="logo" src="{{asset('img/denionn.png')}}" alt="Logo" style="margin-top: -15%"></a>
  
             </div>
-            <nav class="collapse navbar-collapse navbar-ex1-collapse">
+            <nav class="collapse navbar-collapse navbar-ex1-collapse" style="font-size: 40px">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown active">
                         <a href="{{route('index')}}" class="dropdown-toggle" >Accueil</b></a>
@@ -110,18 +110,6 @@
                         </ul> --}}
                     </li>
                     <li><a href="components.html">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-                       {{--  <ul class="dropdown-menu">
-                            <li class="dropdown-header">Standard Layout</li>
-                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                            <li><a href="blog-single-post.html">Blog Single Post</a></li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">Creative Layout</li>
-                            <li><a href="blog-full-width.html">Blog No Sidebar</a></li>
-                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                        </ul> --}}
-                    </li>
                     <li>
                         <a  href="{{Route('cart.index')}}">Panier <span class="badge badge-pill badge-dark" style="color: white">{{Cart::count()}}</span> 
                             </a></li>
