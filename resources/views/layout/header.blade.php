@@ -69,7 +69,7 @@
             <nav class="collapse navbar-collapse navbar-ex1-collapse" style="font-size: 40px">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown active">
-                        <a href="{{route('index')}}" class="dropdown-toggle" >Accueil</b></a>
+                        <a href="{{route('index')}}" class="dropdown-toggle"  style="font-size: 40px">Accueil</b></a>
                   {{--       <ul class="dropdown-menu">
                             <li class="dropdown-header">Main Page</li>
                             <li class="active"><a href="index.html">Index</a></li>
