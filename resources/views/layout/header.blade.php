@@ -86,10 +86,10 @@
                         <ul class="dropdown-menu">
                             {{-- <li class="dropdown-header">Science</li> --}}
                             <li><a href="{{ route('livre.category', "religion") }}" >Religion</a></li>
-                            <li><a href="{{ route('name') }}" >Entreprise</a></li>
-                            <li><a href="{{ route('name') }}" >Developpement Personnel</a></li>
-                            <li><a href="{{ route('name') }}" >Marketing internet</a></li>
-                            <li><a href="{{ route('name') }}" >Santé et bien être</a></li>
+                            <li><a href="{{ route('livre.category') }}" >Entreprise</a></li>
+                            <li><a href="{{ route('livre.category') }}" >Developpement Personnel</a></li>
+                            <li><a href="{{ route('livre.category') }}" >Marketing internet</a></li>
+                            <li><a href="{{ route('livre.category') }}" >Santé et bien être</a></li>
 {{--                             <li class="divider"></li>
                             <li class="dropdown-header">Creative</li>
                             <li><a href="about-me.html">About Me</a></li>
