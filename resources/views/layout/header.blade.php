@@ -85,8 +85,8 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 25px">Catégories<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {{-- <li class="dropdown-header">Science</li> --}}
-                            <li><a href="{{ route('livre.category', "Bloc Note") }}" >Religion</a></li>
-                            <li><a href="{{ route('livre.category', "Agenda") }}" >Religion</a></li>
+                            <li><a href="{{ route('livre.category', "Bloc Note") }}" >Bloc Note</a></li>
+                            <li><a href="{{ route('livre.category', "Agenda") }}" >Agenda</a></li>
                             <li><a href="{{ route('livre.category', "Religion") }}" >Religion</a></li>
                             <li><a href="{{ route('livre.category', "Entreprise") }}" >Entreprise</a></li>
                             <li><a href="{{ route('livre.category', "Developpement personnel") }}" >Developpement Personnel</a></li>
