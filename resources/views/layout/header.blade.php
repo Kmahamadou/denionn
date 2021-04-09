@@ -66,10 +66,10 @@
                     <img class="logo" src="{{asset('img/denionn.png')}}" alt="Logo" style="margin-top: -15%"></a>
  
             </div>
-            <nav class="collapse navbar-collapse navbar-ex1-collapse" style="font-size: 40px">
+            <nav class="collapse navbar-collapse navbar-ex1-collapse" style="font-size: 30px">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown active">
-                        <a href="{{route('index')}}" class="dropdown-toggle"  style="font-size: 40px">Accueil</b></a>
+                        <a href="{{route('index')}}" class="dropdown-toggle"  style="font-size: 30px">Accueil</b></a>
                   {{--       <ul class="dropdown-menu">
                             <li class="dropdown-header">Main Page</li>
                             <li class="active"><a href="index.html">Index</a></li>
@@ -82,7 +82,7 @@
                         </ul> --}}
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 40px">Catégories<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 30px">Catégories<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {{-- <li class="dropdown-header">Science</li> --}}
                             <li><a href="about-us.html" >Religion</a></li>
@@ -99,7 +99,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 40px">A-Propos</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 30px">A-Propos</a>
                      {{--    <ul class="dropdown-menu">
                             <li class="dropdown-header">Page Layouts</li>
                             <li><a href="full-width.html">Full Width</a></li>
@@ -109,9 +109,9 @@
                             <li><a href="404.html">404 Error</a></li>
                         </ul> --}}
                     </li>
-                    <li><a href="components.html" style="font-size: 40px">Contact</a></li>
+                    <li><a href="components.html" style="font-size: 30px">Contact</a></li>
                     <li>
-                        <a  href="{{Route('cart.index')}}" style="font-size: 40px">Panier <span class="badge badge-pill badge-dark" style="color: white">{{Cart::count()}}</span> 
+                        <a  href="{{Route('cart.index')}}" style="font-size: 30px">Panier <span class="badge badge-pill badge-dark" style="color: white">{{Cart::count()}}</span> 
                             </a></li>
                 </ul>
             </nav>
