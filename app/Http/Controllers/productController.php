@@ -108,7 +108,7 @@ public function category($id)
 {
   
    $livre = product::where('categorie', $id)->firstOrfail();
-    dd($livre);
+    dd($id);
         return view('livre.category')->with('livre', $livre);
 
 }
