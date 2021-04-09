@@ -107,9 +107,9 @@ class productController extends Controller
 public function category($id)
 {
   $category = $id;
-   $livre = product::where('categorie', $category)->firstOrfail()->get();
+   $livre = product::where('categorie', $category)->firstOrfail();
             dd($category);
-        return view('livre.category')->with('livre', $livre);
+        //return view('livre.category')->with('livre', $livre);
 
 }
 
