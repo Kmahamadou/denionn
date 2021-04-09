@@ -85,7 +85,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 25px">Catégories<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {{-- <li class="dropdown-header">Science</li> --}}
-                            <li><a href="{{ route('name') }}" id="Religion" >Religion</a></li>
+                            <li><a href="{{ route('livre.category', "religion") }}" >Religion</a></li>
                             <li><a href="{{ route('name') }}" >Entreprise</a></li>
                             <li><a href="{{ route('name') }}" >Developpement Personnel</a></li>
                             <li><a href="{{ route('name') }}" >Marketing internet</a></li>

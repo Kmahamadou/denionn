@@ -104,7 +104,10 @@ class productController extends Controller
         $livre = product::where('id', $id)->firstOrfail();
         return view('livre.show')->with('livre', $livre);
     }
-
+public function category($id)
+{
+    dd($id);
+}
 
 
     // private function storeProductImage($product)

@@ -34,6 +34,7 @@ Route::patch('/panier/${rowId}',[cartController::class, 'update'])->name('cart.u
 Route::delete('/cart/{rowId}',[cartController::class, 'destroy'])->name('cart.destroy');
 
 Route::get('cartp',[cartController::class, 'destroyall'])->name('cart.destroyall');
+Route::get('category/{id}',[productController::class, 'category'])->name('livre.category');
 
 Route::get('retour', [cartController::class, 'retour'])->name('retour');
 //Route::get('category',[productController::class, 'category'])->name('retour');
