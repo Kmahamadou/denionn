@@ -99,19 +99,20 @@ class productController extends Controller
     }
 
 
-    public function show($id)
-    {   
-        $livre = product::where('id', $id)->firstOrfail();
-        return view('livre.show')->with('livre', $livre);
-    }
-public function category($id)
-{
-  $category = $id;
-   $livre = product::where('categorie', $category)->firstOrfail();
-            dd($category);
-        //return view('livre.category')->with('livre', $livre);
+    public function show($id){   
 
-}
+                    $livre = product::where('id', $id)->firstOrfail();
+                    return view('livre.show')->with('livre', $livre);
+                    }
+
+public function category($id){
+
+                $category = $id;
+                $livre = product::where('categorie', $category)->get();
+                dd($category);
+                //return view('livre.category')->with('livre', $livre);
+
+                }
 
 
     // private function storeProductImage($product)
