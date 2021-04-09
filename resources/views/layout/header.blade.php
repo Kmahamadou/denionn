@@ -82,14 +82,14 @@
                         </ul> --}}
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catégories<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 40px">Catégories<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {{-- <li class="dropdown-header">Science</li> --}}
-                            <li><a href="about-us.html">Religion</a></li>
-                            <li><a href="our-team.html">Entreprise</a></li>
-                            <li><a href="sales-page.html">Developpement Personnel</a></li>
-                            <li><a href="contact.html">Marketing internet</a></li>
-                            <li><a href="contact.html">Santé et bien être</a></li>
+                            <li><a href="about-us.html" style="font-size: 40px">Religion</a></li>
+                            <li><a href="our-team.html" style="font-size: 40px">Entreprise</a></li>
+                            <li><a href="sales-page.html" style="font-size: 40px">Developpement Personnel</a></li>
+                            <li><a href="contact.html" style="font-size: 40px">Marketing internet</a></li>
+                            <li><a href="contact.html" style="font-size: 40px">Santé et bien être</a></li>
 {{--                             <li class="divider"></li>
                             <li class="dropdown-header">Creative</li>
                             <li><a href="about-me.html">About Me</a></li>
