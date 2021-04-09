@@ -27,6 +27,8 @@
                     <label>Categorie</label>
                    <select class="form-control" name="categorie">
                      <option></option>
+                     <option value="notebook">Bloc Note</option>
+                     <option value="agenda">Agenda</option>
                      <option value="religion">Religion</option>
                      <option value="Entréprise">Entréprise</option>
                      <option value="sante">Santé et bien être</option>
