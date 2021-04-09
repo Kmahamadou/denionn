@@ -402,7 +402,7 @@
     .popular .pricing-footer .btn-primary.active:focus,
     .popular .pricing-footer .btn-primary:active.focus,
     .popular .pricing-footer .btn-primary.active.focus {
-        background-color: #666666;
+        background-color: #666666   ;
         border-color: #312FE0;
     }
 

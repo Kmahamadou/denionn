@@ -106,8 +106,10 @@ class productController extends Controller
     }
 public function category($id)
 {
-   $category = $id;
-   dd($category);
+   
+   $livre = product::where('categorie', $id)->firstOrfail();
+        return view('livre.category')->with('livre', $livre);
+
 }
 
 

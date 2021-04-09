@@ -27,4 +27,4 @@
                         </article>
                     </div></a>
                         @endforeach</div>
- 
+  

@@ -27,13 +27,13 @@
                     <label>Categorie</label>
                    <select class="form-control" name="categorie">
                      <option></option>
-                     <option value="notebook">Bloc Note</option>
-                     <option value="agenda">Agenda</option>
-                     <option value="religion">Religion</option>
-                     <option value="Entréprise">Entréprise</option>
+                     <option value="Notebook">Bloc Note</option>
+                     <option value="Agenda">Agenda</option>
+                     <option value="Religion">Religion</option>
+                     <option value="Entréprise">Entreprise</option>
                      <option value="sante">Santé et bien être</option>
-                     <option value="Marketing">Marketing internet</option>
-                     <option value="Developpement">Developpement personnel</option>
+                     <option value="Marketing internet">Marketing internet</option>
+                     <option value="Developpement personnel">Developpement personnel</option>
                    </select>
                   </div>
 
