@@ -106,7 +106,8 @@ class productController extends Controller
     }
 public function category($id)
 {
-    dd($id);
+   $category = $id;
+   dd($category);
 }
 
 
