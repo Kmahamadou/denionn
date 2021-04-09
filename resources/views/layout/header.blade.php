@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Elsa, a multipurpose Template from Andreas Lautenschlager">
     <meta name="author" content="Andreas Lautenschlager - www.lautenschlager.de">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        @yield('extra-meta')
+    @yield('extra-meta')
     <title>E-Book</title>
 
     <!-- normalize core CSS -->
@@ -39,8 +37,8 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- Menu shrinking -->
     <script type="text/javascript" src="{{asset('js/menu.js')}}"></script>
 
@@ -49,7 +47,7 @@
 
     <!-- Custom CSS. Input here your changes -->
     <link href="{{asset('css/custom.css')}}" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
