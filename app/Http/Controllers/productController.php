@@ -41,7 +41,7 @@ class productController extends Controller
                         
                         ]);
 
-
+dd($validatedData);
 
         if(isset($validatedData['title'])){
             //Preparation image
