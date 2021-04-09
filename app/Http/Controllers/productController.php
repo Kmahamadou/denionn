@@ -110,7 +110,7 @@ public function category($id){
                 $category = $id;
                 $livre = product::where('categorie', $category)->get();
                 dd($livre);
-                //return view('livre.category')->with('livre', $livre);
+                return view('livre.category')->with('livre', $livre);
 
                 }
 
