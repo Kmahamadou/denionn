@@ -100,14 +100,10 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 25px">A-Propos</a>
-                     {{--    <ul class="dropdown-menu">
-                            <li class="dropdown-header">Page Layouts</li>
-                            <li><a href="full-width.html">Full Width</a></li>
-                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                            <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                            <li><a href="right-left-sidebar.html">Right &amp; Left Sidebar</a></li>
-                            <li><a href="404.html">404 Error</a></li>
-                        </ul> --}}
+                        <select>
+                            <option>Religion</option>
+                            <option>Science</option>
+                        </select>
                     </li>
                     <li><a href="components.html" style="font-size: 25px">Contact</a></li>
                     <li>
