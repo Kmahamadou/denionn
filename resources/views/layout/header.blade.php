@@ -62,8 +62,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               {{--  <a href="index.html">
-                    <img class="logo" src="{{asset('img/denionn.png')}}" alt="Logo" style="margin-top: -15%"></a> --}}
+                <a href="index.html">
+                    <img class="logo" src="{{asset('img/denionn.png')}}" alt="Logo" style="margin-top: -15%"></a>
  
             </div>
             <nav class="collapse navbar-collapse navbar-ex1-collapse" style="font-size: 25px">
