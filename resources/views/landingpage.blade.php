@@ -183,7 +183,7 @@ function showSlides() {
                 <div class="isotopeContainer">
                         @foreach (  $products as $product)
                            <a href="{{Route('livre.detail', $product->id)}}">
-                            <div class="col-md-2 isotopeSelector photography">
+                            <div class="col-md-4 isotopeSelector photography">
                         <figure class="col-md-6" >
                         <article>
                                 <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}}" alt="" style="">
