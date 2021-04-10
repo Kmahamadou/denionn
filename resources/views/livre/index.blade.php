@@ -1,7 +1,7 @@
 @extends('layout.main')
     @foreach (  $products as $product)
                            <a href="{{Route('livre.detail', $product->id)}}">
-                            <div class="col-md-6 isotopeSelector photography">
+                            <div class="col-md-3 isotopeSelector photography">
                         <article class="">
                             
                                 <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}}" alt="">

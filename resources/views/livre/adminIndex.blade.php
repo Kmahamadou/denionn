@@ -21,6 +21,15 @@
                                                     <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
                                             </div>
                                         </div>
+                                         <form action="{{route('cart.destroy',$livre->rowId)}}" method="post">
+                                @csrf
+                                @method('DELETE')
+
+                                <td class="text-right d-none d-md-block"> 
+                                   
+                                    <button class="btn btn-light" data-abc="true"> Supprimer 
+                                    </button> </td>
+                                </form>
                                     </div>
                                 </div>
                            
