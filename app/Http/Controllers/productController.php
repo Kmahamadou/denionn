@@ -17,12 +17,7 @@ class productController extends Controller
        $product = product::all();
        return view('livre.index')->with('products',$product);
     }
-            //show all products for Admin
-    public function adminIndex()
-    {  
-       $product = product::all();
-       return view('livre.adminIndex')->with('products',$product);
-    }
+     
 
      public function create()
     {
@@ -128,5 +123,20 @@ public function category($id){
     //         ]);
     //     }
     // }
+
+
+                       //show all products for Admin
+    public function adminIndex()
+    {  
+       $product = product::all();
+       return view('livre.adminIndex')->with('products',$product);
+    }
+
+                    //Delete product 
+
+    public function delete($id)
+    {  
+       dd($id);
+    }
 
 }
