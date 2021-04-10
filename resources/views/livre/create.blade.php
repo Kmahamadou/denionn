@@ -1,6 +1,7 @@
 @extends('layout.main')
  <form role="form" action="{{route('livre.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="container ml-5">
                 <div class="card">
                 <div class="card-header"><h1> Enregistrement des livres</h1> </div>
