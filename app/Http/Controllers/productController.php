@@ -136,7 +136,9 @@ public function category($id){
 
     public function delete($id)
     {  
-       dd($id);
+       $livre = product::where('id',$id)->get();
+       $livre->delete();
+       return back();
     }
 
 }
