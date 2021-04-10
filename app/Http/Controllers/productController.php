@@ -26,7 +26,7 @@ class productController extends Controller
     public function store(Request $request)
     {   
 
-        dd($request);
+       
          $validatedData = request()->validate([
 
                             'title'         =>'required',
@@ -41,7 +41,7 @@ class productController extends Controller
                         
                         ]);
 
-dd($validatedData);
+
 
         if(isset($validatedData['title'])){
             //Preparation image
@@ -72,7 +72,7 @@ dd($validatedData);
 
             $product->save();
 
-             dd($product);
+             
             // $product = $this->storeProductFiles($product); 
 
             // Store product content
