@@ -17,7 +17,11 @@
                                             </div>
                                             <div class="col-md-12 info">
                                                 <p>{{$product->description}}</p>
-                                                    <a href="{{ route('delete',$product->id) }}" class="btn btn-danger">Supprimer</a>
+                                            <form action="{{route('delete',$product->id)}}" method="post">
+                                             @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-light" data-abc="true"> Supprimer</button> 
+                                            </form>
                                                    <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
                                                     <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
                                             </div>
