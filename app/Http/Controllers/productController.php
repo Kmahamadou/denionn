@@ -5,17 +5,23 @@ use App\Models\product;
 use Illuminate\Http\Request;
 
 class productController extends Controller
-{
+{               //landingpage view
      public function index()
     {  $slider = product::inRandomOrder()->take(1)->get();
        $product = product::inRandomOrder()->take(6)->get();
        return view('landingpage')->with('products',$product)->with('slider',$slider);
     }
-
+                //show all products for user
     public function indexAll()
     {  
        $product = product::all();
        return view('livre.index')->with('products',$product);
+    }
+            //show all products for Admin
+    public function adminIndex()
+    {  
+       $product = product::all();
+       return view('livre.adminIndex')->with('products',$product);
     }
 
      public function create()
