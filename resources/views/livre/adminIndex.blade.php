@@ -17,7 +17,7 @@
                                             </div>
                                             <div class="col-md-12 info">
                                                 <p>{{$product->description}}</p>
-                                                     <form action="{{route('cart.destroy',$livre->rowId)}}" method="post">
+                                                     <form action="{{route('delete',$product->id)}}" method="post">
                                                         @csrf
                                                         @method('DELETE')
 
