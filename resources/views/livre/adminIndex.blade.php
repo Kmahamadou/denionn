@@ -18,7 +18,8 @@
                                             <div class="col-md-12 info">
                                                 <p>{{$product->description}}</p>
                                             <form action="{{route('delete',$product->id)}}" method="post">
-                                             @csrf
+                                                @csrf
+                                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                                             @method('DELETE')
                                             <button class="btn btn-light" data-abc="true"> Supprimer</button> 
                                             </form>
