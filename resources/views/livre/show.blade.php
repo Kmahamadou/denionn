@@ -30,8 +30,8 @@
             <div class="row">
                 <!-- Content -->
                 <div class="col-md-8 col-md-push-4 margin-bottom-15" >
-                    <a title="Main Image" class="fancybox-pop fancybox.image" href="{{asset('livre/image/'.$livre->image) }}" rel="portfolio-main">
-                        <img src="{{asset('livre/image/'.$livre->image) }}" alt="portfolio" class="img-responsive" style="width: 30%">
+                    <a title="Main Image" class="fancybox-pop fancybox.image" href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}}" rel="portfolio-main">
+                        <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}}" alt="portfolio" class="img-responsive" style="width: 30%">
                     </a>
                 </div>
                 <!-- Sidebar -->

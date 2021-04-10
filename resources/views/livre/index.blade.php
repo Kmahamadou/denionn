@@ -4,7 +4,7 @@
                             <div class="col-md-6 isotopeSelector photography">
                         <article class="">
                             
-                                <img src="{{asset('livre/image/'.$product->image) }}" alt="">
+                                <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}}" alt="">
                                 <div class="overlay-background">
                                     <div class="inner"></div>
                                 </div>
