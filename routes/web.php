@@ -27,7 +27,7 @@ Route::get('/livre/{id}',[productController::class, 'show'])->name('livre.detail
 Route::get('createlivre',[productController::class, 'create'])->name('livre.create');
 Route::post('storelivre',[productController::class, 'store'])->name('livre.store');
 Route::get('category/{id}',[productController::class, 'category'])->name('livre.category');
-Route::patch('deleteproduct/{id}',[productController::class, 'delete'])->('delete');
+//Route::patch('deleteproduct/{id}',[productController::class, 'delete'])->('delete');
 Route::get('/adminIndex',[productController::class , 'adminIndex'])->name('adminIndex');							
 							//Cart
 
