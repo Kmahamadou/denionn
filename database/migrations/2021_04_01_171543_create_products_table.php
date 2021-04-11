@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('auteur');
-            $table->string('isbn');
+            $table->string('mode');
             $table->string('categorie');
             $table->string('livre');
             $table->integer('prix');

@@ -18,8 +18,12 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="designation">Isbn</label>
-                    <input type="text" name="isbn" class="form-control" id="">
+                    <label for="designation">Mode</label>
+                    <select class="form-control" name="categorie">
+                     <option></option>
+                     <option value="Portrait">Portrait</option>
+                     <option value="Paysage">Paysage</option>
+                   </select>
                   </div>
 
 
