@@ -9,7 +9,7 @@
 
 
     <!-- Call to Action Primary -->
-    <section class="cta cta-primary">
+    <section class="cta cta-primary" style="position: fixed;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
