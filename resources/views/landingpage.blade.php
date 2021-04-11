@@ -4,7 +4,7 @@
 
 
     <section class="page-section" id="intro" style="background-color: #DAE1E0; margin-top: 0">
-
+        <img src="{{ asset('img/dbaniere.png') }}">
     </section>
 
 
