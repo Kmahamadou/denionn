@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Elsa, a multipurpose Template from Andreas Lautenschlager">
     <meta name="author" content="Andreas Lautenschlager - www.lautenschlager.de">
     @yield('extra-meta')
     <title>E-Book</title>
 
     <!-- normalize core CSS -->
-    <link href="{{asset('css/normalize.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/normalize.css')}}" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="{{asset("bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
-    <link href="{{asset('bootstrap/css/carousel.css')}}" rel="stylesheet">
-    <link href="{{asset('bootstrap/fonts/glyphicons-halflings-regular.eot')}}" rel="stylesheet">
+    <link href="{{secure_asset("bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
+    <link href="{{secure_asset('bootstrap/css/carousel.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('bootstrap/fonts/glyphicons-halflings-regular.eot')}}" rel="stylesheet">
     
     <!-- Load jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="{{asset('bootstrap/css/ie10-viewport-bug-workaround.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('bootstrap/css/ie10-viewport-bug-workaround.css')}}" rel="stylesheet">
 
-    <script src="{{asset('bootstrap/js/ie-emulation-modes-warning.js')}}"></script>
+    <script src="{{secure_asset('bootstrap/js/ie-emulation-modes-warning.js')}}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,13 +41,13 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- Menu shrinking -->
-    <script type="text/javascript" src="{{asset('js/menu.js')}}"></script>
+    <script type="text/javascript" src="{{secure_asset('js/menu.js')}}"></script>
 
     <!-- Main styles of this template -->
-    <link href="{{asset('css/style.min.css?v=1.0.0')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/style.min.css?v=1.0.0')}}" rel="stylesheet">
 
     <!-- Custom CSS. Input here your changes -->
-    <link href="{{asset('css/custom.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/custom.css')}}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -63,7 +64,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="index.html">
-                    <img class="logo" src="{{asset('img/denionn.png')}}" alt="Logo" style="margin-top: -15%"></a>
+                    <img class="logo" src="{{secure_asset('img/denionn.png')}}" alt="Logo" style="margin-top: -15%"></a>
  
             </div>
             <nav class="collapse navbar-collapse navbar-ex1-collapse" style="font-size: 25px">
