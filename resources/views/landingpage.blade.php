@@ -365,6 +365,5 @@ og-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
         </div>
     </section>   
 
-</body>
 
-</html>
+
