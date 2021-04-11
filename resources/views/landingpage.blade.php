@@ -3,7 +3,7 @@
 
 
 
-    <section  style="background-color: #DAE1E0; margin: 1%">
+    <section  style="background-color: #DAE1E0; margin: 1%; align-content: center;">
         <img src="{{ asset('img/dbaniere.png') }}">
     </section>
 
