@@ -68,10 +68,10 @@
                     <img class="logo" src="{{secure_asset('img/denionn.png')}}" alt="Logo" style="margin-top: -15%"></a>
  
             </div>
-            <nav class="collapse navbar-collapse navbar-ex1-collapse" style="font-size: 25px">
+            <nav class="collapse navbar-collapse navbar-ex1-collapse" >
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown active">
-                        <a href="{{route('index')}}" class="dropdown-toggle"  style="font-size: 25px">Accueil</b></a>
+                        <a href="{{route('index')}}" class="dropdown-toggle"  >Accueil</b></a>
                   {{--       <ul class="dropdown-menu">
                             <li class="dropdown-header">Main Page</li>
                             <li class="active"><a href="index.html">Index</a></li>
@@ -84,7 +84,7 @@
                         </ul> --}}
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 25px">Catégories<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Catégories<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {{-- <li class="dropdown-header">Science</li> --}}
                             <li><a href="{{ route('livre.category', "Bloc Note") }}" >Bloc Note</a></li>
@@ -103,11 +103,11 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 25px">A-Propos</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >A-Propos</a>
                     </li>
-                    <li><a href="components.html" style="font-size: 25px">Contact</a></li>
+                    <li><a href="components.html" >Contact</a></li>
                     <li>
-                        <a  href="{{Route('cart.index')}}" style="font-size: 25px">Panier <span class="badge badge-pill badge-dark" style="color: white">{{Cart::count()}}</span> 
+                        <a  href="{{Route('cart.index')}}" >Panier <span class="badge badge-pill badge-dark" style="color: white">{{Cart::count()}}</span> 
                             </a></li>
                 </ul>
             </nav>
