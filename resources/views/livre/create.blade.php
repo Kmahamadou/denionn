@@ -32,7 +32,7 @@
                      <option value="Agenda">Agenda</option>
                      <option value="Religion">Religion</option>
                      <option value="Entréprise">Entreprise</option>
-                     <option value="sante">Santé et bien être</option>
+                     <option value="Sante">Santé et bien être</option>
                      <option value="Marketing internet">Marketing internet</option>
                      <option value="Developpement personnel">Developpement personnel</option>
                    </select>
