@@ -28,7 +28,7 @@
                     <label>Categorie</label>
                    <select class="form-control" name="categorie">
                      <option></option>
-                     <option value="Notebook">Bloc Note</option>
+                     <option value="Bloc Note">Bloc Note</option>
                      <option value="Agenda">Agenda</option>
                      <option value="Religion">Religion</option>
                      <option value="Entréprise">Entreprise</option>
