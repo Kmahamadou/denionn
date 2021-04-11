@@ -5,7 +5,7 @@
 		 @section('extra-script')
 	</body>
 
-	<footer class="page-section-no-padding  footer2-container">
+	<footer>
 
 		@include('layout.footer')
 
