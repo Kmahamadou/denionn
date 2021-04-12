@@ -150,12 +150,12 @@ Image credits: unsplash.com
   </ol>
   
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" style="color: white">
+  <div class="carousel-inner" >
     <div class="item slides active">
       <div class="slide-1"></div>
       <div class="hero">
         <hgroup>
-            <h1>Denionn Expert</h1>        
+            <h1 style="color: white">Denionn Expert</h1>        
             <h3>Get start your next awesome project</h3>
         </hgroup>
         <button class="btn btn-hero btn-lg" role="button">Explorer</button>
