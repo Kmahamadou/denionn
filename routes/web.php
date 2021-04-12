@@ -30,7 +30,7 @@ Route::get('category/{id}',[productController::class, 'category'])->name('livre.
 Route::delete('deleteproduct/{id}',[productController::class, 'delete'])->name('delete');
 Route::get('/adminIndex',[productController::class , 'adminIndex'])->name('adminIndex');							
 							//Cart
-
+Route::group(['middleware'=>['auth']],function(){
 Route::Post('/cart/ajouter',[cartController::class, 'store'])->name('cart.store');
 Route::get('/cart',[cartController::class, 'index'])->name('cart.index');
 Route::patch('/panier/${rowId}',[cartController::class, 'update'])->name('cart.update');
@@ -45,5 +45,5 @@ Route::get('/paiement', [checkoutController::class, 'index'])->name('checkout.in
 Route::Post('/paiement', [checkoutController::class, 'store'])->name('checkout.store');
 Route::get('/merci', [CheckoutController::class, 'thankYou'])->name('checkout.thankYou');
 
-
+});
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
