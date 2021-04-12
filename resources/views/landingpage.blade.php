@@ -150,7 +150,7 @@ Image credits: unsplash.com
   </ol>
   
   <!-- Wrapper for slides -->
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="color: white">
     <div class="item slides active">
       <div class="slide-1"></div>
       <div class="hero">
