@@ -158,7 +158,7 @@ Image credits: unsplash.com
             <h1>Denionn Expert</h1>        
             <h3>Get start your next awesome project</h3>
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+        <button class="btn btn-hero btn-lg" role="button">Explorer</button>
       </div>
     </div>
     <div class="item slides">
