@@ -1,3 +1,4 @@
+@extends('layout.main')
 <style type="text/css">
 /*
 Fade content bs-carousel with hero headers
@@ -126,7 +127,7 @@ Image credits: unsplash.com
     .hero h1 { font-size: 4em; }    
 }
 </style>
-@extends('layout.main')
+
     <!-- Intro -->
 
 
