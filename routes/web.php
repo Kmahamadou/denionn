@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [productController::class, 'index'])->name('index');
-	
+	Auth::routes();
 	 						//Product
 
 Route::get('/livreAll',[productController::class , 'indexAll'])->name('livre.indexAll');
@@ -44,3 +44,6 @@ Route::get('retour', [cartController::class, 'retour'])->name('retour');
 Route::get('/paiement', [checkoutController::class, 'index'])->name('checkout.index');
 Route::Post('/paiement', [checkoutController::class, 'store'])->name('checkout.store');
 Route::get('/merci', [CheckoutController::class, 'thankYou'])->name('checkout.thankYou');
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
