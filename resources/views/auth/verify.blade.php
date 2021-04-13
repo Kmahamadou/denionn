@@ -1,10 +1,10 @@
 @extends('layout.main')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
+<div class="container mt-5">
+    <div class="row justify-content-center mt-5">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card mt-5">
                 <div class="card-header"style="margin-top: 10%">{{ __('Verify Your Email Address') }}</div>
 
                 <div class="card-body">
