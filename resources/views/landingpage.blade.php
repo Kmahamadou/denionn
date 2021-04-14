@@ -1,4 +1,4 @@
-
+@extends('layouts.app')
 <style type="text/css">
 /*
 Fade content bs-carousel with hero headers
