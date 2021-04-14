@@ -156,7 +156,7 @@ Image credits: unsplash.com
       <div class="hero">
         <hgroup>
             <h1 style="color: white">Denionn Expert</h1>        
-            <h3>Get start your next awesome project</h3>
+            
         </hgroup>
         <button class="btn btn-hero btn-lg" role="button"><a href="">Explorer</a></button>
       </div>
@@ -166,7 +166,7 @@ Image credits: unsplash.com
       <div class="hero">        
         <hgroup>
             <h1>We are smart</h1>        
-            <h3>Get start your next awesome project</h3>
+            
         </hgroup>       
         <button class="btn btn-hero btn-lg" role="button">See all features</button>
       </div>
@@ -176,7 +176,7 @@ Image credits: unsplash.com
       <div class="hero">        
         <hgroup>
             <h1>We are amazing</h1>        
-            <h3>Get start your next awesome project</h3>
+            
         </hgroup>
         <button class="btn btn-hero btn-lg" role="button">See all features</button>
       </div>
@@ -223,11 +223,11 @@ Image credits: unsplash.com
                         <h1>Bibliothèque</h1>
                         <div class="filter-container isotopeFilters">
                             <ul class="list-inline filter">
-                                <li class="active"><a href="#" data-filter="*">All </a><span>/</span></li>
-                                <li><a href="#" data-filter=".illustrations">Illustrations</a><span>/</span></li>
-                                <li><a href="#" data-filter=".photography">Photography</a><span>/</span></li>
-                                <li><a href="#" data-filter=".websites">Websites</a><span>/</span></li>
-                                <li><a href="#" data-filter=".art">Art</a></li>
+                                <li class="active"><a href="#" data-filter="*">Religion </a><span>/</span></li>
+                                <li><a href="#" data-filter=".illustrations">Emtreprise</a><span>/</span></li>
+                                <li><a href="#" data-filter=".photography">Developpement personnel</a><span>/</span></li>
+                                <li><a href="#" data-filter=".websites">Marketing Internet</a><span>/</span></li>
+                                <li><a href="#" data-filter=".art">Santé et bien être</a></li>
                             </ul>
                         </div>
                     </div>
