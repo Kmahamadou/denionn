@@ -20,7 +20,7 @@ Image credits: unsplash.com
     margin: 0 2px;
     background-color: #f39c12;
     border-color: #f39c12;
-    opacity: .7;
+    opacity: .2;
 }
 .fade-carousel .carousel-indicators > li.active {
   width: 10px;
@@ -79,7 +79,7 @@ Image credits: unsplash.com
     height: 100%;
     z-index: 2;
     background-color: #080d15;
-    opacity: .7;
+    opacity: .2;
 }
 
 /********************************/
