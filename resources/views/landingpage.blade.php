@@ -1,4 +1,4 @@
-@extends('layout.main')
+
 <style type="text/css">
 /*
 Fade content bs-carousel with hero headers
