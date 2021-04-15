@@ -1,4 +1,4 @@
-@extends('layout.main')
+
 <style type="text/css">
 /*
 Fade content bs-carousel with hero headers
@@ -158,7 +158,7 @@ Image credits: unsplash.com
             <h1 style="color: white">Denionn Expert</h1>        
             
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button"><a href="">Explorer</a></button>
+        <button class="btn btn-hero btn-lg" role="button"><a href="/">Explorer</a></button>
       </div>
     </div>
     <div class="item slides">
@@ -211,7 +211,7 @@ Image credits: unsplash.com
 
 
 
-
+@extends('layout.main')
 
     <!-- Portfolio / Projects -->
     <section class="page-section-no-padding">
