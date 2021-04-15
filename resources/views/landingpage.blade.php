@@ -158,7 +158,7 @@ Image credits: unsplash.com
             <h1 style="color: white">Denionn Expert</h1>        
             
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button"><a href="/">Explorer</a></button>
+        <button class="btn btn-hero btn-lg" role="button">Explorer</button>
       </div>
     </div>
     <div class="item slides">
