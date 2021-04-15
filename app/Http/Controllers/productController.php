@@ -116,14 +116,14 @@ public function category($id){
                 }
 
 
-    // private function storeProductImage($product)
-    // {
-    //     if (request()->has('image')) {
-    //         $product->update([
-    //             'image' => request()->image->store('livre/image', 's3'),
-    //         ]);
-    //     }
-    // }
+    private function storeProductImage($product)
+    {
+        if (request()->has('image')) {
+            $product->update([
+                'image' => request()->image->store('livre/image', 's3'),
+            ]);
+        }
+    }
 
 
                        //show all products for Admin
