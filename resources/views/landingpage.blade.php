@@ -165,20 +165,20 @@ Image credits: unsplash.com
       <div class="slide-2"></div>
       <div class="hero">        
         <hgroup>
-            <h1>We are smart</h1>        
-            
+            <h1  style="color: white">We are smart</h1>        
+             
         </hgroup>       
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+        <button class="btn btn-hero btn-lg" role="button">Explorer</button>
       </div>
     </div>
     <div class="item slides">
       <div class="slide-3"></div>
       <div class="hero">        
         <hgroup>
-            <h1>We are amazing</h1>        
+            <h1  style="color: white">We are amazing</h1>        
             
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+        <button class="btn btn-hero btn-lg" role="button">Explorer</button>
       </div>
     </div>
   </div> 
