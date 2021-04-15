@@ -71,7 +71,7 @@
             <nav class="collapse navbar-collapse navbar-ex1-collapse" >
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown active">
-                        <a href="{{route('index')}}" class="dropdown-toggle"  >Accueil</b></a>
+                        <a href="{{route('index')}}" class="dropdown-toggle"  >Accueil</a>
                   {{--       <ul class="dropdown-menu">
                             <li class="dropdown-header">Main Page</li>
                             <li class="active"><a href="index.html">Index</a></li>
@@ -113,6 +113,9 @@
             </nav>
             <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
+    </div>
+
     @if(session('success'))
     <div class="alert alert-success">
         {{session('success')}}
@@ -123,8 +126,6 @@
         {{session('error')}}
     </div>
       @endif
-        <!-- /.container -->
-    </div>
 
 
 
