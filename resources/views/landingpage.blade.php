@@ -168,7 +168,7 @@ Image credits: unsplash.com
             <h1  style="color: white">We are smart</h1>        
              
         </hgroup>       
-        <button class="btn btn-hero btn-lg" role="button">Explorer</button>
+        <a href="/"><button class="btn btn-hero btn-lg" role="button">Explorer</button></a>
       </div>
     </div>
     <div class="item slides">
