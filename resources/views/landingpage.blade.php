@@ -107,7 +107,7 @@
                         <div class="row">
                             @foreach (  $slider as $slider)
                             <div class="col-md-6 order-md-last align-items-stretch d-flex">
-                                <div class="category-wrap-2 ftco-animate img align-self-stretch d-flex" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$slider->livre_image_aws_storage_path}});">
+                                <div class="category-wrap-2 ftco-animate img align-self-stretch d-flex" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
                                     <div class="text text-center">
                                         <h2>Bloc Note</h2>
                                         <p>Protect the health of every home</p>
@@ -119,13 +119,13 @@
 
                             <div class="col-md-6">
                                 @foreach (  $slider as $slider)
-                                <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$slider->livre_image_aws_storage_path}});">
+                                <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
                                     <div class="text px-3 py-1">
                                         <h2 class="mb-0"><a href="#">{{$slider->title}}</a></h2>
                                     </div>
                                 </div>
                                 @endforeach
-                                <div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$slider->livre_image_aws_storage_path}});">
+                                <div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
                                     <div class="text px-3 py-1">
                                         <h2 class="mb-0"><a href="#">Agenda</a></h2>
                                     </div>
@@ -135,12 +135,12 @@
                     </div>
 
                     <div class="col-md-4">
-                        <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$slider->livre_image_aws_storage_path}});">
+                        <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
                             <div class="text px-3 py-1">
                                 <h2 class="mb-0"><a href="#">Autre</a></h2>
                             </div>      
                         </div>
-                        <div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$slider->livre_image_aws_storage_path}});">
+                        <div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
                             <div class="text px-3 py-1">
                                 <h2 class="mb-0"><a href="#">Livre</a></h2>
                             </div>
