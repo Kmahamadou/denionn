@@ -121,7 +121,7 @@
                                 
                                 <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
                                     <div class="text px-3 py-1">
-                                        <h2 class="mb-0"><a href="#">{{$product->title}}</a></h2>
+                                        <h2 class="mb-0"><a href="#"></a></h2>
                                     </div>
                                 </div>
                                 
