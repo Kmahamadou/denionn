@@ -7,7 +7,7 @@
 
 
 
- <div class="hero-wrap hero-bread" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}});">
+ <div class="hero-wrap hero-bread" style="background-image: url('images/show.jpg');">
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
