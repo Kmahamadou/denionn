@@ -105,7 +105,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="row">
-                            @foreach (  $products as $product)
+                           
                             <div class="col-md-6 order-md-last align-items-stretch d-flex">
                                 <div class="category-wrap-2 ftco-animate img align-self-stretch d-flex" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
                                     <div class="text text-center">
@@ -115,16 +115,16 @@
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
+                            
 
                             <div class="col-md-6">
-                                @foreach (  $products as $product)
+                                
                                 <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
                                     <div class="text px-3 py-1">
                                         <h2 class="mb-0"><a href="#">{{$product->title}}</a></h2>
                                     </div>
                                 </div>
-                                @endforeach
+                                
                                 <div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
                                     <div class="text px-3 py-1">
                                         <h2 class="mb-0"><a href="#">Agenda</a></h2>
