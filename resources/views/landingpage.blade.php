@@ -1,8 +1,4 @@
-@extends('layout.main')
-
-
-
-
+@include('layout.header')
 
  <section id="home-section" class="hero">
           <div class="home-slider owl-carousel">
@@ -546,9 +542,9 @@
       </div>
     </section>
 
+@include('layout/footer')
 
-
-
+@include('layout/footerjs')
 
 
 
