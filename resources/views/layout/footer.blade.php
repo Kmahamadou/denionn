@@ -1,23 +1,78 @@
-    
-        <div class="container" style="background-color: #666666">
-            <div class="row">
-                <!-- Copyright -->
-                <div class="col-xs-6">
-                    <p>Follow me on <a href="https://twitter.com/lautenschlagera" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #666666;"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a></p>
-            		<p>Template created for free commercial use by Andreas Lautenschlager.<br>More free downloads under <a href="https:/lautenschlager.de" target="_blank">lautenschlager.de</a></p>
-            		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" class="fixed"></a><br> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Denionn</a>.
-                </div>
-
-                <!-- Social Links -->
-                <div class="text-right col-xs-6 footer2-social-container">
-                    <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="#" title="Google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="#" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
-                    <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
-                    <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
-                    <a href="#" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>
+       <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+            <div class="mouse">
+                        <a href="#" class="mouse-icon">
+                            <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+                        </a>
+                    </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Vegefoods</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Menu</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Shop</a></li>
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Journal</a></li>
+                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Help</h2>
+              <div class="d-flex">
+                  <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+                    <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
+                    <li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
+                    <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
+                    <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
+                  </ul>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="py-2 d-block">FAQs</a></li>
+                    <li><a href="#" class="py-2 d-block">Contact</a></li>
+                  </ul>
                 </div>
             </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Have a Questions?</h2>
+                <div class="block-23 mb-3">
+                  <ul>
+                    <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                    <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>. Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
+                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>

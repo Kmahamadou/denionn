@@ -1,24 +1,4 @@
- <!-- Scripts -->
-    <!-- Loads Bootstrap Main JS -->
-    <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{asset('bootstrap/js/ie10-viewport-bug-workaround.js')}}"></script>
-
-    <!-- Initiate Google Maps - For more Infos look into the documentation -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="{{asset('js/google-map.js')}}"></script>
-
-    <!-- Initiate Portoflio Script -->
-    <script src="{{asset('extensions/portfolio/isotope.min.js')}}"></script>
-    <script src="{{asset('extensions/portfolio/portfolio.js')}}"></script>
-
-    <!-- Initiate Fancybox/Lightbox Script -->
-    <!-- Fancybox/Lightbox -->
-    <script type="text/javascript" src="{{asset('extensions/fancybox/jquery.fancybox.js')}}"></script>
-    <script type="text/javascript" src="{{asset('extensions/fancybox/jquery.fancybox.pack.js')}}"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('extensions/fancybox/jquery.fancybox.css')}}" media="screen" />
-    <script type="text/javascript" src="{{asset('extensions/fancybox/jquery.fancybox-media.js')}}"></script>
     <!-- Initiate Fancybox/Lightbox for Videos -->
     <script type="text/javascript">
         $(document).ready(function () {
@@ -40,3 +20,22 @@
                 });
         });
     </script>
+  <script src="{{ asset('js/jquery.min.js') }}"></script>
+  <script src="{{ asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ asset('js/popper.min.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ asset('js/aos.js') }}"></script>
+  <script src="{{ asset('js/jquery.animateNumber.min.js') }}"></script>
+  <script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
+  <script src="{{ asset('js/scrollax.min.js') }}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{{ asset('js/google-map.js') }}"></script>
+  <script src="{{ asset('js/main.js') }}"></script>
+    
+  </body>
+</html>

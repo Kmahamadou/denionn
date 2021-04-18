@@ -1,132 +1,62 @@
-function initialize() {
 
+var google;
 
+function init() {
+    // Basic options for a simple Google Map
+    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
+    var myLatlng = new google.maps.LatLng(40.69847032728747, -73.9514422416687);
+    // 39.399872
+    // -8.224454
+    
+    var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 7,
 
-  // Create an array of styles.
-  var styles = [
-    {
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [
+        // The latitude and longitude to center the map (always required)
+        center: myLatlng,
+
+        // How you would like to style the map. 
+        scrollwheel: false,
+        styles: [
             {
-                "color": "#444444"
+                "featureType": "administrative.country",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    },
+                    {
+                        "hue": "#ff0000"
+                    }
+                ]
             }
         ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#f2f2f2"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 45
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#585b5d"
-            },
-            {
-                "visibility": "on"
-            }
-        ]
+    };
+
+    
+
+    // Get the HTML DOM element that will contain your map 
+    // We are using a div with id="map" seen below in the <body>
+    var mapElement = document.getElementById('map');
+
+    // Create the Google Map using out element and options defined above
+    var map = new google.maps.Map(mapElement, mapOptions);
+    
+    var addresses = ['New York'];
+
+    for (var x = 0; x < addresses.length; x++) {
+        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
+            var p = data.results[0].geometry.location
+            var latlng = new google.maps.LatLng(p.lat, p.lng);
+            new google.maps.Marker({
+                position: latlng,
+                map: map,
+                icon: 'images/loc.png'
+            });
+
+        });
     }
-];
-
-  // Create a new StyledMapType object, passing it the array of styles,
-  // as well as the name to be displayed on the map type control.
-  var styledMap = new google.maps.StyledMapType(styles,
-    {name: "Styled Map"});
-
-  // Create a map object, and include the MapTypeId to add
-  // to the map type control.
-  var mapOptions = {	  
-    zoomControl: true,
-    mapTypeControl: false,
-    scaleControl: false,
-    scrollwheel: false,
-    streetViewControl: false,
-    draggable: true,              
-	  
-    zoom: 6,
-    center: new google.maps.LatLng(51.31736, 9.4839113),
-    mapTypeControlOptions: {
-      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-    }
-  };
-  var map = new google.maps.Map(document.getElementById('map'),
-    mapOptions);
-
-  //Associate the styled map with the MapTypeId and set it to display.
-  map.mapTypes.set('map_style', styledMap);
-  map.setMapTypeId('map_style');
-  
-var marker=new google.maps.MarkerImage('img/map-marker.png');  
-var marker1 = new google.maps.Marker({
-    position:new google.maps.LatLng(51.31736, 9.4839113),
-    map: map,		
-	icon:marker,
-    title: ''
-});  
-  
-  
-  
-  
+    
 }
-google.maps.event.addDomListener(window, 'load', initialize);
-
-$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-}); 
+google.maps.event.addDomListener(window, 'load', init);

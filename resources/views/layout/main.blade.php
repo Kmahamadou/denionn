@@ -1,16 +1,11 @@
+@include('layout.header')
 
-		@include('layout.header')
+@yield('content')
 
-		@yield('content')
-		 @section('extra-script')
-	</body>
+@section('extra-script')
 
-	<footer class="page-section-no-padding  footer2-container" style="background-color: #666666">
+@include('layout.footer')
 
-		@include('layout.footer')
-
-	</footer>
-	@yield('extra-js')
-	@include('layout.scriptjs')
-
-</html>
+@yield('extra-js')
+	
+@include('layout.scriptjs')
