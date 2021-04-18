@@ -544,7 +544,7 @@
 
 @include('layout/footer')
 
-@include('layout/footerjs')
+@include('layout/scriptjs')
 
 
 
