@@ -19,7 +19,7 @@
 
                   <div class="form-group">
                     <label for="designation">Mode</label>
-                    <select class="form-control" name="categorie">
+                    <select class="form-control" name="mode">
                      <option></option>
                      <option value="Portrait">Portrait</option>
                      <option value="Paysage">Paysage</option>
