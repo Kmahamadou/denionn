@@ -80,6 +80,13 @@
                 </div>
             </div>
             <p><a href="cart.html" class="btn btn-black py-3 px-5">Add to Cart</a></p>
+             <form method="post" action="{{route('cart.store')}}">
+                        @csrf
+                        <input type="hidden"name="livre_id" value="{{$livre->id}}">
+                         <button type="submit" class="btn btn-primary">
+                            {{ __('Ajouter au panier') }}
+                         </button>
+                     </form>
                 </div>
             </div>
         </div>
