@@ -35,7 +35,7 @@ class productController extends Controller
                             'image'         =>'required|file|image|max:4096',
                             'livre'         =>'required',
                             'categorie'     =>'required',
-                            'isbn'          =>'required',
+                            'mode'          =>'required',
                             'prix'          =>'required',
                             'quantite'      =>'required',
                             'description'   =>'required',
@@ -55,7 +55,7 @@ class productController extends Controller
             $insertingRow->prix = $validatedData['prix'];
             $insertingRow->quantite = $validatedData['quantite'];
             $insertingRow->description = $validatedData['description'];
-            $insertingRow->isbn = $validatedData['isbn'];
+            $insertingRow->mode = $validatedData['mode'];
             $product = product::create($validatedData);
 
             // Store product image and content
