@@ -120,7 +120,6 @@
                             <div class="col-md-6">
                                 
                                 <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url('images/d1.png');">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="text px-3 py-1">
                                         <h2 class="mb-0"><a href="#">Bloc Note</a></h2>
                                     </div>
