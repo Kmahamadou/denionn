@@ -100,7 +100,7 @@
             </div>
         </section>
 
-        <section class="ftco-section ftco-category ftco-no-pt">
+        {{-- <section class="ftco-section ftco-category ftco-no-pt">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
     <section class="ftco-section">
         <div class="container">
