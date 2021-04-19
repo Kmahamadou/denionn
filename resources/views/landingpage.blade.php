@@ -119,17 +119,16 @@
 
                             <div class="col-md-6">
                                 
-                                <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end">
+                                <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url('images/d1.png');">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="text px-3 py-1">
-                                        <h2 class="mb-0"><a href="#"></a></h2>
+                                        <h2 class="mb-0"><a href="#">{{$product->title}}</a></h2>
                                     </div>
                                 </div>
                             
-                                <div class="category-wrap ftco-animate img d-flex align-items-end">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dusVsZ5Jmlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url('images/d2.png'));">
                                     <div class="text px-3 py-1">
-                                        <h2 class="mb-0"><a href="#"></a></h2>
+                                        <h2 class="mb-0"><a href="#">Agenda</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -137,16 +136,14 @@
                     </div>
 
                     <div class="col-md-4">
-                        <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/b8uOgo45M4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url('images/d3>png');">
                             <div class="text px-3 py-1">
-                                <h2 class="mb-0"><a href="#"></a></h2>
+                                <h2 class="mb-0"><a href="#">Autre</a></h2>
                             </div>      
                         </div>
-                        <div class="category-wrap ftco-animate img d-flex align-items-end">
+                        <div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url('images/d4.png');">
                             <div class="text px-3 py-1">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/663sgJujmIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <h2 class="mb-0"><a href="#"></a></h2>
+                                <h2 class="mb-0"><a href="#">Livre</a></h2>
                             </div>
                         </div>
                     </div>
