@@ -118,13 +118,14 @@
                             @endforeach
 
                             <div class="col-md-6">
-                                @foreach (  $products as $product)
+                                
                                 <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="text px-3 py-1">
                                         <h2 class="mb-0"><a href="#">{{$product->title}}</a></h2>
                                     </div>
                                 </div>
-                                @endforeach
+                            
                                 <div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
                                     <div class="text px-3 py-1">
                                         <h2 class="mb-0"><a href="#">Agenda</a></h2>
@@ -194,7 +195,7 @@
                 </div>
                  @endforeach
             </div>
-                        <div class="row">
+            <div class="row">
                 @foreach($paysage as $product)
                 <div class="col-md-6 col-lg-3 ftco-animate">
                     <div class="product">
