@@ -9,7 +9,7 @@ class productController extends Controller
      public function index()
     {  $slider = product::inRandomOrder()->take(1)->get();
        $product = product::inRandomOrder()->take(6)->get();
-       $portrait = product::where('mode', 'Portrait')->get();inRandomOrder()->take(4)->get();
+       $portrait = product::where('mode', 'Portrait')->inRandomOrder()->take(4)->get();
        $paysage = product::where('mode', 'Paysage')->inRandomOrder()->take(4)->get();
        return view('landingpage')->with('products',$product)->with('slider',$slider)->with('portrait',$portrait)->with('paysage', $paysage);
     }
