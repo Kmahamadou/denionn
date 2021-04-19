@@ -105,24 +105,24 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="row">
-                            @foreach (  $products as $product)
+                        
                             <div class="col-md-6 order-md-last align-items-stretch d-flex">
-                                <div class="category-wrap-2 ftco-animate img align-self-stretch d-flex" style="background-image: url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}});">
+                                <div class="category-wrap-2 ftco-animate img align-self-stretch d-flex" style="background-image: url('images/bloc.jpg');">
                                     <div class="text text-center">
                                         <h2>Bloc Note</h2>
                                         <p>Protect the health of every home</p>
-                                        <p><a href="{{Route('livre.detail', $product->id)}}" class="btn btn-primary">Explorer</a></p>
+                                        <p><a href="" class="btn btn-primary">Explorer</a></p>
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
+                
 
                             <div class="col-md-6">
                                 
                                 <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url('images/d1.png');">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="text px-3 py-1">
-                                        <h2 class="mb-0"><a href="#">{{$product->title}}</a></h2>
+                                        <h2 class="mb-0"><a href="#">Bloc Note</a></h2>
                                     </div>
                                 </div>
                             
