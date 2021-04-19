@@ -8,7 +8,7 @@ class productController extends Controller
 {               //landingpage view
      public function index()
     {  $slider = product::inRandomOrder()->take(1)->get();
-       $product = product::inRandomOrder()->take(1)->get();
+       $product = product::inRandomOrder()->take(6)->get();
        return view('landingpage')->with('products',$product)->with('slider',$slider);
     }
                 //show all products for user
