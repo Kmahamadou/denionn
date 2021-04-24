@@ -2074,7 +2074,7 @@ fieldset:disabled a.btn {
   border-color: #007bff; }
   .btn-primary:hover {
     color: #fff;
-    background-color: white;
+    background-color: #0069d9;
     border-color: #0062cc; }
   .btn-primary:focus, .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
@@ -2120,24 +2120,24 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #2156E5;
-  border-color: #2156E5; }
+  background-color: #28a745;
+  border-color: #28a745; }
   .btn-success:hover {
     color: #fff;
-    background-color: #2156E5;
-    border-color: #2156E5; }
+    background-color: #218838;
+    border-color: #1e7e34; }
   .btn-success:focus, .btn-success.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5); }
   .btn-success.disabled, .btn-success:disabled {
     color: #fff;
-    background-color: #2156E5;
-    border-color: #2156E5; }
+    background-color: #28a745;
+    border-color: #28a745; }
   .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
   .show > .btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #2156E5;
-    border-color: #2156E5; }
+    background-color: #1e7e34;
+    border-color: #1c7430; }
     .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
     .show > .btn-success.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
@@ -8518,23 +8518,23 @@ h1, h2, h3, h4, h5,
     border: 1px solid #2530DF;
     color: #fff; }
     .btn.btn-primary:hover {
-      border: 1px solid white;
+      border: 1px solid #2530DF;
       background: transparent;
-      color: white; }
+      color: #2530DF; }
     .btn.btn-primary.btn-outline-primary {
       border: 1px solid #2530DF;
       background: transparent;
       color: #2530DF; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 1px solid transparent;
-        background: white;
+        background: #2530DF;
         color: #fff; }
   .btn.btn-white {
     background: #fff;
     border: 1px solid #fff;
     color: #000000; }
     .btn.btn-white:hover {
-      background: white;
+      background: #2530DF;
       border: 1px solid #2530DF;
       color: #fff; }
     .btn.btn-white.btn-outline-white {
@@ -8946,7 +8946,7 @@ h1, h2, h3, h4, h5,
         border: 1px solid #2530DF;
         background: #2530DF; }
         .table tbody tr td.product-remove a:hover span {
-          color: white; }
+          color: #fff; }
     .table tbody tr td.quantity {
       width: 20%; }
     .table tbody tr td.image-prod .img {
