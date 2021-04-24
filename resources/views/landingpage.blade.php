@@ -73,8 +73,8 @@
 
               </div>
               <div class="media-body">
-                <h3 class="heading">Free Shipping</h3>
-                <span>On order over $100</span>
+                <h3 class="heading">Pack Entréprise</h3>
+                <span>For Buisiness</span>
               </div>
             </div>      
           </div>
@@ -84,8 +84,8 @@
                     <span class="material-icons-outlined">S&amp;B</span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Always Fresh</h3>
-                <span>Product well package</span>
+                <h3 class="heading">Heath</h3>
+                <span>Santé &amp;Bien être</span>
               </div>
             </div>    
           </div>
@@ -95,7 +95,7 @@
                     <span class="material-icons-outlined">D</span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Superior Quality</h3>
+                <h3 class="heading">Développement personnel</h3>
                 <span>Quality Products</span>
               </div>
             </div>      
@@ -106,8 +106,8 @@
                    <span class="material-icons-outlined">M&amp;I</span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Support</h3>
-                <span>24/7 Support</span>
+                <h3 class="heading">Marketing Internet</h3>
+                <span>Marketing Digital</span>
               </div>
             </div>      
           </div>
