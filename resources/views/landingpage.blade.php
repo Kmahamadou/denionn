@@ -10,7 +10,7 @@
                 <div class="col-md-12 ftco-animate text-center">
                   <h1 class="mb-2">Entreprise &amp; Buisiness</h1>
                   <h2 class="subheading mb-4">Des guides pour la gestion d'entreprise &amp; Business</h2>
-                  <p><a href="{{ route('livre.category, "Entreprise"') }}" class="btn btn-primary">Explorer</a></p>
+                  <p><a href="{{ route('livre.category', "Entreprise") }}" class="btn btn-primary">Explorer</a></p>
                 </div>
 
               </div>
@@ -25,7 +25,7 @@
                 <div class="col-sm-12 ftco-animate text-center">
                   <h1 class="mb-2">Marketing  &amp; Internet</h1>
                   <h2 class="subheading mb-4">Des meilleurs outils de Marketing &amp; Internet</h2>
-                  <p><a href="{{ route('livre.category, "Marketing internet"') }}" class="btn btn-primary">Explorer</a></p>
+                  <p><a href="{{ route('livre.category', "Marketing internet") }}" class="btn btn-primary">Explorer</a></p>
                 </div>
 
               </div>
@@ -40,7 +40,7 @@
                 <div class="col-sm-12 ftco-animate text-center">
                   <h1 class="mb-2">Developpement personnel</h1>
                   <h2 class="subheading mb-4">Augmenté vos capacités de production &amp; de Réflexion</h2>
-                  <p><a href="{{ route('livre.category, "Developpement personnel"') }}" class="btn btn-primary">Explorer</a></p>
+                  <p><a href="{{ route('livre.category', "Developpement personnel") }}" class="btn btn-primary">Explorer</a></p>
                 </div>
 
               </div>
@@ -54,7 +54,7 @@
                 <div class="col-sm-12 ftco-animate text-center">
                   <h1 class="mb-2">Santé &amp; Bien être</h1>
                   <h2 class="subheading mb-4">santé &amp; Bien être</h2>
-                  <p><a href="#" class="btn btn-primary">Explorer</a></p>
+                  <p><a href="{{ route('livre.category',"Santé et bien être") }}" class="btn btn-primary">Explorer</a></p>
                 </div>
 
               </div>
