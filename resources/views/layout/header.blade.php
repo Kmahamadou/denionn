@@ -63,12 +63,12 @@
               <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Boutique</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="#">Entréprise</a>
-                <a class="dropdown-item" href="#">Marketing Internet</a>
-                <a class="dropdown-item" href="#">Santé et bien être</a>
-                <a class="dropdown-item" href="#">Développement personnel</a>
-                <a class="dropdown-item" href="#">Réligion</a>
-                 <a class="dropdown-item" href="#">Autres</a>
+                <a class="dropdown-item" href="{{ route('livre.category', "Entreprise") }}">Entréprise</a>
+                <a class="dropdown-item" href="{{ route('livre.category', "Marketing internet") }}">Marketing Internet</a>
+                <a class="dropdown-item" href="{{ route('livre.category', "Santé et bien être") }}">Santé et bien être</a>
+                <a class="dropdown-item" href="{{ route('livre.category', "Developpement personnel") }}">Développement personnel</a>
+                <a class="dropdown-item" href="{{ route('livre.category', "Religion") }}">Réligion</a>
+                 <a class="dropdown-item" href="{{route('livre.indexAll')}}">Autres</a>
               </div>
             </li>
               <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
