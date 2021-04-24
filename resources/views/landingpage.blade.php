@@ -89,17 +89,19 @@
               </div>
             </div>    
           </div>
-          <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services mb-md-0 mb-4">
-              <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
-                    <a href="{{ route('livre.category', "Developpement personnel") }}"><span class="material-icons-outlined">D</span></a>
+            <a href="{{ route('livre.category', "Developpement personnel") }}">
+              <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services mb-md-0 mb-4">
+                  <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
+                        <span class="material-icons-outlined">D</span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="heading">Développement personnel</h3>
+                    <span>Quality Products</span>
+                  </div>
+                </div>      
               </div>
-              <div class="media-body">
-                <h3 class="heading">Développement personnel</h3>
-                <span>Quality Products</span>
-              </div>
-            </div>      
-          </div>
+            </a>
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
