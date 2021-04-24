@@ -68,8 +68,8 @@
                 <div class="row no-gutters ftco-services">
                    
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-            <a href="{{ route('livre.category', "Entreprise") }}"> 
             <div class="media block-6 services mb-md-0 mb-4">
+            <a href="{{ route('livre.category', "Entreprise") }}"> 
               <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
                     <span class="material-icons-outlined">E</span>
 
@@ -78,13 +78,13 @@
                 <h3 class="heading">Pack Entréprise</h3>
                 <span>For Buisiness</span>
               </div>
-            </div>
             </a>      
+            </div>
           </div>
           
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-          <a href="{{ route('livre.category',"Santé et bien être") }}">
             <div class="media block-6 services mb-md-0 mb-4">
+          <a href="{{ route('livre.category',"Santé et bien être") }}">
               <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
                     <span class="material-icons-outlined">S&amp;B</span>
               </div>
@@ -92,12 +92,12 @@
                 <h3 class="heading">Heath</h3>
                 <span>Santé &amp;Bien être</span>
               </div>
-            </div>    
           </a>
+            </div>    
           </div>
               <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-            <a href="{{ route('livre.category', "Developpement personnel") }}">
                 <div class="media block-6 services mb-md-0 mb-4">
+            <a href="{{ route('livre.category', "Developpement personnel") }}">
                   <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
                         <span class="material-icons-outlined">D</span>
                   </div>
@@ -105,12 +105,12 @@
                     <h3 class="heading">Développement personnel</h3>
                     <span>Quality Products</span>
                   </div>
-                </div>      
             </a>
+                </div>      
               </div>
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-            <a href="{{ route('livre.category', "Marketing internet") }}">
             <div class="media block-6 services mb-md-0 mb-4">
+            <a href="{{ route('livre.category', "Marketing internet") }}">
               <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
                    <span class="material-icons-outlined">M&amp;I</span>
               </div>
@@ -118,8 +118,8 @@
                 <h3 class="heading">Marketing Internet</h3>
                 <span>Marketing Digital</span>
               </div>
-            </div>      
           </a>
+            </div>      
           </div>
         </div>
             </div>
