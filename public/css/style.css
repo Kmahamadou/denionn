@@ -137,7 +137,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #FFFFFF;
+    color: #0056b3;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -2073,9 +2073,9 @@ fieldset:disabled a.btn {
   background-color: #007bff;
   border-color: #007bff; }
   .btn-primary:hover {
-    color: #ffffff;
-    background-color: #ffffff;
-    border-color: #ffffff; }
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc; }
   .btn-primary:focus, .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
@@ -8518,9 +8518,9 @@ h1, h2, h3, h4, h5,
     border: 1px solid #2530DF;
     color: #fff; }
     .btn.btn-primary:hover {
-      border: 1px solid #2530DF;
+      border: 1px solid white;
       background: transparent;
-      color: #ffffff; }
+      color: white; }
     .btn.btn-primary.btn-outline-primary {
       border: 1px solid #2530DF;
       background: transparent;
