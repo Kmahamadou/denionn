@@ -219,7 +219,7 @@
                 </div>
                  @endforeach
             </div>
-            <div class="row">
+            {{-- <div class="row">
                 @foreach($paysage as $product)
                 <div class="col-md-6 col-lg-3 ftco-animate">
                     <div class="product">
@@ -251,7 +251,7 @@
                     </div>
                 </div>
                  @endforeach
-            </div>
+            </div> --}}
         </div>
     </section>
         
