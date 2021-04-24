@@ -69,7 +69,7 @@
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
-                    <span class="material-icons-outlined"></span>
+                    <span class="material-icons-outlined">E</span>
 
               </div>
               <div class="media-body">
@@ -81,7 +81,7 @@
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
-                    <span class="flaticon-diet"></span>
+                    <span class="material-icons-outlined">S&amp;B</span>
               </div>
               <div class="media-body">
                 <h3 class="heading">Always Fresh</h3>
@@ -92,7 +92,7 @@
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
-                    <span class="flaticon-award"></span>
+                    <span class="material-icons-outlined">D</span>
               </div>
               <div class="media-body">
                 <h3 class="heading">Superior Quality</h3>
@@ -103,7 +103,7 @@
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
-                    <span class="flaticon-customer-service"></span>
+                   <span class="material-icons-outlined">M&amp;I</span>
               </div>
               <div class="media-body">
                 <h3 class="heading">Support</h3>
