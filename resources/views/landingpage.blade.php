@@ -1,7 +1,7 @@
 @include('layout.header')
 
  <section id="home-section" class="hero">
-          <div class="home-slider owl-carousel">
+          <div class="home-slider owl-carousel" style="touch-action: pan-y;">
           <div class="slider-item" style="background-image: url(images/bgd1.jpg);">
             <div class="overlay"></div>
             <div class="container">
