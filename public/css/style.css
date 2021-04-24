@@ -2074,7 +2074,7 @@ fieldset:disabled a.btn {
   border-color: #007bff; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
+    background-color: white;
     border-color: #0062cc; }
   .btn-primary:focus, .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
@@ -8527,14 +8527,14 @@ h1, h2, h3, h4, h5,
       color: #2530DF; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 1px solid transparent;
-        background: #2530DF;
+        background: white;
         color: #fff; }
   .btn.btn-white {
     background: #fff;
     border: 1px solid #fff;
     color: #000000; }
     .btn.btn-white:hover {
-      background: #2530DF;
+      background: white;
       border: 1px solid #2530DF;
       color: #fff; }
     .btn.btn-white.btn-outline-white {
@@ -8946,7 +8946,7 @@ h1, h2, h3, h4, h5,
         border: 1px solid #2530DF;
         background: #2530DF; }
         .table tbody tr td.product-remove a:hover span {
-          color: #fff; }
+          color: white; }
     .table tbody tr td.quantity {
       width: 20%; }
     .table tbody tr td.image-prod .img {
