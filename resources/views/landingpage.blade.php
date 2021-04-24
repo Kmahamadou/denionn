@@ -82,8 +82,8 @@
             </a>      
           </div>
           
-          <a href="{{ route('livre.category',"Santé et bien être") }}">
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+          <a href="{{ route('livre.category',"Santé et bien être") }}">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
                     <span class="material-icons-outlined">S&amp;B</span>
@@ -93,10 +93,10 @@
                 <span>Santé &amp;Bien être</span>
               </div>
             </div>    
-          </div>
           </a>
-            <a href="{{ route('livre.category', "Developpement personnel") }}">
+          </div>
               <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+            <a href="{{ route('livre.category', "Developpement personnel") }}">
                 <div class="media block-6 services mb-md-0 mb-4">
                   <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
                         <span class="material-icons-outlined">D</span>
@@ -106,10 +106,10 @@
                     <span>Quality Products</span>
                   </div>
                 </div>      
-              </div>
             </a>
-            <a href="{{ route('livre.category', "Marketing internet") }}">
+              </div>
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+            <a href="{{ route('livre.category', "Marketing internet") }}">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
                    <span class="material-icons-outlined">M&amp;I</span>
@@ -119,8 +119,8 @@
                 <span>Marketing Digital</span>
               </div>
             </div>      
-          </div>
           </a>
+          </div>
         </div>
             </div>
         </section>
