@@ -66,6 +66,7 @@
     <section class="ftco-section">
             <div class="container">
                 <div class="row no-gutters ftco-services">
+          <a href="{{ route('livre.category', "Entreprise") }}">          
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
@@ -78,6 +79,8 @@
               </div>
             </div>      
           </div>
+          </a>
+          <a href="{{ route('livre.category',"Santé et bien être") }}">
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
@@ -89,6 +92,7 @@
               </div>
             </div>    
           </div>
+          </a>
             <a href="{{ route('livre.category', "Developpement personnel") }}">
               <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
                 <div class="media block-6 services mb-md-0 mb-4">
@@ -102,6 +106,7 @@
                 </div>      
               </div>
             </a>
+            <a href="{{ route('livre.category', "Marketing internet") }}">
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
@@ -113,6 +118,7 @@
               </div>
             </div>      
           </div>
+          </a>
         </div>
             </div>
         </section>
