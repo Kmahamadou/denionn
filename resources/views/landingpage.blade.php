@@ -92,7 +92,7 @@
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
               <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
-                    <span class="material-icons-outlined">D</span>
+                    <a href="{{ route('livre.category', "Developpement personnel") }}"><span class="material-icons-outlined">D</span></a>
               </div>
               <div class="media-body">
                 <h3 class="heading">Développement personnel</h3>
