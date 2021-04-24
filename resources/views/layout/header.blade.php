@@ -63,16 +63,15 @@
               <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Boutique</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="#">Entreprise</a>
+                <a class="dropdown-item" href="#">Entréprise</a>
                 <a class="dropdown-item" href="#">Marketing Internet</a>
-                <a class="dropdown-item" href="#">Sante et bien être</a>
+                <a class="dropdown-item" href="#">Santé et bien être</a>
                 <a class="dropdown-item" href="#">Développement personnel</a>
                 <a class="dropdown-item" href="#">Réligion</a>
                  <a class="dropdown-item" href="#">Autres</a>
               </div>
             </li>
               <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-              <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
               <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
               <li class="nav-item cta cta-colored"><a href="{{ route('cart.index') }}" class="nav-link"><span class="icon-shopping_cart"></span>{{Cart::count()}}</a></li>
 
