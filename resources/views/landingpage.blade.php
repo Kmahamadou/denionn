@@ -287,7 +287,7 @@
         <div class="row ftco-animate">
           <div class="col-md-12">
             <div class="carousel-testimony owl-carousel">
-              <div class="item" style="padding: 1%">
+              <div class="item" style="margin: auto;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="item">
@@ -336,8 +336,8 @@
       <div class="container py-4">
         <div class="row d-flex justify-content-center py-5">
           <div class="col-md-6">
-            <h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
-            <span>Get e-mail updates about our latest shops and special offers</span>
+            <h2 style="font-size: 22px;" class="mb-0">Abonnez-vous à notre newsletter</h2>
+            <span>Recevez des mises à jour par e-mail sur nos dernières articles et offres spéciales</span>
           </div>
           <div class="col-md-6 d-flex align-items-center">
             <form action="#" class="subscribe-form">
