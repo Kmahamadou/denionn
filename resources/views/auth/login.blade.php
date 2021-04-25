@@ -1,9 +1,9 @@
 @include('layout.header')
-<div class="container mt-5" >
-    <div class="row justify-content-center mt-5">
+<div class="container " >
+    <div class="row justify-content-center ">
         <div class="col-md-8">
             <div class="card mt-5">
-                <div class="card-header mt-5"style="margin-top: 20%">{{ __('Login') }}</div>
+                <div class="card-header ">{{ __('Login') }}</div>
 
                 <div class="card-body ">
                     <form method="POST" action="{{ route('login') }}">
