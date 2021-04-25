@@ -105,7 +105,7 @@ class productController extends Controller
     public function show($id){ 
                     
                     $livre = product::where('id', $id)->firstOrfail();
-                    $similaire=$livre->category;
+                    $similaire=$livre->categorie;
                     dd($similaire);
                     $similaire = product::where('mode', 'Portrait')->inRandomOrder()->take(4)->get();
                     return view('livre.show')->with('livre', $livre);
