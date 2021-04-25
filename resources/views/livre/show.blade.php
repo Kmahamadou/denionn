@@ -1,12 +1,6 @@
 @include('layout.header')
 
 
-
-
-
-
-
-
  <div class="hero-wrap hero-bread" style="background-image: url('../images/show.jpg');">
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -83,7 +77,7 @@
              <form method="post" action="{{route('cart.store')}}">
                         @csrf
                         <input type="hidden"name="livre_id" value="{{$livre->id}}">
-                         <button type="submit" class="btn btn-primary">
+                         <button type="submit" class="btn btn-black py-3 px-5">
                             {{ __('Ajouter au panier') }}
                          </button>
                      </form>
