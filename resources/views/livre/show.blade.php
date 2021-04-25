@@ -102,7 +102,7 @@
 
                 <div class="col-md-6 col-lg-3 ftco-animate">
                     <div class="product">
-                        <a href="#" class="img-prod"><img class="img-fluid" src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$similaire->livre_image_aws_storage_path}}" alt="{{$similaire->title}}">
+                        <a href="{{Route('livre.detail', $similaire->id)}}">{{$similaire->title }}" class="img-prod"><img class="img-fluid" src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$similaire->livre_image_aws_storage_path}}" alt="{{$similaire->title}}">
                             
                             <div class="overlay"></div>
                         </a>
@@ -128,9 +128,9 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
-                
                 </div>
+                
+                @endforeach
                 </div>
             </div>
         </div>
