@@ -106,9 +106,9 @@ class productController extends Controller
                     
                     $livre = product::where('id', $id)->firstOrfail();
                     $similaire=$livre->categorie;
-                    dd($similaire);
-                    $similaire = product::where('mode', 'Portrait')->inRandomOrder()->take(4)->get();
-                    return view('livre.show')->with('livre', $livre);
+                    
+                    $similaire = product::where('categorie', $similaire)->inRandomOrder()->take(4)->get();
+                    return view('livre.show')->with('livre', $livre)->with('similaire',$similaire);
                     }
 
 public function category($id){
