@@ -287,7 +287,7 @@
         <div class="row ftco-animate">
           <div class="col-md-12">
             <div class="carousel-testimony owl-carousel">
-              <div class="item">
+              <div class="item" style="padding: 1%">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="item">
