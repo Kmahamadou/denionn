@@ -136,72 +136,7 @@
         </div>
     </section>
 
-        <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
-      <div class="container py-4">
-        <div class="row d-flex justify-content-center py-5">
-          <div class="col-md-6">
-            <h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
-            <span>Get e-mail updates about our latest shops and special offers</span>
-          </div>
-          <div class="col-md-6 d-flex align-items-center">
-            <form action="#" class="subscribe-form">
-              <div class="form-group d-flex">
-                <input type="text" class="form-control" placeholder="Enter email address">
-                <input type="submit" value="Subscribe" class="submit px-3">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-   
-    <!-- Container  -->
-    <section class="page-section padding-30">
-        <div class="container">
-            <div class="row">
-                <!-- Content -->
-                <div class="col-md-8 col-md-push-4 margin-bottom-15" >
-                    <a title="Main Image" class="fancybox-pop fancybox.image" href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}}" rel="portfolio-main">
-                        <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}}" alt="portfolio" class="img-responsive" style="width: 30%">
-                    </a>
-                </div>
-                <!-- Sidebar -->
-
-
-                <div class="col-md-4 col-md-pull-8">
-
-                    <h4>{{$livre->title}}</h4>
-                    <div class="portfolio-details">
-                        <p>
-                            <strong>Catégorie : </strong>{{$livre->categorie}}
-                            <br/>
-                            <strong>Date: </strong>{{date('Y-m-d H:i:s')}}
-                            <br/>
-                            <strong style="color: red">Prix : </strong> {{$livre->prix}} f cfa 
-                            <br/> 
-                        </p>
-                        <p>{{$livre->description}}</p>
-                    <form method="post" action="{{route('cart.store')}}">
-                        @csrf
-                        <input type="hidden"name="livre_id" value="{{$livre->id}}">
-                         <button type="submit" class="btn btn-primary">
-                            {{ __('Ajouter au panier') }}
-                         </button>
-                     </form>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
+     
 
 
 
