@@ -190,7 +190,7 @@
                 @foreach($portrait as $product)
                 <div class="col-md-6 col-lg-3 ftco-animate">
                     <div class="product">
-                        <a href="#" class="img-prod"><img class="img-fluid" src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}}">
+                        <a href="{{Route('livre.detail', $product->id)}}" class="img-prod"><img class="img-fluid" src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_image_aws_storage_path}}">
                             
                             <div class="overlay"></div>
                         </a>
@@ -206,7 +206,7 @@
                                     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
                                         <span><i class="ion-ios-menu"></i></span>
                                     </a>
-                                    <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+                                    <a href="{{Route('livre.detail', $product->id)}}" class="buy-now d-flex justify-content-center align-items-center mx-1">
                                         <span><i class="ion-ios-cart"></i></span>
                                     </a>
                                     <a href="#" class="heart d-flex justify-content-center align-items-center ">
