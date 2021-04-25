@@ -255,7 +255,7 @@
         </div>
     </section>
         
-        <section class="ftco-section img" style="background-image: url(images/bgv.png);">
+        <section class="ftco-section img" style="background-image: url(images/oasis.jpg);">
         <div class="container">
                 <div class="row justify-content-end">
           <div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate">
