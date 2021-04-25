@@ -4,8 +4,8 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Products</span></p>
-            <h1 class="mb-0 bread">Products</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="/">Home</a></span> <span>Articles</span></p>
+            <h1 class="mb-0 bread">Livres</h1>
           </div>
         </div>
       </div>
@@ -16,11 +16,11 @@
             <div class="row justify-content-center">
                 <div class="col-md-10 mb-5 text-center">
                     <ul class="product-category">
-                        <li><a href="#" class="active">All</a></li>
-                        <li><a href="#">Vegetables</a></li>
-                        <li><a href="#">Fruits</a></li>
-                        <li><a href="#">Juice</a></li>
-                        <li><a href="#">Dried</a></li>
+                        <li><a href="{{route('livre.indexAll')}}" class="active">Tout</a></li>
+                        <li><a href="{{ route('livre.category', "Entreprise") }}">Entréprise</a></li>
+                        <li><a href="{{ route('livre.category', "Marketing internet") }}">Marketing</a></li>
+                        <li><a href="{{ route('livre.category', "Santé et bien être") }}">Santé</a></li>
+                        <li><a href="{{ route('livre.category', "Developpement personnel") }}">Dev-personnel</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +57,7 @@
             @endforeach
             </div>
             <div class="row mt-5">
-          <div class="col text-center">
+{{--           <div class="col text-center">
             <div class="block-27">
               <ul>
                 <li><a href="#">&lt;</a></li>
@@ -70,7 +70,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> --}}
         </div>
     </section>
 
