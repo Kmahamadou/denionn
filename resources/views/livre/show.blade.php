@@ -98,17 +98,19 @@
         </div>
         <div class="container">
             <div class="row">
+                @foreach ($similaire as $similaire)
+
                 <div class="col-md-6 col-lg-3 ftco-animate">
                     <div class="product">
-                        <a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg" alt="Colorlib Template">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$similaire->livre_image_aws_storage_path}}" alt="{{$similaire->title}}">
                             
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 pb-4 px-3 text-center">
-                            <h3><a href="#">Bell Pepper</a></h3>
+                            <h3><a href="{{Route('livre.detail', $similaire->id)}}">{{$similaire->title }}</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
-                                    <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+                                    <p class="price"><span class="price-sale">{{$similaire->prix }}</span></p>
                                 </div>
                             </div>
                             <div class="bottom-area d-flex px-3">
@@ -116,7 +118,7 @@
                                     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
                                         <span><i class="ion-ios-menu"></i></span>
                                     </a>
-                                    <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+                                    <a href="{{Route('livre.detail', $similaire->id)}}" class="buy-now d-flex justify-content-center align-items-center mx-1">
                                         <span><i class="ion-ios-cart"></i></span>
                                     </a>
                                     <a href="#" class="heart d-flex justify-content-center align-items-center ">
@@ -126,6 +128,8 @@
                             </div>
                         </div>
                     </div>
+                @endforeach
+                
                 </div>
                 </div>
             </div>
