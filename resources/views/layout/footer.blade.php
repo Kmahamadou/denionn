@@ -35,10 +35,10 @@
               <h2 class="ftco-heading-2">Help</h2>
               <div class="d-flex">
                   <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
-                    <li><a href="#" class="py-2 d-block">Entréprise</a></li>
-                    <li><a href="#" class="py-2 d-block">Santé &amp; Bien être</a></li>
-                    <li><a href="#" class="py-2 d-block">Marketing Internet</a></li>
-                    <li><a href="#" class="py-2 d-block">Développement personnel</a></li>
+                    <li><a href="{{ route('livre.category', "Entreprise") }}" class="py-2 d-block">Entréprise</a></li>
+                    <li><a href="{{ route('livre.category', "Santé et bien être") }}" class="py-2 d-block">Santé &amp; Bien être</a></li>
+                    <li><a href="{{ route('livre.category', "Marketing internet") }}" class="py-2 d-block">Marketing Internet</a></li>
+                    <li><a href="{{ route('livre.category', "Developpement personnel") }}" class="py-2 d-block">Développement personnel</a></li>
                   </ul>
                   <ul class="list-unstyled">
                     <li><a href="#" class="py-2 d-block">FAQs</a></li>
@@ -64,7 +64,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Toot droit reseré | Denionn Experts<i class="icon-heart color-danger" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>.  <a href="https://themeslab.org/" target="_blank"></a>
+                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tout droit reseré | Denionn Experts<i class="icon-heart color-danger" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>.  <a href="https://themeslab.org/" target="_blank"></a>
                           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
           </div>
