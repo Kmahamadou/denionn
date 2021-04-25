@@ -77,9 +77,9 @@
              <form method="post" action="{{route('cart.store')}}">
                         @csrf
                         <input type="hidden"name="livre_id" value="{{$livre->id}}">
-                         <button type="submit" class="btn btn-black py-3 px-5">
-                            Ajouter au panier
-                         </button><p><a href="cart.html" class="btn btn-black py-3 px-5">Add to Cart</a></p>
+                        <p> <button type="submit">
+                           <a href="#" class="btn btn-black py-3 px-5"> Ajouter au panier</a>
+                         </button></p>
                      </form>
                 </div>
             </div>
