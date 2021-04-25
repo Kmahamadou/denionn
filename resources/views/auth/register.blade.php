@@ -1,11 +1,9 @@
-@extends('layout.main')
-
-@section('content')
-<div class="container mt-5">
-    <div class="row justify-content-center mt-5">
+@include('layout.header')
+<div class="container mb-5">
+    <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card mt-5">
-                <div class="card-header"style="margin-top: 20%">{{ __('Register') }}</div>
+            <div class="card">
+                <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -74,4 +72,6 @@
         </div>
     </div>
 </div>
-@endsection
+@include('layout/footer')
+
+@include('layout/scriptjs')
