@@ -275,17 +275,6 @@
         </div>
     </section>
 
-    <section class="ftco-section testimony-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-            <span class="subheading">Testimony</span>
-            <h2 class="mb-4">Videos de Rélaxation</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-          </div>
-        </div>
-      </div>
-    </section>
         <section class="page-section">
         <div class="container">
                     <div class="row justify-content-center mb-5 pb-3">
@@ -306,7 +295,7 @@
                             Ecoutez pendant 5 minutes et vous vous endormez aussitôt
                         </p>
                         
-                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                        
                     </article>
                 
                     </div>
@@ -320,7 +309,7 @@
                             Ecoutez pendant 5 minutes et vous vous endormez aussitôt
                         </p>
                         
-                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                        
                     </article>
                 
                     </div>
@@ -333,7 +322,7 @@
                             Ecoutez pendant 5 minutes et vous vous endormez aussitôt
                         </p>
                         
-                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                        
                     </article>
                 
                     </div>
@@ -346,7 +335,7 @@
                         <p>
                             Ecoutez pendant 5 minutes et vous vous endormez aussitôt
                         </p>
-                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                       
                     </article>
                 
                   </div> <div class="col-md-6">
@@ -359,7 +348,7 @@
                             Ecoutez pendant 5 minutes et vous vous endormez aussitôt
                         </p>
                         
-                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                        
                     </article>
                 
                   </div>
