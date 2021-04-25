@@ -52,15 +52,15 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
+                                    {{ __('Se connecter') }}
                                 </button>
-                                     <a href="https://denionn.herokuapp.com/registration" class="btn btn-primary">
+                                     <a href="https://denionn.herokuapp.com/register" class="btn btn-primary">
                                     {{ __('S\'inscrire') }}
                                 </a>
                                  </div>
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('Mot de passe oublié?') }}
                                     </a>
                                 @endif
                            
