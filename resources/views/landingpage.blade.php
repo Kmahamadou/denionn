@@ -284,37 +284,17 @@
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
           </div>
         </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel">
-              <div class="item" style="margin: 2%;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dusVsZ5Jmlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dusVsZ5Jmlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dusVsZ5Jmlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dusVsZ5Jmlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
         <section class="page-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="title-section"><span class="title-regular">Relaxing</span><br/>Video</h2>
-                    <hr class="title-underline" />
-                </div>
-            </div>
+                    <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <span class="subheading">Testimony</span>
+            <h2 class="mb-4">Videos de Rélaxation</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+          </div>
+        </div>
             <div class="row blog-listing">
             
                 <div class="col-md-6">
@@ -366,8 +346,7 @@
                         <p>
                             Ecoutez pendant 5 minutes et vous vous endormez aussitôt
                         </p>
-                        <a href="bl                        
-og-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
                     </article>
                 
                   </div> <div class="col-md-6">
