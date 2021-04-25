@@ -307,6 +307,88 @@
         </div>
       </div>
     </section>
+        <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title-section"><span class="title-regular">Relaxing</span><br/>Video</h2>
+                    <hr class="title-underline" />
+                </div>
+            </div>
+            <div class="row blog-listing">
+            
+                <div class="col-md-6">
+                    <article>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dusVsZ5Jmlk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2>Video 1</h2>
+                        <hr class="title-underline">
+                        <p>
+                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                        </p>
+                        
+                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                    </article>
+                
+                    </div>
+            
+                    <div class="col-md-6">
+                    <article>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yA5iB4HIki0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2>Musique Relaxante</h2>
+                        <hr class="title-underline">
+                        <p>
+                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                        </p>
+                        
+                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                    </article>
+                
+                    </div>
+                    <div class="col-md-6">
+                    <article>
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/663sgJujmIw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2>Musique Relaxante</h2>
+                        <hr class="title-underline">
+                        <p>
+                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                        </p>
+                        
+                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                    </article>
+                
+                    </div>
+
+                  <div class="col-md-6">
+                    <article>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ktEmA1PTNM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2> Relaxing Music</h2>
+                        <hr class="title-underline">
+                        <p>
+                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                        </p>
+                        <a href="bl                        
+og-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                    </article>
+                
+                  </div> <div class="col-md-6">
+                    <article>
+                                   
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ktEmA1PTNM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2> Relaxing Music</h2>
+                        <hr class="title-underline">
+                        <p>
+                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                        </p>
+                        
+                        <a href="blog-single-post.html" class="btn btn-xs btn-primary">voir plus...</a>
+                    </article>
+                
+                  </div>
+                                  
+         
+
+        </div>
+    </section>
 
     <hr>
 
@@ -342,7 +424,7 @@
           <div class="col-md-6 d-flex align-items-center">
             <form action="#" class="subscribe-form">
               <div class="form-group d-flex">
-                <input type="text" class="form-control" placeholder="Enter email address">
+                <input type="text" class="form-control" placeholder="Entrer l'adresse e-mail">
                 <input type="submit" value="Subscribe" class="submit px-3">
               </div>
             </form>
