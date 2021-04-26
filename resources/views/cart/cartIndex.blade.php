@@ -45,7 +45,7 @@
 
                                 <td class="product-remove">
                                    
-                                   <button data-abc="true" > <i class="icon-trash"style="color: red; font-size: 5%"></i></button></td> 
+                                   <button data-abc="true" > <i class="icon-trash"style="color: red; font-size: 50%"></i></button></td> 
                                 </form>
                                 
                                 
