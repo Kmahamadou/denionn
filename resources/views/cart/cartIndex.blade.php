@@ -1,12 +1,4 @@
-@extends('layout.main');
-@section('extra-meta')
-<meta name="csrf-token" content="{{ csrf_token() }}">
-@endsection
-
-
-
-
-
+@include('layout.header')
 
 <div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.jpg');">
       <div class="container">
@@ -182,3 +174,7 @@
     });
 </script>
 @endsection 
+
+@include('layout/footer')
+
+@include('layout/scriptjs')
