@@ -45,7 +45,7 @@
 
                                 <td class="product-remove">
                                    
-                                   <button data-abc="true"> ><span class="ion-ios-close"></span></button></td> 
+                                   <button data-abc="true" style="background-color: red"> <i class="icon-trash"></i></button></td> 
                                 </form>
                                 
                                 
