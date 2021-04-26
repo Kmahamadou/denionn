@@ -126,7 +126,7 @@
                         <hr>
                         <p class="d-flex total-price">
                             <span>Total</span>
-                            <span>{{convertprix(Cart::total())}}</span>
+                            <span>{{-- {{convertprix(Cart::total())}} --}}</span>
                         </p>
                     </div>
                     <p><a href="{{ route('checkout.index') }}" class="btn btn-primary py-3 px-4">Proceder au paiement</a></p>
