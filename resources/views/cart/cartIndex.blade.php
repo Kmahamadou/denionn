@@ -45,7 +45,7 @@
 
                                 <td class="product-remove">
                                    
-                                  <span class="ion-ios-close"> <input type="submit" value="'" name=""data-abc="true"> </span></td> 
+                                   <button data-abc="true"> ><span class="ion-ios-close"></span></button></td> 
                                 </form>
                                 
                                 
