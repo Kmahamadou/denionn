@@ -41,7 +41,7 @@
                                 </form>
                                 
                                 
-                                <td class="image-prod"><div class="img" style="background-image:url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}});"></div></td>
+                                <td class="image-prod"><div class="img" style="background-image:url(https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->model->livre_image_aws_storage_path}});"></div></td>
                                 
                                 <td class="product-name">
                                     <h3>{{$livre->model->title}}</h3>
