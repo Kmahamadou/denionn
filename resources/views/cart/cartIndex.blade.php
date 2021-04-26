@@ -3,221 +3,154 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 @endsection
 
-<style type="text/css">
-.my-custom-scrollbar {
-position: relative;
-height: 300px;
-overflow: auto;
-background-color: #d7d7c1;
-}
-.table-wrapper-scroll-y {
-display: block;
-}
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
- body {
-     background-color: #eeeeee;
-     font-family: 'Open Sans', serif;
-     font-size: 14px
- }
 
- .container-fluid {
-     margin-top: 70px
- }
 
- .card-body {
-     -ms-flex: 1 1 auto;
-     flex: 1 1 auto;
-     padding: 1.40rem
- }
 
- .img-sm {
-     width: 80px;
-     height: 80px
- }
 
- .itemside .info {
-     padding-left: 15px;
-     padding-right: 7px
- }
+<div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <p class="breadcrumbs"><span class="mr-2"><a href="/">Accueil</a></span> <span>Panier</span></p>
+            <h1 class="mb-0 bread">Mon panier</h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
- .table-shopping-cart .price-wrap {
-     line-height: 1.2
- }
-
- .table-shopping-cart .price {
-     font-weight: bold;
-     margin-right: 5px;
-     display: block
- }
-
- .text-muted {
-     color: #969696 !important
- }
-
- a {
-     text-decoration: none !important
- }
-
- .card {
-     position: relative;
-     display: -ms-flexbox;
-     display: flex;
-     -ms-flex-direction: column;
-     flex-direction: column;
-     min-width: 0;
-     word-wrap: break-word;
-     background-color: #fff;
-     background-clip: border-box;
-     border: 1px solid rgba(0, 0, 0, .125);
-     border-radius: 0px
- }
-
- .itemside {
-     position: relative;
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     width: 100%
- }
-
- .dlist-align {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex
- }
-
- [class*="dlist-"] {
-     margin-bottom: 5px
- }
-
- .coupon {
-     border-radius: 1px
- }
-
- .price {
-     font-weight: 600;
-     color: #212529
- }
-
- .btn.btn-out {
-     outline: 1px solid #fff;
-     outline-offset: -5px
- }
-
- .btn-main {
-     border-radius: 2px;
-     text-transform: capitalize;
-     font-size: 15px;
-     padding: 10px 19px;
-     cursor: pointer;
-     color: #fff;
-     width: 100%
- }
-
- .btn-light {
-     color: #ffffff;
-     background-color: #F44336;
-     border-color: #f8f9fa;
-     font-size: 12px
- }
-
- .btn-light:hover {
-     color: #ffffff;
-     background-color: #F44336;
-     border-color: #F44336
- }
-
- .btn-apply {
-     font-size: 11px
- }
-</style>
-    <div class="container-fluid">
-        <div class="row">
-            <aside class="col-lg-9">
-                <div class="card">
-                    <div class="table-responsive">
-                        <table class="table table-borderless table-shopping-cart">
-                            <thead class="text-muted">
-                                <tr class="small text-uppercase">
-                                    <th scope="col">Product</th>
-                                    <th scope="col" width="120">Quantity</th>
-                                    <th scope="col" width="120">Price</th>
-                                    <th scope="col" class="text-right d-none d-md-block" width="200"></th>
-                                </tr>
+    <section class="ftco-section ftco-cart">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-12 ftco-animate">
+                    <div class="cart-list">
+                        <table class="table">
+                            <thead class="thead-primary">
+                              <tr class="text-center">
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                                <th>Nom du produit</th>
+                                <th>Prix</th>
+                                <th>Quantité</th>
+                                <th>Total</th>
+                              </tr>
                             </thead>
                             <tbody>
                                 @if (Cart::count()>0)
                                 @foreach (Cart::content() as $livre)
-                                <tr>
-                                    <td>
-                                        <figure class="itemside align-items-center">
-                                            <div class="aside"><img src="{{asset('livre/image/'.$livre->model->image)}}" class="img-sm"></div>
-                                            <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">{{$livre->model->title}}</a>
-                                                <p class="text-muted small">{{$livre->model->description}}</p>
-                                            </figcaption>
-                                        </figure>
-                                    </td>
-                                    <td> <select class="custom-select" name="qty" id="qty" data-id="{{ $livre->rowId }}">
-                             @for ($i = 1; $i <= 6; $i++)
-                                <option value="{{ $i }}" {{ $livre->qty == $i ? 'selected' : ''}}>
-                                                    {{ $i }}
-                                </option>
-                            @endfor
-                                        </select> </td>
-                                    <td>
-                                        <div class="price-wrap"> <var class="price">{{$livre->model->prix}}</var> <small class="text-muted"> </small> </div>
-                                    </td>
-                            <form action="{{route('cart.destroy',$livre->rowId)}}" method="post">
+                              <tr class="text-center">
+                                 <form action="{{route('cart.destroy',$livre->rowId)}}" method="post">
                                 @csrf
                                 @method('DELETE')
 
-                                <td class="text-right d-none d-md-block"> 
+                                <td class="product-remove">
                                    
-                                    <button class="btn btn-light" data-abc="true"> Supprimer 
-                                    </button> </td>
+                                   <input type="submit" name=""data-abc="true"><span class="ion-ios-close"></span></td> 
                                 </form>
-                                </tr>
-                                @endforeach
+                                
+                                
+                                <td class="image-prod"><div class="img" style="background-image:url(images/product-3.jpg);"></div></td>
+                                
+                                <td class="product-name">
+                                    <h3>{{$livre->model->title}}</h3>
+                                    <p>{{$livre->model->description}}</p>
+                                </td>
+                                
+                                <td class="price">{{$livre->model->prix}}</td>
+                                
+                                <td class="quantity">
+                                    <div class="input-group mb-3">
+                                    <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+                                </div>
+                              </td>
+                                
+                                <td class="total">{{$livre->model->prix}}</td>
+                              </tr><!-- END TR-->
+                              @endforeach
                                 @endif
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </aside>
-            <aside class="col-lg-3">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group"> <label>Coupon de remise</label>
-                                <div class="input-group"> <input type="text" class="form-control coupon" name="" placeholder="Coupon code"> <span class="input-group-append"> <button class="btn btn-primary btn-apply coupon">Appliquer</button> </span> </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <dl class="dlist-align">
-                            <dt>Prix Total :</dt>
-                            <dd class="text-right ml-3"> {{Cart::subtotal()}} Fcfa</dd>
-                        </dl>
-                        <dl class="dlist-align">
-                            <dt>TVA:</dt>
-                            <dd class="text-right text-danger ml-3"> {{Cart::tax()}} Fcfa</dd>
-                        </dl>
-                        <dl class="dlist-align">
-                            <dt>Total:</dt>
-                            <dd class="text-right text-dark b ml-3"><strong> {{-- {{convertprix(Cart::total())}} --}} Fcfa</strong></dd>
-                        </dl>
-                        <hr> <a href="{{ route('checkout.index') }}" class="btn btn-out btn-primary btn-square btn-main" data-abc="true"> Passer à la caisse </a> <a href="/" class="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">Ajouter des produits</a>
-                        <a href="{{route('cart.destroyall')}}" class="btn btn-out btn-danger btn-square btn-main mt-2" data-abc="true">Vider le panier</a>
-                    </div>
-                </div>
-            </aside>
-            
-        </div>
 
-    </div>
+                            </tbody>
+                          </table>
+                      </div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+                    <div class="cart-total mb-3">
+                        <h3>Code Coupon</h3>
+                        <p>Entrer le Code Coupon si vous en avez</p>
+                        <form action="#" class="info">
+                  <div class="form-group">
+                    <label for=""> code Coupon</label>
+                    <input type="text" class="form-control text-left px-3" placeholder="">
+                  </div>
+                </form>
+                    </div>
+                    <p><a href="checkout.html" class="btn btn-primary py-3 px-4">Appliquer Coupon</a></p>
+                </div>
+                <div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+                    <div class="cart-total mb-3">
+                        <h3>Information Client</h3>
+                        <p>Entrer votre destination </p>
+                        <form action="#" class="info">
+                  <div class="form-group">
+                    <label for="">Pays</label>
+                    <input type="text" class="form-control text-left px-3" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="country">Ville/Région</label>
+                    <input type="text" class="form-control text-left px-3" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="country">Code Zip/Postal</label>
+                    <input type="text" class="form-control text-left px-3" placeholder="">
+                  </div>
+                </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+                    <div class="cart-total mb-3">
+                        <h3>Totals Panier</h3>
+                        <p class="d-flex">
+                            <span>Sous total</span>
+                            <span>{{Cart::subtotal()}} Fcfa</span>
+                        </p>
+                        <p class="d-flex">
+                            <span>Tva</span>
+                            <span>{{Cart::tax()}} Fcfa</span>
+                        </p>
+                        <p class="d-flex">
+                            <span>Discount</span>
+                            <span>$3.00</span>
+                        </p>
+                        <hr>
+                        <p class="d-flex total-price">
+                            <span>Total</span>
+                            <span>{{convertprix(Cart::total())}}</span>
+                        </p>
+                    </div>
+                    <p><a href="{{ route('checkout.index') }}" class="btn btn-primary py-3 px-4">Proceder au paiement</a></p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @section('extra-js') 
 <script>
     var qty = document.querySelectorAll('#qty');
