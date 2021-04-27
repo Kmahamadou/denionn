@@ -1,4 +1,4 @@
-@extends('layout.main')
+@include('layout.header')
  <form role="form" action="{{route('livre.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -85,3 +85,6 @@
           </div>
         </div>
               </form>
+@include('layout/footer')
+
+@include('layout/scriptjs')
