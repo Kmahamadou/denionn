@@ -1,6 +1,6 @@
 @include('layout.header')
 
-    <div class="hero-wrap hero-bread" style="background-image: url('../mages/bgd1.jpg');">
+    <div class="hero-wrap hero-bread" style="background-image: url('../images/bgd1.jpg');">
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
