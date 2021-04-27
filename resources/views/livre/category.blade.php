@@ -17,7 +17,7 @@
                 <div class="col-md-10 mb-5 text-center">
                     <ul class="product-category">
                         <li><a href="{{route('livre.indexAll')}}" class="active">Tout</a></li>
-                        <li><a href="{{ route('livre.category', "Entreprise") }}">Entréprise</a></li>
+                        <li><a href="{{ route('livre.category', "Entreprise") }}" class="{{ Request::path() ==  'category/Entreprise' ? 'active' : ''  }}">Entréprise</a></li>
                         <li><a href="{{ route('livre.category', "Marketing internet") }}">Marketing</a></li>
                         <li><a href="{{ route('livre.category', "Santé et bien être") }}">Santé</a></li>
                         <li><a href="{{ route('livre.category', "Developpement personnel") }}">Dev-personnel</a></li>
