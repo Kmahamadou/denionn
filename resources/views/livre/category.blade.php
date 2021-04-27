@@ -20,7 +20,7 @@
                         <li><a href="{{ route('livre.category', "Entreprise") }}" class="{{ Request::path() ==  'category/Entreprise' ? 'active' : ''  }}">Entréprise</a></li>
                         <li><a href="{{ route('livre.category', "Marketing internet") }}"class="{{ Request::path() ==  'category/Marketing internet' ? 'active' : ''  }}">Marketing</a></li>
                         <li><a href="{{ route('livre.category', "Santé et bien être") }}"class="{{ Request::path() ==  'category/Santé et bien être' ? 'active' : ''  }}">Santé</a></li>
-                        <li><a href="{{ route('livre.category', "Developpement personnel") }}"class="{{ Request::path() ==  'category/Developpement personnel' ? 'active' : ''  }}">Dev-personnel</a></li>
+                        <li><a href="{{ route('livre.category', "Developpement personnel") }}"class="{{ Request::path() ==  'category/Developpement%20personnel' ? 'active' : ''  }}">Dev-personnel</a></li>
                     </ul>
                 </div>
             </div>
