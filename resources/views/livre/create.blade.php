@@ -36,7 +36,7 @@
                      <option value="Agenda">Agenda</option>
                      <option value="Religion">Religion</option>
                      <option value="Entreprise">Entreprise</option>
-                     <option value="Santé bien être">Santé et bien être</option>
+                     <option value="Santé/bien être">Santé et bien être</option>
                      <option value="Marketing internet">Marketing internet</option>
                      <option value="Developpement personnel">Developpement personnel</option>
                    </select>
