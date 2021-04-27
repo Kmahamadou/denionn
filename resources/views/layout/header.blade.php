@@ -65,7 +65,7 @@
               <div class="dropdown-menu" aria-labelledby="dropdown04">
                 <a class="dropdown-item" href="{{ route('livre.category', "Entreprise") }}">Entréprise</a>
                 <a class="dropdown-item" href="{{ route('livre.category', "Marketing internet") }}">Marketing Internet</a>
-                <a class="dropdown-item" href="{{ route('livre.category', "Santé et bien être") }}">Santé et bien être</a>
+                <a class="dropdown-item" href="{{ route('livre.category', "Sante bien-etre") }}">Santé et bien être</a>
                 <a class="dropdown-item" href="{{ route('livre.category', "Developpement personnel") }}">Développement personnel</a>
                 <a class="dropdown-item" href="{{ route('livre.category', "Religion") }}">Réligion</a>
                  <a class="dropdown-item" href="{{route('livre.indexAll')}}">Autres</a>
