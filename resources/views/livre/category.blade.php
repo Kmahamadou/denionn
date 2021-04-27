@@ -16,11 +16,11 @@
             <div class="row justify-content-center">
                 <div class="col-md-10 mb-5 text-center">
                     <ul class="product-category">
-                        <li><a href="{{route('livre.indexAll')}}" class="active">Tout</a></li>
+                        <li><a href="{{route('livre.indexAll')}}" class="{{ Request::path() ==  '/livreAll' ? 'active' : ''  }}">Tout</a></li>
                         <li><a href="{{ route('livre.category', "Entreprise") }}" class="{{ Request::path() ==  'category/Entreprise' ? 'active' : ''  }}">Entréprise</a></li>
-                        <li><a href="{{ route('livre.category', "Marketing internet") }}">Marketing</a></li>
-                        <li><a href="{{ route('livre.category', "Santé et bien être") }}">Santé</a></li>
-                        <li><a href="{{ route('livre.category', "Developpement personnel") }}">Dev-personnel</a></li>
+                        <li><a href="{{ route('livre.category', "Marketing internet") }}"class="{{ Request::path() ==  'category/Marketing internet' ? 'active' : ''  }}">Marketing</a></li>
+                        <li><a href="{{ route('livre.category', "Santé et bien être") }}"class="{{ Request::path() ==  'category/Santé et bien être' ? 'active' : ''  }}">Santé</a></li>
+                        <li><a href="{{ route('livre.category', "Developpement personnel") }}"class="{{ Request::path() ==  'category/Developpement personnel' ? 'active' : ''  }}">Dev-personnel</a></li>
                     </ul>
                 </div>
             </div>
