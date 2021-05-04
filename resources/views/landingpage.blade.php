@@ -89,7 +89,7 @@
                     <span class="material-icons-outlined">S&amp;B</span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Heath</h3>
+                <h3 class="heading">Santé</h3>
                 <span>Santé &amp;Bien être</span>
               </div>
           </a>
@@ -288,7 +288,7 @@
             
                 <div class="col-md-6">
                     <article>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dusVsZ5Jmlk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="40%" height="" src="https://www.youtube.com/embed/dusVsZ5Jmlk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h2>Video 1</h2>
                         <hr class="title-underline">
                         <p>
