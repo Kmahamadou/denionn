@@ -30,12 +30,12 @@
   </head>
   <body class="goto-here">
         <div class="py-1 bg-primary">
-        <div class="container">
+        <div class="container" style="text-align: center;">
             <div class="row no-gutters d-flex align-items-center align-items-center px-md-0">
                 <div class="col-lg-12 d-block">
                     <div class="row d-flex">
                         <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon mr-2 d-flex justify-content-center align-items-center" style="text-align: center"><span class="icon-phone2"></span></div>
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
                             <span class="text">+223 00 00 00 00 </span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
