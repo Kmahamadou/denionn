@@ -25,4 +25,16 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function mail()
+    {      
+
+        $validatedData = request()->validate([
+
+                        'mail'=>'required',
+                            dd($validatedData);
+        $retour = mail('info@denionn.com', 'Envoi depuis la page Newsletter', $validatedData, 'From :'$validatedData);
+    if ($retour) {
+        return back();
+    }
+    }
 }

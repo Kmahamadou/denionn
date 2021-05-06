@@ -47,3 +47,4 @@ Route::get('/merci', [CheckoutController::class, 'thankYou'])->name('checkout.th
 
 });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::Post('mail',[App\Http\Controllers\HomeController::class, 'mail'])->name('mail.index');
