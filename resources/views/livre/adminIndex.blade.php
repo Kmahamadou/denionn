@@ -1,5 +1,5 @@
 
-  @include('layout.main')
+  @include('layout.header')
     <!-- END nav -->
 
     <div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.jpg');">
