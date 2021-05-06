@@ -39,9 +39,9 @@
                             @csrf
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                             @method('DELETE')
-                            <button class="btn btn-light" data-abc="true"> Supprimer</button> 
+                            <button class="btn btn-danger py-2 px-3" data-abc="true"> Supprimer</button> 
                         </form>
-                        <a href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_content_aws_storage_path}}" class="btn btn-primary py-2 px-3">Modifier</a>
+                        <a href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_content_aws_storage_path}}" class="btn btn-success py-2 px-3">Modifier</a>
                     </p>
             </div>
         </div>
