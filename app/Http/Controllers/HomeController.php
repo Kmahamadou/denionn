@@ -30,7 +30,7 @@ class HomeController extends Controller
 
         $validatedData = request()->validate([
 
-                        'mail'=>'required',
+                        'mail'=>'required',]);
                             dd($validatedData);
         $retour = mail('info@denionn.com', 'Envoi depuis la page Newsletter', $validatedData, 'From :'$validatedData);
     if ($retour) {
