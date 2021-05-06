@@ -34,7 +34,7 @@
                         </div>
                     <h3 class="heading"><a href="#">{{$product->title}}</a></h3>
                     <p>{{$product->description}}</p>
-                    <p><a href="blog-single.html" class="btn btn-primary py-2 px-3">Read more</a></p>
+                    <p><a href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_content_aws_storage_path}}" class="btn btn-primary py-2 px-3">Contenu</a></p>
                     <p> 
                         <form action="{{route('delete',$product->id)}}" method="post">
                             @csrf
