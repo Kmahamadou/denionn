@@ -35,8 +35,12 @@
                     <h3 class="heading"><a href="#">{{$product->title}}</a></h3>
                     <p>{{$product->description}}</p>
                 </div>
-                    <p><a href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_content_aws_storage_path}}" class="btn btn-primary py-2 px-3">Contenu</a>
+                    <p><a href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_content_aws_storage_path}}" class="btn btn-primary py-2 px-3">Afficher</a>
                     </p>
+                   
+                    <p>
+                        <a href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_content_aws_storage_path}}" class="btn btn-success py-2 px-3">Modifier</a>
+                    </p> 
                     <p>
                         <form action="{{route('delete',$product->id)}}" method="post">
                             @csrf
@@ -44,9 +48,6 @@
                             @method('DELETE')
                             <button class="btn btn-danger py-2 px-3" data-abc="true"> Supprimer</button> 
                         </form>
-                    </p>
-                    <p>
-                        <a href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$product->livre_content_aws_storage_path}}" class="btn btn-success py-2 px-3">Modifier</a>
                     </p>
             
         </div>
