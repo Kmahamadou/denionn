@@ -34,7 +34,7 @@ class HomeController extends Controller
                     ]);
 
                         
-         $retour = mail('info@denionn.com', 'Envoi depuis la page Newsletter', $validatedData, 'From :'$validatedData);
+         $retour = mail('info@denionn.com', 'Envoi depuis la page Newsletter', $validatedData, 'From :'.$validatedData);
     if ($retour) {
         return back();
     }
