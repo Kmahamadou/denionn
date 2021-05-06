@@ -391,6 +391,7 @@
           </div>
           <div class="col-md-6 d-flex align-items-center">
             <form action="{{ route('mail.index') }}" class="subscribe-form" method="POST">
+              @csrf
               <div class="form-group d-flex">
                 <input type="e-mail" class="form-control" placeholder="Entrer l'adresse e-mail">
                 <input type="submit" value="Subscribe" class="submit px-3">
