@@ -17,7 +17,7 @@
             </div>
           </div>
 
-          <div class="slider-item" style="background-image: url(images/bgd2.jpg);">
+          <div class="slider-item" style="background-image: url(images/bgd2.jpg); scroll-behavior: auto;">
             <div class="overlay"></div>
             <div class="container">
               <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
