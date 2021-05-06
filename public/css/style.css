@@ -4970,8 +4970,8 @@ a.close.disabled {
   position: relative; }
 
 .carousel.pointer-event {
-  -ms-touch-action: pan-y;
-  touch-action: pan-y; }
+  -ms-touch-action: manipulation;
+  touch-action: manipulation; }
 
 .carousel-inner {
   position: relative;
@@ -8366,7 +8366,7 @@ h1, h2, h3, h4, h5,
       background-position: center center;
       height: 650px;
       position: relative;
-      z-index: 10; }
+      z-index: 0; }
       @media (max-width: 1199.98px) {
         .owl-carousel.home-slider .slider-item {
           background-position: center center !important; } }
