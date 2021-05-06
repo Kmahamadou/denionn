@@ -9,24 +9,24 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('css/open-iconic-bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/open-iconic-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/animate.css') }}">
     
-    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/magnific-popup.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/aos.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('css/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/ionicons.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/jquery.timepicker.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/jquery.timepicker.css') }}">
 
     
-    <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/icomoon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/icomoon.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
   </head>
   <body class="goto-here">
         <div class="py-1 bg-primary">
@@ -36,7 +36,7 @@
                     <div class="row d-flex">
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon mr-2 d-flex justify-content-center align-items-center" ><span class="icon-phone2"></span></div>
-                            <span class="text">+223 00 00 00 00 </span>
+                            <span class="text">+223 77 09 95 43 </span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
