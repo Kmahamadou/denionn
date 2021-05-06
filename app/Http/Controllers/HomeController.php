@@ -28,7 +28,7 @@ class HomeController extends Controller
     public function mail()
     {      
 
-        dd($_POST['mail']);
+       
 
                         
          $retour =
