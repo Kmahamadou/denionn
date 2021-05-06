@@ -36,11 +36,11 @@
                     <div class="row d-flex">
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon mr-2 d-flex justify-content-center align-items-center" ><span class="icon-phone2"></span></div>
-                            <span class="text"><a href="tel:+22377099543">+223 77 09 95 43</a> </span>
+                            <span class="text"><a href="tel:+22377099543" style="color: white">+223 77 09 95 43</a> </span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-                            <span class="text"><a href="mailto:info@denionn.com" style="text-decoration: none">info@denionn.com</a></span>
+                            <span class="text"><a href="mailto:info@denionn.com" style="color:white">info@denionn.com</a></span>
                         </div>
                         <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
                             <span class="text">3-5 Business days delivery &amp; Free Returns</span>
