@@ -142,7 +142,7 @@ public function category($id){
 
     public function delete($id)
     {  
-       $livre = product:findOrFaile($id);
+       $livre = product::findOrFaile($id);
        $livre->delete();
        return back();
     }
