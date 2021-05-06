@@ -5,7 +5,7 @@
           <div class="slider-item" style="background-image: url(images/bgd1.jpg);">
             <div class="overlay"></div>
             <div class="container">
-              <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+              <div class="row slider-text justify-content-center align-items-center" >
 
                 <div class="col-md-12 ftco-animate text-center">
                   <h1 class="mb-2">Entreprise &amp; Buisiness</h1>
@@ -20,7 +20,7 @@
           <div class="slider-item" style="background-image: url(images/bgd2.jpg); scroll-behavior: all;">
             <div class="overlay"></div>
             <div class="container">
-              <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+              <div class="row slider-text justify-content-center align-items-center" >
 
                 <div class="col-sm-12 ftco-animate text-center">
                   <h1 class="mb-2">Marketing  &amp; Internet</h1>
@@ -35,7 +35,7 @@
           <div class="slider-item" style="background-image: url(images/bgd2.jpg);">
             <div class="overlay"></div>
             <div class="container">
-              <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+              <div class="row slider-text justify-content-center align-items-center" >
 
                 <div class="col-sm-12 ftco-animate text-center">
                   <h1 class="mb-2">Developpement personnel</h1>
@@ -49,7 +49,7 @@
           <div class="slider-item" style="background-image: url(images/bgd3.jpg); scroll-behavior: all;">
             <div class="overlay"></div>
             <div class="container">
-              <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+              <div class="row slider-text justify-content-center align-items-center" >
 
                 <div class="col-sm-12 ftco-animate text-center">
                   <h1 class="mb-2">Santé &amp; Bien être</h1>
