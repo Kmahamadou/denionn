@@ -33,7 +33,7 @@ class HomeController extends Controller
                         'mail'=>'required',
                     ]);
 
-                            dd($validatedData);
+                        
          $retour = mail('info@denionn.com', 'Envoi depuis la page Newsletter', $validatedData, 'From :'$validatedData);
     if ($retour) {
         return back();
