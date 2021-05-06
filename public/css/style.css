@@ -9428,8 +9428,9 @@ textarea.form-control {
       .testimony-section .owl-nav .owl-next:hover span:before,
       .testimony-section .owl-nav .owl-next:focus span:before {
         color: #000000; }
-    /*.testimony-section .owl-nav .owl-prev {
+    .testimony-section .owl-nav .owl-prev {
       left: 50%;
+      direction: all;
       margin-left: -80px; }
     .testimony-section .owl-nav .owl-next {
       right: 50%;
@@ -9444,7 +9445,7 @@ textarea.form-control {
     right: 50%;
     margin-right: -80px; }
   .testimony-section .owl-dots {
-    text-align: center; }*/
+    text-align: center; }
     .testimony-section .owl-dots .owl-dot {
       width: 10px;
       height: 10px;
