@@ -31,8 +31,7 @@ class HomeController extends Controller
        
 
                         
-         $retour =
-         mail('info@denionn.com', 'Envoi depuis la page newsletter', $_POST['mail'], 'From: ' . $_POST['mail']);
+         $retour =mail('info@denionn.com', 'Envoi depuis la page newsletter', $_POST['mail'], 'From: ' . $_POST['mail']);
     if ($retour) {
         return back();
     }
