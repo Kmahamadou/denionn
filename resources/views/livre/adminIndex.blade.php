@@ -24,7 +24,7 @@
 
     <div class="col-md-12 d-flex ftco-animate">
         <div class="blog-entry align-self-stretch d-md-flex">
-            <a href="{{Route('livre.detail', $product->id)}}" class="block-20" style="background-image: url('images/bgd2.jpg');">
+            <a href="{{Route('livre.detail', $product->id)}}" class="block-20" style="background-image: url('https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}}');">
             </a>
             <div class="text d-block pl-md-4">
                 <div class="meta mb-3">
