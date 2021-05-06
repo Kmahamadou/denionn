@@ -28,13 +28,11 @@ class HomeController extends Controller
     public function mail()
     {      
 
-        $validatedData = request()->validate([
-
-                        'mail'=>'required',
-                    ]);
+        dd($_POST['mail']);
 
                         
-         $retour = mail('info@denionn.com', 'Envoi depuis la page Newsletter', $validatedData, 'From :x');
+         $retour =
+         mail('info@denionn.com', 'Envoi depuis la page newsletter', $_POST['mail'], 'From: ' . $_POST['mail']);
     if ($retour) {
         return back();
     }
