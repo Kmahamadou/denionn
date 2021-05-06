@@ -5,7 +5,7 @@
           <div class="slider-item" style="background-image: url(images/bgd1.jpg);">
             <div class="overlay"></div>
             <div class="container">
-              <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+              <div class="row slider-text justify-content-center align-items-center" >
 
                 <div class="col-md-12 ftco-animate text-center">
                   <h1 class="mb-2">Entreprise &amp; Buisiness</h1>
