@@ -8218,7 +8218,7 @@ h1, h2, h3, h4, h5,
     left: 0;
     right: 0;
     bottom: 0;
-    content: '';
+    content: 'test';
     opacity: .6;
     width: 50%;
     background: #2530DF; }
@@ -9428,7 +9428,7 @@ textarea.form-control {
       .testimony-section .owl-nav .owl-next:hover span:before,
       .testimony-section .owl-nav .owl-next:focus span:before {
         color: #000000; }
-    /*.testimony-section .owl-nav .owl-prev {
+    .testimony-section .owl-nav .owl-prev {
       left: 50%;
       margin-left: -80px; }
     .testimony-section .owl-nav .owl-next {
@@ -9444,7 +9444,7 @@ textarea.form-control {
     right: 50%;
     margin-right: -80px; }
   .testimony-section .owl-dots {
-    text-align: center; }*/
+    text-align: center; }
     .testimony-section .owl-dots .owl-dot {
       width: 10px;
       height: 10px;
