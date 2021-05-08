@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="{{ secure_asset('css/bootstrap-datepicker.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css/jquery.timepicker.css') }}">
-
+    <script src="{{ asset('js/app.js') }}" defer></script>
     
     <link rel="stylesheet" href="{{ secure_asset('css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css/icomoon.css') }}">
@@ -74,7 +74,7 @@
               <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
               <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
               <li class="nav-item cta cta-colored"><a href="{{ route('cart.index') }}" class="nav-link"><span class="icon-shopping_cart"></span>{{Cart::count()}}</a></li>
-
+               <li class="nav-item">@include('layout.auth')</li>
             </ul>
           </div>
         </div>
