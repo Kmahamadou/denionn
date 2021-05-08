@@ -17,11 +17,11 @@
                 </div>
 
             </div>
-            
+
         </div>
     </div>
 </div>
-   <a href="{{ route('index') }}" class="btn-success py-2 px-3" >Continuer l'achat</a>
+
 @include('layout/footer')
 
 @include('layout/scriptjs')
