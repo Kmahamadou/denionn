@@ -1,4 +1,4 @@
-@extends('layout.header')
+@include('layout.header')
 
 <div class="container">
     <div class="row justify-content-center">
