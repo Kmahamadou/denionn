@@ -15,8 +15,9 @@
 
                     {{ __('Vous etes connecter !') }}
                 </div>
-                <a href="/" class="btn-success">Continuer l'achat</a>
+
             </div>
+            <a href="{{ route('index') }}" class="btn-success py-2 px-3" >Continuer l'achat</a>
         </div>
     </div>
 </div>
