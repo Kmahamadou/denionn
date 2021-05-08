@@ -55,11 +55,11 @@
                     </div>
                             </div>
                             <div class="w-100"></div>
-                            <div class="input-group col-md-6 d-flex mb-3">
+                          {{--   <div class="input-group col-md-6 d-flex mb-3">
                     
                     <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
                    
-                </div>
+                </div> --}}
                 <div class="w-100"></div>
                 
             </div>
