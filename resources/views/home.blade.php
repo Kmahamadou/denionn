@@ -13,8 +13,9 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Vous etes connecter !') }}
                 </div>
+                <a href="/" class="btn-success">Continuer l'achat</a>
             </div>
         </div>
     </div>
