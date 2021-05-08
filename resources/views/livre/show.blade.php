@@ -45,33 +45,23 @@
                                 <div class="form-group d-flex">
                       <div class="select-wrap">
                       <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                      <select name="" id="" class="form-control">
+                      {{-- <select name="" id="" class="form-control">
                         <option value="">Small</option>
                         <option value="">Medium</option>
                         <option value="">Large</option>
                         <option value="">Extra Large</option>
-                      </select>
+                      </select> --}}
                     </div>
                     </div>
                             </div>
                             <div class="w-100"></div>
                             <div class="input-group col-md-6 d-flex mb-3">
-                    <span class="input-group-btn mr-2">
-                        <button type="button" class="quantity-left-minus btn"  data-type="minus" data-field="">
-                       <i class="ion-ios-remove"></i>
-                        </button>
-                        </span>
+                    
                     <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
-                    <span class="input-group-btn ml-2">
-                        <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
-                         <i class="ion-ios-add"></i>
-                     </button>
-                    </span>
+                   
                 </div>
                 <div class="w-100"></div>
-                <div class="col-md-12">
-                    <p style="color: #000;">{{$livre->quantite}} available</p>
-                </div>
+                
             </div>
             
              <form method="post" action="{{route('cart.store')}}">
