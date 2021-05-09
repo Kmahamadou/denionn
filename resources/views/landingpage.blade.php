@@ -8,7 +8,7 @@
               <div class="row slider-text justify-content-center align-items-center" >
 
                 <div class="col-md-12 ftco-animate text-center">
-                  <h1 class="mb-2">Entreprise &amp; Buisiness</h1>
+                  <h1 class="mb-2">Entreprenariat &amp; Buisiness</h1>
                   <h2 class="subheading mb-4">Des guides pour la gestion d'entreprise &amp; Business</h2>
                   <p><a href="{{ route('livre.category', "Entreprise") }}" class="btn btn-dark">Explorer</a></p>
                 </div>
@@ -75,7 +75,7 @@
 
               </div>
               <div class="media-body">
-                <h3 class="heading">Pack Entréprise</h3>
+                <h3 class="heading">Entreprise</h3>
                 <span>For Buisiness</span>
               </div>
             </a>      
@@ -260,7 +260,7 @@
                 <div class="row justify-content-end">
           <div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate">
             <span class="subheading">Best Price For You</span>
-            <h2 class="mb-4">Denionn Experts</h2>
+            <h2 class="mb-4">Denionn Relaxation</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
 {{--             <h3><a href="#">Spinach</a></h3>
             <span class="price">$10 <a href="#">now $5 only</a></span>
@@ -279,8 +279,8 @@
         <div class="container">
                     <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <span class="subheading">Testimony</span>
-            <h2 class="mb-4">Videos de Rélaxation</h2>
+            <span class="subheading">Relaxation</span>
+            <h2 class="mb-4">Videos de Relaxation</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
           </div>
         </div>
@@ -382,7 +382,7 @@
         </div>
     </section> --}}
 
-        <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
+{{--         <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
       <div class="container py-4">
         <div class="row d-flex justify-content-center py-5">
           <div class="col-md-6">
@@ -400,7 +400,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
 @include('layout/footer')
 

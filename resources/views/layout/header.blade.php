@@ -43,7 +43,7 @@
                             <span class="text"><a href="mailto:info@denionn.com" style="color:white">info@denionn.com</a></span>
                         </div>
                         <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
-                            <span class="text">3-5 Business days delivery &amp; Free Returns</span>
+                            <span class="text">Lire pour s'améliorer &amp; Innover</span>
                         </div>
                     </div>
                 </div>

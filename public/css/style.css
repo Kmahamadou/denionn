@@ -8031,7 +8031,7 @@ h1, h2, h3, h4, h5,
   font-size: 11px;
   width: 100%;
   display: block;
-  text-transform: uppercase;
+  text-transform: ;
   letter-spacing: 1px; }
   @media (max-width: 767.98px) {
     .topper {
