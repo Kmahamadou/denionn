@@ -10,7 +10,7 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Denionn Experts</h2>
+              <h2 class="ftco-heading-2">Denionn</h2>
               <p>Lire délivre</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -53,7 +53,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits reserés | Denionn Experts<i class="icon-heart color-danger" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>.  <a href="https://themeslab.org/" target="_blank"></a>
+                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits reservés | Denionn <i class="icon-heart color-danger" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>.  <a href="https://themeslab.org/" target="_blank"></a>
                           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
           </div>
