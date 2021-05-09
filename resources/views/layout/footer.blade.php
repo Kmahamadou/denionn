@@ -43,7 +43,7 @@
                   <ul>
                     <li><span class="icon icon-map-marker"></span><span class="text">Sotuba ACI, près de la Rue des armées</span></li>
                     <li><a href="#"><span class="icon icon-phone"></span><span class="text">+223 77 09 95 43</span></a></li>
-                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@Denionn.com</span></a></li>
+                    <li><a href="mailto:info@denionn.com"><span class="icon icon-envelope"></span><span class="text">info@denionn.com</span></a></li>
                   </ul>
                 </div>
             </div>

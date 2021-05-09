@@ -73,7 +73,7 @@
             </li>
               <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
               <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-              <li class="nav-item cta cta-colored"><a href="{{ route('cart.index') }}" class="nav-link"><span class="icon-shopping_cart"></span>{{Cart::count()}}</a></li>
+              <li class="nav-item cta cta-colored"><a href="{{ route('cart.index') }}" class="nav-link">panier<span class="icon-shopping_cart"></span>{{Cart::count()}}</a></li>
                <li class="nav-item">@include('layout.auth')</li>
             </ul>
           </div>
