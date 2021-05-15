@@ -76,7 +76,7 @@
               </div>
               <div class="media-body">
                 <h3 class="heading">Entreprise</h3>
-                <span>For Buisiness</span>
+                <span>Entreprenariat &amp; Business</span>
               </div>
             </a>      
             </div>
