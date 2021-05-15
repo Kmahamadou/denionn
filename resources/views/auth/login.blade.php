@@ -54,16 +54,13 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Se connecter') }}
                                 </button>
-                                     <a href="https://denionn.herokuapp.com/register" class="btn btn-primary">
-                                    {{ __('S\'inscrire') }}
-                                </a>
-                                 </div>
+                                
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Mot de passe oublié?') }}
                                     </a>
                                 @endif
-                           
+                            </div>
                         </div>
                     </form>
                 </div>
