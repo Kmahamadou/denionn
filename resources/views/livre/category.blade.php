@@ -19,7 +19,7 @@
                         <li><a href="{{route('livre.indexAll')}}" class="{{ Request::path() ==  '/livreAll' ? 'active' : ''  }}">Tout</a></li>
                         <li><a href="{{ route('livre.category', "Entreprise") }}" class="{{ Request::path() ==  'category/Entreprise' ? 'active' : ''  }}">Entreprise</a></li>
                         <li><a href="{{ route('livre.category', "Marketing internet") }}"class="{{ Request::path() ==  'category/Marketing%20internet' ? 'active' : ''  }}">Marketing</a></li>
-                        <li><a href="{{ route('livre.category', "Sante bien-etre") }}" class="{{ Request::path() ==  'category/Sante%20bien-etre' ? 'active' : ''  }}">Santé</a></li>
+                        <li><a href="{{ route('livre.category', "Sante bien-etre") }}" class="{{ Request::path() ==  'category/Sante%20bien-etre' ? 'active' : ''  }}">Santé &amp; Bien être</a></li>
                         <li><a href="{{ route('livre.category', "Developpement personnel") }}"class="{{ Request::path() ==  'category/Developpement%20personnel' ? 'active' : ''  }}">Développement personnel</a></li>
                     </ul>
                 </div>
