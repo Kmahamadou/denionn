@@ -1,13 +1,18 @@
 <!-- Authentication Links -->
 @guest
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
+    <li class="nav-item dropdown">
+        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+            {{ __('Compte')}} <span class="caret"></span>
+        </a>
+         @if (Route::has('register'))
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
+
+            <a class="dropdown-item" href="{{ route('register') }}">{{ __('S\'inscrire') }}</a>
+        </div>
     </li>
-    @if (Route::has('register'))
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('register') }}">{{ __('S\'inscrire') }}</a>
-        </li>
-    @endif
+@endif
+
 @else
     <li class="nav-item dropdown">
         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
