@@ -24,7 +24,7 @@
               <h2 class="ftco-heading-2">Accès rapide</h2>
               <div class="d-flex">
                   <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
-                    <li><a href="{{ route('livre.category', "Entreprise") }}" class="py-2 d-block">Entréprise</a></li>
+                    <li><a href="{{ route('livre.category', "Entreprise") }}" class="py-2 d-block">Entreprise</a></li>
                     <li><a href="{{ route('livre.category', "Santé et bien être") }}" class="py-2 d-block">Santé &amp; Bien être</a></li>
                     <li><a href="{{ route('livre.category', "Marketing internet") }}" class="py-2 d-block">Marketing Internet</a></li>
                     <li><a href="{{ route('livre.category', "Developpement personnel") }}" class="py-2 d-block">Développement personnel</a></li>
