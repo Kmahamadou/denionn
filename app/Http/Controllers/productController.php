@@ -49,15 +49,17 @@ class productController extends Controller
         if(isset($validatedData['title'])){
             //Preparation image
             $insertingRow = new product();
-            $insertingRow->title = $validatedData['title'];
-            $insertingRow->auteur = $validatedData['auteur'];
-            $insertingRow->image = $validatedData['image'];
-            $insertingRow->livre = $validatedData['livre'];
-            $insertingRow->categorie = $validatedData['categorie'];
-            $insertingRow->prix = $validatedData['prix'];
-            $insertingRow->quantite = $validatedData['quantite'];
-            $insertingRow->description = $validatedData['description'];
-            $insertingRow->mode = $validatedData['mode'];
+
+            $insertingRow->title        = $validatedData['title'];
+            $insertingRow->auteur       = $validatedData['auteur'];
+            $insertingRow->image        = $validatedData['image'];
+            $insertingRow->livre        = $validatedData['livre'];
+            $insertingRow->categorie    = $validatedData['categorie'];
+            $insertingRow->prix         = $validatedData['prix'];
+            $insertingRow->quantite     = $validatedData['quantite'];
+            $insertingRow->description  = $validatedData['description'];
+            $insertingRow->mode         = $validatedData['mode'];
+
             $product = product::create($validatedData);
 
             // Store product image and content
@@ -111,7 +113,7 @@ class productController extends Controller
                     return view('livre.show')->with('livre', $livre)->with('similaire',$similaire);
                     }
 
-public function category($id){
+    public function category($id){
 
                 $category = $id;
                
