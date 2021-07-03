@@ -22,8 +22,8 @@ class CreateProductsTable extends Migration
             $table->string('livre');
             $table->integer('prix');
             $table->integer('quantite');
-            $table->text('description');
-            $table->text('sommaire');
+            $table->longtext('description');
+            $table->longtext('sommaire');
             $table->string('image');
             $table->string('livre_image_aws_storage_path')->nullable();
             $table->string('livre_content_aws_storage_path')->nullable();
