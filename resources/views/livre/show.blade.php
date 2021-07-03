@@ -20,7 +20,7 @@
                         <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}}" class="img-fluid" alt="Article image"></a>
                         <hr>
                         <h5>Sommaire</h5>
-                        <p>{{ $livre->sommaire }}</p>
+                        <h3> {{ $livre->sommaire }}</h3>
                 </div>
                 <div class="col-lg-6 product-details pl-md-5 ftco-animate">
                     <h3>{{$livre->title}}</h3>
