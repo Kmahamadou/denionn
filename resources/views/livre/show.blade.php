@@ -39,6 +39,7 @@
                         </div>
                     <p class="price"><span>{{$livre->prix }} f cfa</span></p>
                     <p>{{$livre->description}}</p>
+                    <p>{{$livre->sommaire}}</p>
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-group d-flex">

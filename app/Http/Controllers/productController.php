@@ -41,6 +41,7 @@ class productController extends Controller
                             'prix'          =>'required',
                             'quantite'      =>'required',
                             'description'   =>'required',
+                            'sommaire'   =>'required',
                         
                         ]);
 
@@ -58,6 +59,7 @@ class productController extends Controller
             $insertingRow->prix         = $validatedData['prix'];
             $insertingRow->quantite     = $validatedData['quantite'];
             $insertingRow->description  = $validatedData['description'];
+            $insertingRow->sommaire     = $validatedData['sommaire'];
             $insertingRow->mode         = $validatedData['mode'];
 
             $product = product::create($validatedData);

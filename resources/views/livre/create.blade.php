@@ -72,7 +72,12 @@
                    <label for="description">Description</label><br/>
                     <textarea cols="100%" rows="4" type="text" name="description"></textarea>
                   </div>
-                 
+                  
+
+                  <div class="form-group">
+                   <label for="sommaire">Sommaire</label><br/>
+                    <textarea cols="100%" rows="4" type="text" name="sommaire"></textarea>
+                  </div>                 
                
                 <!-- /.card-body -->
 
