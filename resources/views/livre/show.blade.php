@@ -18,6 +18,9 @@
                 <div class="col-lg-6 mb-5 ftco-animate">
                     <a href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}}" class="image-popup">
                         <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}}" class="img-fluid" alt="Article image"></a>
+                        <hr>
+                        <h5>Sommaire</h5>
+                        <p>{{ $livre->sommaire }}</p>
                 </div>
                 <div class="col-lg-6 product-details pl-md-5 ftco-animate">
                     <h3>{{$livre->title}}</h3>
@@ -33,8 +36,8 @@
                         
                         </div>
                         <hr>
-                        <h5>Introduction</h5>
                     <p class="price"><span>{{$livre->prix }} f cfa</span></p>
+                        <h5>Introduction</h5>
                     <p>{{$livre->description}}</p>
                     <p>{{$livre->sommaire}}</p>
                         <div class="row mt-4">
