@@ -30,13 +30,10 @@
                                 <a href="#"><span class="ion-ios-star-outline"></span></a>
                                 <a href="#"><span class="ion-ios-star-outline"></span></a>
                             </p>
-                            <p class="text-left mr-4">
-                                <a href="#" class="mr-2" style="color: #000;">100 <span style="color: #bbb;">Rating</span></a>
-                            </p>
-                            <p class="text-left">
-                                <a href="#" class="mr-2" style="color: #000;">500 <span style="color: #bbb;">Sold</span></a>
-                            </p>
+                        
                         </div>
+                        <hr>
+                        <h5>Introduction</h5>
                     <p class="price"><span>{{$livre->prix }} f cfa</span></p>
                     <p>{{$livre->description}}</p>
                     <p>{{$livre->sommaire}}</p>
