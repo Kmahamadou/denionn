@@ -28,7 +28,7 @@ class productController extends Controller
 
     public function store(Request $request)
     {   
-        dd($request);
+        //dd($request);
        
          $validatedData = request()->validate([
 
@@ -48,7 +48,7 @@ class productController extends Controller
                         ]);
 
 
-
+dd($validatedData);
         if(isset($validatedData['title'])){
             //Preparation image
             $insertingRow = new product();
