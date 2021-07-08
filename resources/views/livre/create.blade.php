@@ -9,7 +9,7 @@
                 <div class="col-md-6 m-auto ml-5 justify-content-center">
                   <div class="form-group">
                     <label for="designation">Titre</label>
-                    <input type="text" name="title" class="form-control" id="">
+                    <input type="text" name="title" class="form-control" required>
                   </div>
 
                    <div class="form-group">
@@ -19,7 +19,7 @@
 
                   <div class="form-group">
                     <label for="designation">Mode</label>
-                    <select class="form-control" name="mode">
+                    <select class="form-control" name="mode" required>
                      <option></option>
                      <option value="Portrait">Portrait</option>
                      <option value="Paysage">Paysage</option>
@@ -30,7 +30,7 @@
                  
                   <div class="form-group">
                     <label>Categorie</label>
-                   <select class="form-control" name="categorie">
+                   <select class="form-control" name="categorie" required>
                      <option></option>
                      <option value="Bloc Note">Bloc Note</option>
                      <option value="Agenda">Agenda</option>
@@ -45,7 +45,7 @@
                   <div class="form-group">
                   <div class="custom-file">
                     <label class="custom-file-label" for="livre">Inserer le Livre</label>
-                      <input type="file" class="custom-file-input" name="livre" id="livre">
+                      <input type="file" class="custom-file-input" name="livre" id="livre" required>
                   </div>
 
                   </div>
@@ -53,14 +53,15 @@
                     <label for="image">Ajouter Image</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="image" id="image">
+                        <input type="file" class="custom-file-input" name="image" id="image" required>
                       </div>
                     </div>
                   </div>
 
+
                   <div class="form-group">
                    <label for="prix">Prix</label>
-                    <input type="text" name="prix" class="form-control" id="" placeholder="">
+                    <input type="text" name="prix" class="form-control" id="" placeholder="" required>
                   </div>
 
                   <div class="form-group">
@@ -70,15 +71,40 @@
 
                   <div class="form-group">
                    <label for="description">Description</label><br/>
-                    <textarea cols="100%" rows="4" type="text" name="description"></textarea>
+                    <textarea cols="100%" rows="4" type="text" name="description" required></textarea>
+                  </div>                 
+               
+                  <div class="form-group">
+                    <label for="image1">Somaire Image 1</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" name="sommaire_image1" id="image1" required>
+                      </div>
+                    </div>
                   </div>
-                  
 
+<<<<<<< HEAD
+                  <div class="form-group">
+                    <label for="image2">Sommaire Image 2</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" name="sommaire_image2" id="image2">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="image3">Sommaire Image 3</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" name="sommaire_image3" id="image3">
+=======
                <div class="form-group">
                     <label for="sommaire">Ajouter sommaire</label>
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" name="sommaire" id="sommaire">
+>>>>>>> d9222de48bb30981675e795e3182ad4ec90ab00e
                       </div>
                     </div>
                   </div>
