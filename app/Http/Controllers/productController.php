@@ -70,9 +70,9 @@ class productController extends Controller
             // Store product image and content
 
              $image = $request->file('image');
-             $image = $request->file('sommaire_image1');
-             $image = $request->file('sommaire_image1');
-             $image = $request->file('sommaire_image1');
+             $sommaire_image1 = $request->file('sommaire_image1');
+             $sommaire_image2 = $request->file('sommaire_image1');
+             $sommaire_image3 = $request->file('sommaire_image1');
              $livre = $request->file('sommaire_image1');
             // $livre = $request->file('sommaire');
              
