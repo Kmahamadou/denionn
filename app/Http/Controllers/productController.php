@@ -63,7 +63,6 @@ class productController extends Controller
             $insertingRow->prix         = $validatedData['prix'];
             $insertingRow->quantite     = $request->quantity;
             $insertingRow->description  = $validatedData['description'];
-            $insertingRow->sommaire     = $validatedData['sommaire'];
             $insertingRow->mode         = $validatedData['mode'];
 
             $product = product::create($validatedData);
