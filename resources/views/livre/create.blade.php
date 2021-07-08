@@ -98,7 +98,9 @@
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" name="sommaire_image3" id="image3">
-          
+                      </div>
+                    </div>
+                  </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
