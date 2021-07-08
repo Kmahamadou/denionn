@@ -68,18 +68,18 @@ class productController extends Controller
 
              $image = $request->file('image');
              $livre = $request->file('livre');
-            // $livre = $request->file('sommaire');
+             $livre = $request->file('sommaire');
              $livre_image_aws_storage_path   = 'denionn/livre/images/' . time() .'.'. $image->getClientOriginalExtension();
              $livre_content_aws_storage_path = 'denionn/livre/livres/' . time() .'.'. $livre->getClientOriginalExtension();
-             //$sommaire_content_aws_storage_path = 'denionn/livre/sommaires/' . time() .'.'. $sommaire->getClientOriginalExtension();
+             $sommaire_content_aws_storage_path = 'denionn/livre/sommaires/' . time() .'.'. $sommaire->getClientOriginalExtension();
 
              \Storage::disk('s3')->put($livre_image_aws_storage_path, fopen($validatedData['image'], 'r+'));
              \Storage::disk('s3')->put($livre_content_aws_storage_path, fopen($validatedData['livre'], 'r+'));
-             //\Storage::disk('s3')->put($sommaire_content_aws_storage_path, fopen($validatedData['sommaire'], 'r+'));
+             \Storage::disk('s3')->put($sommaire_content_aws_storage_path, fopen($validatedData['sommaire'], 'r+'));
 
             $product->livre_image_aws_storage_path   = $livre_image_aws_storage_path;
             $product->livre_content_aws_storage_path = $livre_content_aws_storage_path;
-           // $product->sommaire_content_aws_storage_path = $sommaire_content_aws_storage_path;
+            $product->sommaire_content_aws_storage_path = $sommaire_content_aws_storage_path;
 
             $product->save();
 
