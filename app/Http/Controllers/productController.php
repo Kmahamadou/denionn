@@ -47,7 +47,7 @@ class productController extends Controller
                         ]);
 
 
-dd($validatedData);
+//dd($validatedData);
         if(isset($validatedData['title'])){
             //Preparation image
             $insertingRow = new product();
