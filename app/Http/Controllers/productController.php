@@ -58,23 +58,23 @@ class productController extends Controller
             $product->sommaire_image1          = $validatedData['sommaire_image1'];
             $product->sommaire_image2          = $validatedData['sommaire_image2'];
             $product->sommaire_image3          = $validatedData['sommaire_image3'];
-            $product->livre        = $validatedData['livre'];
-            $product->categorie    = $validatedData['categorie'];
-            $product->prix         = $validatedData['prix'];
-            $product->quantite     = $request->quantity;
-            $product->description  = $validatedData['description'];
-            $product->mode         = $validatedData['mode'];
+            $product->livre                    = $validatedData['livre'];
+            $product->categorie                = $validatedData['categorie'];
+            $product->prix                     = $validatedData['prix'];
+            $product->quantite                 = $request->quantity;
+            $product->description              = $validatedData['description'];
+            $product->mode                     = $validatedData['mode'];
             $product->save();
 
             
 
             // Store product image and content
 
-             $image = $request->file('image');
+             $image           = $request->file('image');
              $sommaire_image1 = $request->file('sommaire_image1');
              $sommaire_image2 = $request->file('sommaire_image1');
              $sommaire_image3 = $request->file('sommaire_image1');
-             $livre = $request->file('sommaire_image1');
+             $livre           = $request->file('sommaire_image1');
             // $livre = $request->file('sommaire');
              
              // 3D image storage link
@@ -113,8 +113,8 @@ class productController extends Controller
              \Storage::disk('s3')->put($livre_content_aws_storage_path, fopen($validatedData['livre'], 'r+'));
              \Storage::disk('s3')->put($sommaire_content_aws_storage_path, fopen($validatedData['sommaire'], 'r+'));
 
-            $product->livre_image_aws_storage_path   = $livre_image_aws_storage_path;
-            $product->livre_content_aws_storage_path = $livre_content_aws_storage_path;
+            $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
+            $product->livre_content_aws_storage_path         = $livre_content_aws_storage_path;
             $product->livre_sommaire_image1_aws_storage_path = $livre_sommaire_image1_aws_storage_path;
             $product->livre_sommaire_image2_aws_storage_path = $livre_sommaire_image2_aws_storage_path;
             $product->livre_sommaire_image3_aws_storage_path = $livre_sommaire_image3_aws_storage_path;
