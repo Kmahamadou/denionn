@@ -72,7 +72,6 @@ class productController extends Controller
             // Store product image and content
 
              $image = $request->file('image');
-<<<<<<< HEAD
              $image = $request->file('sommaire_image1');
              $image = $request->file('sommaire_image1');
              $image = $request->file('sommaire_image1');
@@ -80,20 +79,15 @@ class productController extends Controller
             // $livre = $request->file('sommaire');
              
              // 3D image storage link
-=======
              $livre = $request->file('livre');
              $livre = $request->file('sommaire');
->>>>>>> d9222de48bb30981675e795e3182ad4ec90ab00e
              $livre_image_aws_storage_path   = 'denionn/livre/images/' . time() .'.'. $image->getClientOriginalExtension();
              \Storage::disk('s3')->put($livre_image_aws_storage_path, fopen($validatedData['image'], 'r+'));
 
              $livre_content_aws_storage_path = 'denionn/livre/livres/' . time() .'.'. $livre->getClientOriginalExtension();
-<<<<<<< HEAD
              //$sommaire_content_aws_storage_path = 'denionn/livre/sommaires/' . time() .'.'. $sommaire->getClientOriginalExtension();
              \Storage::disk('s3')->put($livre_sommaire_image3_aws_storage_path, fopen($validatedData['sommaire_image3'], 'r+'));
-=======
              $sommaire_content_aws_storage_path = 'denionn/livre/sommaires/' . time() .'.'. $sommaire->getClientOriginalExtension();
->>>>>>> d9222de48bb30981675e795e3182ad4ec90ab00e
 
              // Sommaire images
              $livre_sommaire_image1_aws_storage_path   = 'denionn/livre/sommaire/' . time() .'.'. $image->getClientOriginalExtension();
