@@ -54,7 +54,7 @@ class productController extends Controller
 
             $product->title                    = $validatedData['title'];
             $product->auteur                   = $validatedData['auteur'];
-            //$product->image                    = $validatedData['image'];
+            $product->image                    = $validatedData['image'];
             $product->sommaire_image1          = $validatedData['sommaire_image1'];
             $product->sommaire_image2          = $validatedData['sommaire_image2'];
             $product->sommaire_image3          = $validatedData['sommaire_image3'];
