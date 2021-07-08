@@ -23,7 +23,7 @@ class CreateProductsTable extends Migration
             $table->integer('prix');
             $table->integer('quantite')->nullable();
             $table->longtext('description');
-            $table->longtext('image');
+            $table->string('image');
             $table->string('sommaire_image1');
             $table->string('sommaire_image2')->nullable();
             $table->string('sommaire_image3')->nullable();
