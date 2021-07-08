@@ -98,14 +98,7 @@
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" name="sommaire_image3" id="image3">
-               <div class="form-group">
-                    <label for="sommaire">Ajouter sommaire</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="sommaire" id="sommaire">
-                      </div>
-                    </div>
-                  </div>
+          
                 <!-- /.card-body -->
 
                 <div class="card-footer">
