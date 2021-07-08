@@ -28,7 +28,7 @@ class productController extends Controller
 
     public function store(Request $request)
     {   
-        dd($request);
+        //($request);
        
          $validatedData = request()->validate([
 
@@ -36,14 +36,13 @@ class productController extends Controller
                             'auteur'                  =>'required',
                             'image'                   =>'required|file|image|max:4096',
                             'sommaire_image1'         =>'required|file|image|max:4096',
-                           // 'sommaire_image2'         =>'file|image|max:4096',
-                           // 'sommaire_image3'         =>'file|image|max:4096',
+                            'sommaire_image2'         =>'file|image|max:4096',
+                            'sommaire_image3'         =>'file|image|max:4096',
                             'livre'                   =>'required',
                             'categorie'               =>'required',
                             'mode'                    =>'required',
                             'prix'                    =>'required',
                             'description'             =>'required',
-                            'sommaire'                =>'required',
                         
                         ]);
 
