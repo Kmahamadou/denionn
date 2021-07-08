@@ -66,52 +66,50 @@ class productController extends Controller
             $product->mode                     = $validatedData['mode'];
             $product->save();
 
-            
+            $sommaire_image2        =$validatedData['sommaire_image2'];
+            $sommaire_image3        =$validatedData['sommaire_image3'];
+            dd($request->quantity);
 
             // Store product image and content
 
              $image           = $request->file('image');
              $sommaire_image1 = $request->file('sommaire_image1');
-             $sommaire_image2 = $request->file('sommaire_image1');
-             $sommaire_image3 = $request->file('sommaire_image1');
-             $livre           = $request->file('sommaire_image1');
-            // $livre = $request->file('sommaire');
-             
-             // 3D image storage link
-             $livre = $request->file('livre');
-             $livre = $request->file('sommaire');
+             $sommaire_image2 = $request->file('sommaire_image2');
+             $sommaire_image3 = $request->file('sommaire_image3');
+             $livre           = $request->file('livre');
+        
              $livre_image_aws_storage_path   = 'denionn/livre/images/' . time() .'.'. $image->getClientOriginalExtension();
+
              \Storage::disk('s3')->put($livre_image_aws_storage_path, fopen($validatedData['image'], 'r+'));
 
              $livre_content_aws_storage_path = 'denionn/livre/livres/' . time() .'.'. $livre->getClientOriginalExtension();
-             //$sommaire_content_aws_storage_path = 'denionn/livre/sommaires/' . time() .'.'. $sommaire->getClientOriginalExtension();
-             \Storage::disk('s3')->put($livre_sommaire_image3_aws_storage_path, fopen($validatedData['sommaire_image3'], 'r+'));
-             $sommaire_content_aws_storage_path = 'denionn/livre/sommaires/' . time() .'.'. $sommaire->getClientOriginalExtension();
+
+             \Storage::disk('s3')->put($livre_content_aws_storage_path, fopen($validatedData['livre'], 'r+'));
+
 
              // Sommaire images
              $livre_sommaire_image1_aws_storage_path   = 'denionn/livre/sommaire/' . time() .'.'. $image->getClientOriginalExtension();
 
              \Storage::disk('s3')->put($livre_sommaire_image1_aws_storage_path, fopen($validatedData['sommaire_image1'], 'r+'));
 
+        
+
+
              if(!empty($sommaire_image2)){
 
                 $livre_sommaire_image2_aws_storage_path   = 'denionn/livre/sommaire/' . time() .'.'. $image->getClientOriginalExtension();
 
-                \Storage::disk('s3')->put($livre_sommaire_image2_aws_storage_path, fopen($validatedData['sommaire_image3'], 'r+'));
+                \Storage::disk('s3')->put($livre_sommaire_image2_aws_storage_path, fopen($validatedData['sommaire_image2'], 'r+'));
              }
 
              if(!empty($sommaire_image3)){
                 $livre_sommaire_image3_aws_storage_path   = 'denionn/livre/sommaire/' . time() .'.'. $image->getClientOriginalExtension();
 
-               
+               \Storage::disk('s3')->put($livre_sommaire_image3_aws_storage_path, fopen($validatedData['sommaire_image3'], 'r+'));
 
             }
 
-             //Book Content
-
-         
-             \Storage::disk('s3')->put($livre_content_aws_storage_path, fopen($validatedData['livre'], 'r+'));
-             \Storage::disk('s3')->put($sommaire_content_aws_storage_path, fopen($validatedData['sommaire'], 'r+'));
+       
 
             $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
             $product->livre_content_aws_storage_path         = $livre_content_aws_storage_path;
