@@ -50,22 +50,23 @@ class productController extends Controller
 //dd($validatedData);
         if(isset($validatedData['title'])){
             //Preparation image
-            $insertingRow = new product();
+            $product = new product();
 
-            $insertingRow->title                    = $validatedData['title'];
-            $insertingRow->auteur                   = $validatedData['auteur'];
-            $insertingRow->image                    = $validatedData['image'];
-            $insertingRow->sommaire_image1          = $validatedData['sommaire_image1'];
-            $insertingRow->sommaire_image2          = $validatedData['sommaire_image2'];
-            $insertingRow->sommaire_image3          = $validatedData['sommaire_image3'];
-            $insertingRow->livre        = $validatedData['livre'];
-            $insertingRow->categorie    = $validatedData['categorie'];
-            $insertingRow->prix         = $validatedData['prix'];
-            $insertingRow->quantite     = $request->quantity;
-            $insertingRow->description  = $validatedData['description'];
-            $insertingRow->mode         = $validatedData['mode'];
+            $product->title                    = $validatedData['title'];
+            $product->auteur                   = $validatedData['auteur'];
+            $product->image                    = $validatedData['image'];
+            $product->sommaire_image1          = $validatedData['sommaire_image1'];
+            $product->sommaire_image2          = $validatedData['sommaire_image2'];
+            $product->sommaire_image3          = $validatedData['sommaire_image3'];
+            $product->livre        = $validatedData['livre'];
+            $product->categorie    = $validatedData['categorie'];
+            $product->prix         = $validatedData['prix'];
+            $product->quantite     = $request->quantity;
+            $product->description  = $validatedData['description'];
+            $product->mode         = $validatedData['mode'];
+            $product->save();
 
-            $product = product::create($validatedData);
+            
 
             // Store product image and content
 
@@ -114,7 +115,9 @@ class productController extends Controller
 
             $product->livre_image_aws_storage_path   = $livre_image_aws_storage_path;
             $product->livre_content_aws_storage_path = $livre_content_aws_storage_path;
-            $product->sommaire_content_aws_storage_path = $sommaire_content_aws_storage_path;
+            $product->livre_sommaire_image1_aws_storage_path = $livre_sommaire_image1_aws_storage_path;
+            $product->livre_sommaire_image2_aws_storage_path = $livre_sommaire_image2_aws_storage_path;
+            $product->livre_sommaire_image3_aws_storage_path = $livre_sommaire_image3_aws_storage_path;
 
             $product->save();
 
