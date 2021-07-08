@@ -68,7 +68,7 @@ class productController extends Controller
 
             $sommaire_image2        =$validatedData['sommaire_image2'];
             $sommaire_image3        =$validatedData['sommaire_image3'];
-            dd($request->quantity);
+            
 
             // Store product image and content
 
