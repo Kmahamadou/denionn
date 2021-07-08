@@ -83,7 +83,7 @@
                     </div>
                   </div>
 
-<<<<<<< HEAD
+
                   <div class="form-group">
                     <label for="image2">Sommaire Image 2</label>
                     <div class="input-group">
@@ -98,13 +98,11 @@
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" name="sommaire_image3" id="image3">
-=======
                <div class="form-group">
                     <label for="sommaire">Ajouter sommaire</label>
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" name="sommaire" id="sommaire">
->>>>>>> d9222de48bb30981675e795e3182ad4ec90ab00e
                       </div>
                     </div>
                   </div>
