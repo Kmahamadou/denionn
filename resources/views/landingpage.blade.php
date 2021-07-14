@@ -39,7 +39,7 @@
 
                 <div class="col-sm-12 ftco-animate text-center">
                   <h1 class="mb-2">Developpement personnel</h1>
-                  <h2 class="subheading mb-4">Augmenté vos capacités de production &amp; de Réflexion</h2>
+                  <h2 class="subheading mb-4">Augmenter vos capacités de production &amp; de Réflexion</h2>
                   <p><a href="{{ route('livre.category', "Developpement personnel") }}" class="btn btn-dark">Explorer</a></p>
                 </div>
 
@@ -203,15 +203,11 @@
                             </div>
                             <div class="bottom-area d-flex px-3">
                                 <div class="m-auto d-flex">
-                                    <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-                                        <span><i class="ion-ios-menu"></i></span>
-                                    </a>
+                                  
                                     <a href="{{Route('livre.detail', $product->id)}}" class="buy-now d-flex justify-content-center align-items-center mx-1">
                                         <span><i class="ion-ios-cart"></i></span>
                                     </a>
-                                    <a href="#" class="heart d-flex justify-content-center align-items-center ">
-                                        <span><i class="ion-ios-heart"></i></span>
-                                    </a>
+                                
                                 </div>
                             </div>
                         </div>
@@ -260,8 +256,8 @@
                 <div class="row justify-content-end">
           <div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate">
             <span class="subheading">Best Price For You</span>
-            <h2 class="mb-4">Denionn Relaxation</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <h2 class="mb-4" style="color:white">Denionn Relaxation</h2>
+            <p style="color: white;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
 {{--             <h3><a href="#">Spinach</a></h3>
             <span class="price">$10 <a href="#">now $5 only</a></span>
             <div id="timer" class="d-flex mt-5">
@@ -279,7 +275,7 @@
         <div class="container">
                     <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <span class="subheading">Relaxation</span>
+            
             <h2 class="mb-4">Videos de Relaxation</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
           </div>
@@ -288,7 +284,7 @@
             
                 <div class="col-md-6">
                     <article>
-                        <iframe width="100%" height="" src="https://www.youtube.com/embed/dusVsZ5Jmlk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h2>Video 1</h2>
                         <hr class="title-underline">
                         <p>
@@ -302,7 +298,7 @@
             
                     <div class="col-md-6">
                     <article>
-                        <iframe width="100%" height="" src="https://www.youtube.com/embed/yA5iB4HIki0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="" src="https://www.youtube.com/embed/ktEmA1PTNM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h2>Musique Relaxante</h2>
                         <hr class="title-underline">
                         <p>
@@ -315,7 +311,7 @@
                     </div>
                     <div class="col-md-6">
                     <article>
-                       <iframe width="100%" height="" src="https://www.youtube.com/embed/663sgJujmIw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       <iframe width="100%" height="" src="https://www.youtube.com/embed/L7rpsiGn77M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h2>Musique Relaxante</h2>
                         <hr class="title-underline">
                         <p>
@@ -329,7 +325,7 @@
 
                   <div class="col-md-6">
                     <article>
-                        <iframe width="100%" height="" src="https://www.youtube.com/embed/ktEmA1PTNM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="" src="https://www.youtube.com/embed/TRMtQbEZfJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h2> Relaxing Music</h2>
                         <hr class="title-underline">
                         <p>
@@ -339,17 +335,7 @@
                     </article>
                 
                   </div> <div class="col-md-6">
-                    <article>
-                                   
-                        <iframe width="100%" height="" src="https://www.youtube.com/embed/ktEmA1PTNM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2> Relaxing Music</h2>
-                        <hr class="title-underline">
-                        <p>
-                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
-                        </p>
-                        
-                        
-                    </article>
+            
                 
                   </div>
                                   
