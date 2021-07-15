@@ -21,8 +21,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [productController::class, 'index'])->name('index');
 	Auth::routes();
 	 						//Product
-Route::get('/apropos',[App\Http\Controllers\HomeController::class, 'apropos'])->name('index.apropos');
-Route::get('/contact',[App\Http\Controllers\HomeController::class, 'contact'])->name('index.contact');
+Route::get('/apropos',[App\Http\Controllers\productController::class, 'apropos'])->name('index.apropos');
+Route::get('/contact',[App\Http\Controllers\productController::class, 'contact'])->name('index.contact');
 Route::get('/livreAll',[productController::class , 'indexAll'])->name('livre.indexAll');
 Route::get('/livre/{id}',[productController::class, 'show'])->name('livre.detail');
 Route::get('createlivre',[productController::class, 'create'])->name('livre.create');
