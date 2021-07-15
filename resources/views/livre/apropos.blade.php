@@ -1,7 +1,7 @@
 
 @include('layout.header')
 
-<div class="hero-wrap hero-bread" style="background-image: url('images/DENIONN.jpg');">
+<div class="hero-wrap hero-bread" >
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
@@ -14,33 +14,17 @@
 
     <section class="ftco-section contact-section bg-light">
       <div class="container">
-        <div class="row d-flex mb-5 contact-info">
-          <div class="w-100"></div>
-          <div class="col-md-4 d-flex">
-            <div class="info bg-white p-4">
-              <p>Sotuba ACI, près de la Rue des armées</p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex">
-            <div class="info bg-white p-4">
-              <p><a href="tel://1234567920">+223 77 09 95 43</a></p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex">
-            <div class="info bg-white p-4">
-              <p><a href="mailto:info@yoursite.com"> info@denionn.com</a></p>
-            </div>
-          </div>
 
-        </div>
         <div class="row block-9">
           <div class="col-md-8 order-md-last d-flex">
-          
+          Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum
+          Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum
+          Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum
           
           </div>
 
           <div class="col-md-6 d-flex">
-            <div class="bg-white">
+            <div class="bg-white"style="background-image: url('images/DENIONN.jpg');">
               <img src="" alt="">
             </div>
           </div> 
