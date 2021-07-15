@@ -254,10 +254,11 @@ a{
         </div>
                             
         <div class="white-panel">
-            <form method="POST" action="{{ route('login') }}">
-            @csrf
+           
             <div class="login-show">
                 <h2>LOGIN</h2>
+                <form method="POST" action="{{ route('login') }}">
+                @csrf
                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                 @error('email')
                     <span class="invalid-feedback" role="alert">
@@ -278,8 +279,8 @@ a{
                     {{ __('Mot de passe oublié?') }}
                     </a>
                  @endif
+                 </form>
             </div>
-            </form>
             <div class="register-show">
                 <h2>REGISTER</h2>
                 <input type="text" placeholder="Email">
