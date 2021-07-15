@@ -48,5 +48,5 @@ Route::get('/merci', [CheckoutController::class, 'thankYou'])->name('checkout.th
 });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::Post('mail',[App\Http\Controllers\HomeController::class, 'mail'])->name('mail.index');
-Route::Post('/apropos',[App\Http\Controllers\HomeController::class, 'apropos'])->name('index.apropos');
-Route::Post('/contact',[App\Http\Controllers\HomeController::class, 'contact'])->name('index.contact');
+Route::get('/apropos',[App\Http\Controllers\HomeController::class, 'apropos'])->name('index.apropos');
+Route::get('/contact',[App\Http\Controllers\HomeController::class, 'contact'])->name('index.contact');
