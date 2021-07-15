@@ -291,7 +291,7 @@ a{
         </div>
     </div>
 
-    <script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
+    {{-- <script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
         
     $(document).ready(function(){
     $('.login-info-box').fadeOut();
@@ -320,4 +320,4 @@ $('.login-reg-panel input[type="radio"]').on('change', function() {
     }
 });
   
-    </script>
+    </script> --}}
