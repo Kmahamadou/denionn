@@ -16,17 +16,17 @@
       <div class="container">
       	<div class="row d-flex mb-5 contact-info">
           <div class="w-100"></div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 d-flex">
           	<div class="info bg-white p-4">
 	            <p>Sotuba ACI, près de la Rue des armées</p>
 	          </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 d-flex">
           	<div class="info bg-white p-4">
 	            <p><a href="tel://1234567920">+223 77 09 95 43</a></p>
 	          </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 d-flex">
           	<div class="info bg-white p-4">
 	            <p><a href="mailto:info@yoursite.com"> info@denionn.com</a></p>
 	          </div>
@@ -34,7 +34,7 @@
 
         </div>
         <div class="row block-9">
-          <div class="col-md-8 align-items-center" style="margin-left: 20%;">
+          <div class="col-md-8 align-items-center" style="margin-left: 18%;">
             <form action="#" class="bg-white p-5 contact-form">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Nom">
