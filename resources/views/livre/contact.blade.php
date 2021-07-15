@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="row block-9">
-          <div class="col-md-12 order-md-last d-flex">
+          <div class="col-md-8">
             <form action="#" class="bg-white p-5 contact-form">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Your Name">
