@@ -34,7 +34,7 @@
 
         </div>
         <div class="row block-9">
-          <div class="col-md-8 align-items-center">
+          <div class="col-md-8 align-items-center" style="margin-left: 20%;">
             <form action="#" class="bg-white p-5 contact-form">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Nom">
