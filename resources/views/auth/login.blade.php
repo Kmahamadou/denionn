@@ -253,7 +253,7 @@ a{
             <input type="radio" name="active-log-panel" id="log-login-show">
         </div>
                             
-        <div class="white-panel">
+        <div class="">
            
             <div class="login-show">
                 <h2>LOGIN</h2>
