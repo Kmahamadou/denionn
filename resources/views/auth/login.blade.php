@@ -253,9 +253,9 @@ a{
             <input type="radio" name="active-log-panel" id="log-login-show">
         </div>
                             
-        <div class="">
+        <div class="white-panel">
            
-            <div class="">
+            <div class="login-show">
                 <h2>LOGIN</h2>
                 <form method="POST" action="{{ route('login') }}">
                 @csrf
