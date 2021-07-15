@@ -21,7 +21,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [productController::class, 'index'])->name('index');
 	Auth::routes();
 	 						//Product
-
+Route::get('/apropos',[App\Http\Controllers\HomeController::class, 'apropos'])->name('index.apropos');
+Route::get('/contact',[App\Http\Controllers\HomeController::class, 'contact'])->name('index.contact');
 Route::get('/livreAll',[productController::class , 'indexAll'])->name('livre.indexAll');
 Route::get('/livre/{id}',[productController::class, 'show'])->name('livre.detail');
 Route::get('createlivre',[productController::class, 'create'])->name('livre.create');
@@ -48,5 +49,3 @@ Route::get('/merci', [CheckoutController::class, 'thankYou'])->name('checkout.th
 });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::Post('mail',[App\Http\Controllers\HomeController::class, 'mail'])->name('mail.index');
-Route::get('/apropos',[App\Http\Controllers\HomeController::class, 'apropos'])->name('index.apropos');
-Route::get('/contact',[App\Http\Controllers\HomeController::class, 'contact'])->name('index.contact');
