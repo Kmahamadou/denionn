@@ -168,13 +168,13 @@ class productController extends Controller
     public function apropos(){
 
 
-                return view('apropos');
+                return view('livre.apropos');
 
                 }
     public function contact(){
 
 
-                return view('contact');
+                return view('livre.contact');
 
                 }
     private function storeProductImage($product)
