@@ -68,8 +68,8 @@ class productController extends Controller
             $product->mode                     = $validatedData['mode'];
             $product->save();
 
-            $sommaire_image2        =$validatedData['sommaire_image2'];
-            $sommaire_image3        =$validatedData['sommaire_image3'];
+            // $sommaire_image2        =$validatedData['sommaire_image2'];
+            // $sommaire_image3        =$validatedData['sommaire_image3'];
             
 
             // Store product image and content
