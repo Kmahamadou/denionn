@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="row block-9">
-          <div class="col-md-6 order-md-last d-flex">
+          <div class="col-md-12 order-md-last d-flex">
             <form action="#" class="bg-white p-5 contact-form">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Your Name">
@@ -59,9 +59,9 @@
           
           </div>
 
-          <div class="col-md-6 d-flex">
+         {{--  <div class="col-md-6 d-flex">
           	<div id="map" class="bg-white"></div>
-          </div>
+          </div> --}}
         </div>
       </div>
     </section>
