@@ -24,14 +24,15 @@ class CreateProductsTable extends Migration
             $table->integer('quantite')->nullable();
             $table->longtext('description');
             $table->string('image');
-            $table->string('sommaire_image1');
-            $table->string('sommaire_image2')->nullable();
-            $table->string('sommaire_image3')->nullable();
+            $table->longtext('sommaire');
+            // $table->string('sommaire_image1');
+            // $table->string('sommaire_image2')->nullable();
+            // $table->string('sommaire_image3')->nullable();
             $table->string('livre_image_aws_storage_path')->nullable();
-            $table->string('livre_sommaire_image1_aws_storage_path')->nullable();
-            $table->string('livre_sommaire_image2_aws_storage_path')->nullable();
-            $table->string('livre_sommaire_image3_aws_storage_path')->nullable();
-            $table->string('livre_content_aws_storage_path')->nullable();
+            // $table->string('livre_sommaire_image1_aws_storage_path')->nullable();
+            // $table->string('livre_sommaire_image2_aws_storage_path')->nullable();
+            // $table->string('livre_sommaire_image3_aws_storage_path')->nullable();
+            // $table->string('livre_content_aws_storage_path')->nullable();
             $table->timestamps();
         });
     }

@@ -35,14 +35,15 @@ class productController extends Controller
                             'title'                   =>'required',
                             'auteur'                  =>'required',
                             'image'                   =>'required|file|image|max:4096',
-                            'sommaire_image1'         =>'required|file|image|max:4096',
-                            'sommaire_image2'         =>'file|image|max:4096',
-                            'sommaire_image3'         =>'file|image|max:4096',
+                            // 'sommaire_image1'         =>'required|file|image|max:4096',
+                            // 'sommaire_image2'         =>'file|image|max:4096',
+                            // 'sommaire_image3'         =>'file|image|max:4096',
                             'livre'                   =>'required',
                             'categorie'               =>'required',
                             'mode'                    =>'required',
                             'prix'                    =>'required',
                             'description'             =>'required',
+                            'sommaire'                =>'required',
                         
                         ]);
 
@@ -63,6 +64,7 @@ class productController extends Controller
             $product->prix                     = $validatedData['prix'];
             $product->quantite                 = $request->quantity;
             $product->description              = $validatedData['description'];
+            $product->sommaire              = $validatedData['sommaire'];
             $product->mode                     = $validatedData['mode'];
             $product->save();
 
@@ -73,9 +75,9 @@ class productController extends Controller
             // Store product image and content
 
              $image           = $request->file('image');
-             $sommaire_image1 = $request->file('sommaire_image1');
-             $sommaire_image2 = $request->file('sommaire_image2');
-             $sommaire_image3 = $request->file('sommaire_image3');
+             // $sommaire_image1 = $request->file('sommaire_image1');
+             // $sommaire_image2 = $request->file('sommaire_image2');
+             // $sommaire_image3 = $request->file('sommaire_image3');
              $livre           = $request->file('livre');
         
              $livre_image_aws_storage_path   = 'denionn/livre/images/' . time() .'.'. $image->getClientOriginalExtension();
@@ -87,35 +89,35 @@ class productController extends Controller
              \Storage::disk('s3')->put($livre_content_aws_storage_path, fopen($validatedData['livre'], 'r+'));
 
 
-             // Sommaire images
-             $livre_sommaire_image1_aws_storage_path   = 'denionn/livre/sommaire/' . time() .'.'. $image->getClientOriginalExtension();
+            //  // Sommaire images
+            //  $livre_sommaire_image1_aws_storage_path   = 'denionn/livre/sommaire/' . time() .'.'. $image->getClientOriginalExtension();
 
-             \Storage::disk('s3')->put($livre_sommaire_image1_aws_storage_path, fopen($validatedData['sommaire_image1'], 'r+'));
+            //  \Storage::disk('s3')->put($livre_sommaire_image1_aws_storage_path, fopen($validatedData['sommaire_image1'], 'r+'));
 
         
 
 
-             if(!empty($sommaire_image2)){
+            //  if(!empty($sommaire_image2)){
 
-                $livre_sommaire_image2_aws_storage_path   = 'denionn/livre/sommaire/' . time() .'.'. $image->getClientOriginalExtension();
+            //     $livre_sommaire_image2_aws_storage_path   = 'denionn/livre/sommaire/' . time() .'.'. $image->getClientOriginalExtension();
 
-                \Storage::disk('s3')->put($livre_sommaire_image2_aws_storage_path, fopen($validatedData['sommaire_image2'], 'r+'));
-             }
+            //     \Storage::disk('s3')->put($livre_sommaire_image2_aws_storage_path, fopen($validatedData['sommaire_image2'], 'r+'));
+            //  }
 
-             if(!empty($sommaire_image3)){
-                $livre_sommaire_image3_aws_storage_path   = 'denionn/livre/sommaire/' . time() .'.'. $image->getClientOriginalExtension();
+            //  if(!empty($sommaire_image3)){
+            //     $livre_sommaire_image3_aws_storage_path   = 'denionn/livre/sommaire/' . time() .'.'. $image->getClientOriginalExtension();
 
-               \Storage::disk('s3')->put($livre_sommaire_image3_aws_storage_path, fopen($validatedData['sommaire_image3'], 'r+'));
+            //    \Storage::disk('s3')->put($livre_sommaire_image3_aws_storage_path, fopen($validatedData['sommaire_image3'], 'r+'));
 
-            }
+            // }
 
        
 
             $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
             $product->livre_content_aws_storage_path         = $livre_content_aws_storage_path;
-            $product->livre_sommaire_image1_aws_storage_path = $livre_sommaire_image1_aws_storage_path;
-            $product->livre_sommaire_image2_aws_storage_path = $livre_sommaire_image2_aws_storage_path;
-            $product->livre_sommaire_image3_aws_storage_path = $livre_sommaire_image3_aws_storage_path;
+            // $product->livre_sommaire_image1_aws_storage_path = $livre_sommaire_image1_aws_storage_path;
+            // $product->livre_sommaire_image2_aws_storage_path = $livre_sommaire_image2_aws_storage_path;
+            // $product->livre_sommaire_image3_aws_storage_path = $livre_sommaire_image3_aws_storage_path;
 
             $product->save();
 

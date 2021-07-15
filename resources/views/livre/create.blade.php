@@ -72,9 +72,13 @@
                   <div class="form-group">
                    <label for="description">Description</label><br/>
                     <textarea cols="100%" rows="4" type="text" name="description" required></textarea>
-                  </div>                 
+                  </div>   
+                    <div class="form-group">
+                   <label for="sommaire">Sommaire</label><br/>
+                    <textarea cols="100%" rows="4" type="text" name="sommaire" required></textarea>
+                  </div>                
                
-                  <div class="form-group">
+{{--                   <div class="form-group">
                     <label for="image1">Somaire Image 1</label>
                     <div class="input-group">
                       <div class="custom-file">
@@ -100,7 +104,7 @@
                         <input type="file" class="custom-file-input" name="sommaire_image3" id="image3">
                       </div>
                     </div>
-                  </div>
+                  </div> --}}
                 <!-- /.card-body -->
 
                 <div class="card-footer">
