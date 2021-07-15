@@ -32,7 +32,7 @@ class CreateProductsTable extends Migration
             // $table->string('livre_sommaire_image1_aws_storage_path')->nullable();
             // $table->string('livre_sommaire_image2_aws_storage_path')->nullable();
             // $table->string('livre_sommaire_image3_aws_storage_path')->nullable();
-            // $table->string('livre_content_aws_storage_path')->nullable();
+            $table->string('livre_content_aws_storage_path')->nullable();
             $table->timestamps();
         });
     }
