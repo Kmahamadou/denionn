@@ -75,7 +75,7 @@
                   </div>   
                     <div class="form-group">
                    <label for="sommaire">Sommaire</label><br/>
-                    <textarea cols="100%" rows="4" type="text" name="sommaire" required></textarea>
+                    <textarea cols="100%" rows="4" type="text" name="sommaire" wrap="hard" required></textarea>
                   </div>                
                
 {{--                   <div class="form-group">
