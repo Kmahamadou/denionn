@@ -255,7 +255,7 @@ a{
                             
         <div class="">
            
-            <div class="login-show">
+            <div class="">
                 <h2>LOGIN</h2>
                 <form method="POST" action="{{ route('login') }}">
                 @csrf
