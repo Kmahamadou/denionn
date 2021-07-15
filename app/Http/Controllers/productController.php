@@ -165,8 +165,18 @@ class productController extends Controller
                 return view('livre.category')->with('products', $livre);
 
                 }
+    public function apropos(){
 
 
+                return view('apropos');
+
+                }
+    public function apropos(){
+
+
+                return view('contact');
+
+                }
     private function storeProductImage($product)
     {
         if (request()->has('image')) {
