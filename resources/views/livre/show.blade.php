@@ -18,7 +18,16 @@
                 <div class="col-lg-6 mb-5 ftco-animate">
                     <a href="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}}" class="image-popup">
                         <img src="https://ikavignetti-assets.s3.us-east-2.amazonaws.com/{{$livre->livre_image_aws_storage_path}}" class="img-fluid" alt="Article image"></a>
-                    
+                         <hr>
+                            <div class="container">
+                <div class="row justify-content-center mb-3 pb-3">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <span class="subheading">Products</span>
+            <h2 class="mb-4">Articles Similaires</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          </div>
+        </div>          
+        </div>
                 </div>
                 <div class="col-lg-6 product-details pl-md-5 ftco-animate">
                     <h3>{{$livre->title}}</h3>
