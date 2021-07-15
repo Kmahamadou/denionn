@@ -15,7 +15,7 @@
           
           </div>
 
-          <div class="col-md-6 d-flex mr-2" style="background-image: url('images/DENIONN.jpg');">
+          <div class="col-md-6 d-flex mr-4" style="background-image: url('images/DENIONN.jpg');">
             <div class="bg-white">
               <img src="" alt="">
             </div>
