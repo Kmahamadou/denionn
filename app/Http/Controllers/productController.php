@@ -171,7 +171,7 @@ class productController extends Controller
                 return view('apropos');
 
                 }
-    public function apropos(){
+    public function contact(){
 
 
                 return view('contact');
