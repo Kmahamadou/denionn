@@ -22,8 +22,7 @@
                             <div class="container">
                 <div class="row justify-content-center mb-3 pb-3">
           <div class="col-md-12 heading-section text-center ftco-animate">
-            <span class="subheading">Products</span>
-            <h2 class="mb-4">Articles Similaires</h2>
+            <h3 class="mb-4">De quoi est-il sujet dans ce livre</h3>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
           </div>
         </div>          
