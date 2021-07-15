@@ -24,7 +24,7 @@
           <div class="col-md-12 heading-section text-center ftco-animate">
             <h3 class="mb-4">De quoi est-il sujet dans ce livre?</h3>
             <p><ul>
-                <li></li>
+                <li><p>{{$livre->sommaire}}</p></li>
             </ul></p>
           </div>
         </div>          
