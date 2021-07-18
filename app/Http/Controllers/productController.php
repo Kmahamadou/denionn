@@ -50,30 +50,9 @@ class productController extends Controller
 
 //dd($validatedData);
         if(isset($validatedData['title'])){
-            //Preparation image
-            $product = new product();
-
-            $product->title                    = $validatedData['title'];
-            $product->auteur                   = $validatedData['auteur'];
-            $product->image                    = $validatedData['image'];
-            // $product->sommaire_image1          = $validatedData['sommaire_image1'];
-            // $product->sommaire_image2          = $validatedData['sommaire_image2'];
-            // $product->sommaire_image3          = $validatedData['sommaire_image3'];
-            $product->livre                    = $validatedData['livre'];
-            $product->categorie                = $validatedData['categorie'];
-            $product->prix                     = $validatedData['prix'];
-            $product->quantite                 = $request->quantity;
-            $product->description              = $validatedData['description'];
-            $product->sommaire              = $validatedData['sommaire'];
-            $product->mode                     = $validatedData['mode'];
-
-
             // Store product image and content
 
              $image           = $request->file('image');
-             // $sommaire_image1 = $request->file('sommaire_image1');
-             // $sommaire_image2 = $request->file('sommaire_image2');
-             // $sommaire_image3 = $request->file('sommaire_image3');
              $livre           = $request->file('livre');
         
              $livre_image_aws_storage_path   = 'denionn/livre/images/' . time() .'.'. $image->getClientOriginalExtension();
@@ -86,11 +65,26 @@ class productController extends Controller
 
 
              if ($livre_image_aws_storage_path && $livre_content_aws_storage_path) {
-                    dd('yeah');
+                    //dd('yeah');
+                    $product = new product();
+
+                    $product->title                    = $validatedData['title'];
+                    $product->auteur                   = $validatedData['auteur'];
+                    $product->image                    = $validatedData['image'];
+                    $product->livre                    = $validatedData['livre'];
+                    $product->categorie                = $validatedData['categorie'];
+                    $product->prix                     = $validatedData['prix'];
+                    $product->quantite                 = $request->quantity;
+                    $product->description              = $validatedData['description'];
+                    $product->sommaire              = $validatedData['sommaire'];
+                    $product->mode                     = $validatedData['mode'];
+
                     $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
                     $product->livre_content_aws_storage_path         = $livre_content_aws_storage_path;
                     
                     $product->save();
+
+                    dd($product);
              }
 
              else {
