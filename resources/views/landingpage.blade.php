@@ -271,24 +271,25 @@
         </div>
     </section>
 
-        <section class="page-section">
+        <section class="page-section mt-5">
         <div class="container">
                     <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
             
-            <h2 class="mb-4">Videos de Relaxation</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+            <h2 class="mb-4 mt-5">Videos de Relaxation</h2>
+            <p>Des vidéos de rélaxation, un passe-temps agréable...</p>
           </div>
         </div>
             <div class="row blog-listing">
             
                 <div class="col-md-6">
                     <article>
-                        <iframe width="100%" height="" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2>Video 1</h2>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2> Musique clame, Bruit de la pluie, DOMIR, se Relaxer</h2>
                         <hr class="title-underline">
                         <p>
-                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                            Relaxation, Musique douce, sous une pluie 
+                            pour Dormir ou se relaxer après une journée de travail
                         </p>
                         
                         
@@ -298,11 +299,11 @@
             
                     <div class="col-md-6">
                     <article>
-                        <iframe width="100%" height="" src="https://www.youtube.com/embed/ktEmA1PTNM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2>Musique Relaxante</h2>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ktEmA1PTNM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2> Beautiful Relaxing Music</h2>
                         <hr class="title-underline">
                         <p>
-                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                            Piano, Guitar Music for Relaxation, Sleep, Stress Relief, study and Meditation
                         </p>
                         
                         
@@ -311,11 +312,11 @@
                     </div>
                     <div class="col-md-6">
                     <article>
-                       <iframe width="100%" height="" src="https://www.youtube.com/embed/L7rpsiGn77M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2>Musique Relaxante</h2>
+                       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L7rpsiGn77M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2> Beautiful Relaxing Music</h2>
                         <hr class="title-underline">
                         <p>
-                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                            Calm Piano Music, Meditation Music, Sleep Music, Relaxation Music, Relaxing Music for studying, Stress Relief
                         </p>
                         
                         
@@ -325,11 +326,12 @@
 
                   <div class="col-md-6">
                     <article>
-                        <iframe width="100%" height="" src="https://www.youtube.com/embed/TRMtQbEZfJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2> Relaxing Music</h2>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TRMtQbEZfJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2> Relaxation</h2>
                         <hr class="title-underline">
                         <p>
-                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                            Relaxing Music, Calming Music
+                            Peaceful Music, Meditation music
                         </p>
                        
                     </article>
