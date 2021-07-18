@@ -246,7 +246,7 @@ a{
             <input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
         </div>
                             
-        <div class="register-info-box">
+        <div class="register-info-box col-md-8">
             <h2>Vous n'avez pas de compte?</h2>
             <p></p>
             <label id="label-login" for="log-login-show">Créer un compte</label>
