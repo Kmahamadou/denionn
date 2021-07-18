@@ -66,11 +66,7 @@ class productController extends Controller
             $product->description              = $validatedData['description'];
             $product->sommaire              = $validatedData['sommaire'];
             $product->mode                     = $validatedData['mode'];
-            $product->save();
 
-            // $sommaire_image2        =$validatedData['sommaire_image2'];
-            // $sommaire_image3        =$validatedData['sommaire_image3'];
-            
 
             // Store product image and content
 
@@ -87,6 +83,19 @@ class productController extends Controller
              $livre_content_aws_storage_path = 'denionn/livre/livres/' . time() .'.'. $livre->getClientOriginalExtension();
 
              \Storage::disk('s3')->put($livre_content_aws_storage_path, fopen($validatedData['livre'], 'r+'));
+
+
+             if ($livre_image_aws_storage_path && $livre_content_aws_storage_path) {
+                    $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
+                    $product->livre_content_aws_storage_path         = $livre_content_aws_storage_path;
+             }
+
+            $product->save();
+
+            // $sommaire_image2        =$validatedData['sommaire_image2'];
+            // $sommaire_image3        =$validatedData['sommaire_image3'];
+            
+
 
 
             //  // Sommaire images
@@ -113,8 +122,7 @@ class productController extends Controller
 
        
 
-            $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
-            $product->livre_content_aws_storage_path         = $livre_content_aws_storage_path;
+       
             // $product->livre_sommaire_image1_aws_storage_path = $livre_sommaire_image1_aws_storage_path;
             // $product->livre_sommaire_image2_aws_storage_path = $livre_sommaire_image2_aws_storage_path;
             // $product->livre_sommaire_image3_aws_storage_path = $livre_sommaire_image3_aws_storage_path;
