@@ -69,11 +69,11 @@
                     <input type="text" name="quantite" class="form-control" id="" placeholder="">
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group col-md-8">
                    <label for="description">Description</label><br/>
                     <textarea cols="100%" rows="4" type="text" name="description" required></textarea>
                   </div>   
-                    <div class="form-group">
+                    <div class="form-group col-md-8">
                    <label for="sommaire">Sommaire</label><br/>
                     <textarea cols="100%" rows="4" type="text" name="sommaire" wrap="hard" required></textarea>
                   </div>                
