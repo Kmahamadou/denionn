@@ -86,7 +86,7 @@ class productController extends Controller
 
 
              if ($livre_image_aws_storage_path && $livre_content_aws_storage_path) {
-
+                    dd('yeah');
                     $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
                     $product->livre_content_aws_storage_path         = $livre_content_aws_storage_path;
                     
