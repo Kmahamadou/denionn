@@ -1,6 +1,22 @@
 @include('layout.header')
  <form role="form" action="{{route('livre.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
+
+                @if(Session::has('error'))
+
+                    <div class="alert alert-danger">
+
+                       {{ Session::get('error') }};
+
+                        @php
+
+                            Session::forget('error');
+
+                        @endphp
+
+                    </div>
+
+                @endif
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="container">
                 <div class="card">

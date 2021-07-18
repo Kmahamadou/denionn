@@ -127,7 +127,7 @@
 
         @if(Session::has('contactFormSent'))
 
-            <!-- <div class="alert alert-success"> -->
+            <div class="alert alert-success">
 
                 alert({{ Session::get('contactFormSent') }});
 
@@ -137,7 +137,7 @@
 
                 @endphp
 
-          <!--   </div> -->
+            </div>
 
         @endif
 
