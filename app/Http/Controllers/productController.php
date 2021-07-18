@@ -197,7 +197,7 @@ class productController extends Controller
        return back();
     }
 
-}
+
 
     public function contact(){
 
