@@ -69,7 +69,7 @@
                    
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
-            <a href="{{ route('livre.category', "Entreprise") }}"> 
+            <a href="{{ route('livre.category', 'Entreprise') }}"> 
               <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
                     <span class="material-icons-outlined">E</span>
 
@@ -84,7 +84,7 @@
           
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
-          <a href="{{ route('livre.category',"Santé et bien être") }}">
+          <a href="{{ route('livre.category','Santé et bien être') }}">
               <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
                     <span class="material-icons-outlined">S&amp;B</span>
               </div>
@@ -97,7 +97,7 @@
           </div>
               <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
                 <div class="media block-6 services mb-md-0 mb-4">
-            <a href="{{ route('livre.category', "Developpement personnel") }}">
+            <a href="{{ route('livre.category', 'Developpement personnel') }}">
                   <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
                         <span class="material-icons-outlined">D</span>
                   </div>
@@ -110,7 +110,7 @@
               </div>
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
-            <a href="{{ route('livre.category', "Marketing internet") }}">
+            <a href="{{ route('livre.category', 'Marketing internet') }}">
               <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
                    <span class="material-icons-outlined">M&amp;I</span>
               </div>
@@ -124,6 +124,23 @@
         </div>
             </div>
         </section>
+
+        @if(Session::has('contactFormSent'))
+
+            <!-- <div class="alert alert-success"> -->
+
+                alert({{ Session::get('contactFormSent') }});
+
+                @php
+
+                    Session::forget('contactFormSent');
+
+                @endphp
+
+          <!--   </div> -->
+
+        @endif
+
 
         {{-- <section class="ftco-section ftco-category ftco-no-pt">
             <div class="container">
@@ -160,11 +177,6 @@
                     </div>
 
                     <div class="col-md-4">
-                        <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url('images/d3.png');">
-                            <div class="text px-3 py-1">
-                                <h2 class="mb-0"><a href="#">Autre</a></h2>
-                            </div>      
-                        </div>
                         <div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url('images/d4.png');">
                             <div class="text px-3 py-1">
                                 <h2 class="mb-0"><a href="#">Livre</a></h2>

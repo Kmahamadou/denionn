@@ -171,12 +171,6 @@ class productController extends Controller
                 return view('livre.apropos');
 
                 }
-    public function contact(){
-
-
-                return view('livre.contact');
-
-                }
     private function storeProductImage($product)
     {
         if (request()->has('image')) {
@@ -204,3 +198,62 @@ class productController extends Controller
     }
 
 }
+
+    public function contact(){
+
+                return view('livre.contact');
+
+    }
+
+    public function sendContactEmail(Request $request){
+            $request->validate([
+
+            'name' => 'required',
+
+            'email' => 'required|email',
+
+            'phone' => 'required|digits:15|numeric',
+
+            'subject' => 'required',
+
+            'message' => 'required',
+
+        ]);
+
+
+        $input = $request->all();
+
+
+        Contact::create($input);
+
+
+        //  Send mail to admin
+
+        \Mail::send('contactMail', array(
+
+            'name' => $input['name'],
+
+            'email' => $input['email'],
+
+            'phone' => $input['phone'],
+
+            'subject' => $input['subject'],
+
+            'message' => $input['message'],
+
+        ), function($message) use ($request){
+
+            $message->from($request->email);
+
+            $message->to('kmahamadou01@gmail.com', 'Admin')->subject($request->get('subject'));
+
+        });
+
+
+        return redirect()->back()->with(['contactFormSent' => 'Contact Form Submit Successfully']);
+
+    }
+
+
+
+    }
