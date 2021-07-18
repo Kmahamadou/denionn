@@ -239,19 +239,21 @@ a{
 <!------ Include the above in your HEAD tag ---------->
 
 <div class="login-reg-panel">
-        <div class="login-info-box col-md-4">
+        <div class="login-info-box">
             <h2>Vous avez un compte?</h2>
+            <p></p>
             <label id="label-register" for="log-reg-show">Connexion</label>
             <input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
         </div>
                             
-        <div class="register-info-box col-md-4">
+        <div class="register-info-box">
             <h2>Vous n'avez pas de compte?</h2>
+            <p></p>
             <label id="label-login" for="log-login-show">Créer un compte</label>
             <input type="radio" name="active-log-panel" id="log-login-show">
         </div>
                             
-        <div class="white-panel col-md-6">
+        <div class="white-panel">
            
             <div class="login-show">
                 <h2>Me connecter à mon compte Denionn</h2>
@@ -284,7 +286,7 @@ a{
                 <input name="email" type="text" placeholder="Email">
                 <input name="password" type="password" placeholder="Password">
                 <input name="passwordConfirm" type="password" placeholder="Confirm Password">
-                <input  type="button" value="Register">
+                <input name="register" type="button" value="Register">
             </div>
         </div>
     </div>
