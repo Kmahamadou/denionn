@@ -35,9 +35,6 @@ class productController extends Controller
                             'title'                   =>'required',
                             'auteur'                  =>'required',
                             'image'                   =>'required|file|image|max:4096',
-                            // 'sommaire_image1'         =>'required|file|image|max:4096',
-                            // 'sommaire_image2'         =>'file|image|max:4096',
-                            // 'sommaire_image3'         =>'file|image|max:4096',
                             'livre'                   =>'required',
                             'categorie'               =>'required',
                             'mode'                    =>'required',
@@ -48,7 +45,7 @@ class productController extends Controller
                         ]);
 
 
-//dd($validatedData);
+dd($validatedData);
         if(isset($validatedData['title'])){
             // Store product image and content
 
