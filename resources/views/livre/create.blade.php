@@ -4,7 +4,7 @@
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="container">
                 <div class="card">
-                <div class="card-header"><h1> Enregistrement des livres</h1> </div>
+                <div class="card-header"><h3> Enregistrement des livres</h3> </div>
                 <div class="card-body">
                 <div class="col-md-6 m-auto ml-5 justify-content-center">
                   <div class="form-group">
