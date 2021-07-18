@@ -28,14 +28,14 @@ class productController extends Controller
 
     public function store(Request $request)
     {   
-        dd($request);
+        //dd($request);
        
          $validatedData = request()->validate([
 
                             'title'                   =>'required',
                             'auteur'                  =>'required',
                             'image'                   =>'required|file|image|max:4096',
-                            'livre'                   =>'required',
+                            'livre'                   =>'required|file|max:4096',
                             'categorie'               =>'required',
                             'mode'                    =>'required',
                             'prix'                    =>'required',
