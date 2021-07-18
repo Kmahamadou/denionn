@@ -255,7 +255,7 @@ a{
                             
         <div class="white-panel">
            
-            <div class="login-show">
+            <div class="login-show col-md-8">
                 <h2>Me connecter à mon compte Denionn</h2>
                 <form method="POST" action="{{ route('login') }}">
                 @csrf
