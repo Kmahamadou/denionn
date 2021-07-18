@@ -86,11 +86,17 @@ class productController extends Controller
 
 
              if ($livre_image_aws_storage_path && $livre_content_aws_storage_path) {
+
                     $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
                     $product->livre_content_aws_storage_path         = $livre_content_aws_storage_path;
+                    
+                    $product->save();
              }
 
-            $product->save();
+             else {
+                return back()->with('error', 'Un problème est survenu lors de l\'enregistrement du livre.');
+             }
+
 
             // $sommaire_image2        =$validatedData['sommaire_image2'];
             // $sommaire_image3        =$validatedData['sommaire_image3'];
