@@ -177,3 +177,62 @@
 @include('layout/footer')
 
 @include('layout/scriptjs')
+
+<script>
+$(document).ready(function(){     
+    //Dès qu'on clique sur #b1, on applique hide() au titre
+      
+
+
+    let count     = 2;
+    var countBtn  = 1;
+
+    for (var i = count; i <= i+1; i++) {
+      Things[i]
+      var sommaire= "#sommaire"+count;
+      sommaire = sommaire.toString();
+
+      var btn = "#btn"+countBtn;
+      btn = btn.toString();
+
+      $(btn).click(function(){
+          $(sommaire).show();
+      });
+
+      if(i == count + 1){
+        break;
+      }
+    }
+    count++;
+    countBtn++;
+
+  
+});
+
+
+$(document).ready(function(){ 
+
+  for (var i = 2; i < 11; i++) {
+  var som = "#sommaire"+i;
+  $(som).hide();
+  };
+
+
+    let count     = 2;
+    var countBtn  = 1;
+
+    $("#btn").click(function(){
+
+      var sommaire= "#sommaire"+count;
+      sommaire = sommaire.toString();
+
+        $(sommaire).show();
+        count + = 1;
+    });
+});
+
+
+
+
+
+</script>
