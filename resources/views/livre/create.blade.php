@@ -12,19 +12,19 @@
                     <input type="text" name="title" class="form-control" required>
                   </div>
 
-                   <div class="form-group">
+                   {{-- <div class="form-group">
                     <label for="designation">Auteur</label>
                     <input type="text" name="auteur" class="form-control" id="">
-                  </div>
+                  </div> --}}
 
-                  <div class="form-group">
+                {{--   <div class="form-group">
                     <label for="designation">Mode</label>
                     <select class="form-control" name="mode" required>
                      <option></option>
                      <option value="Portrait">Portrait</option>
                      <option value="Paysage">Paysage</option>
                    </select>
-                  </div>
+                  </div> --}}
 
 
                  
@@ -73,10 +73,44 @@
                    <label for="description">Description</label><br/>
                     <textarea cols="100%" rows="4" type="text" name="description" required></textarea>
                   </div>   
-                    <div class="form-group">
+                   {{--  <div class="form-group">
                    <label for="sommaire">Sommaire</label><br/>
                     <textarea cols="100%" rows="4" type="text" name="sommaire" wrap="hard" required></textarea>
-                  </div>                
+                  </div> --}}
+
+
+                    <div class="form-group">
+                    <label for="sommaire1">sommaire 1</label>
+                    <input type="text" name="sommaire2" class="form-control" >
+                  </div> <div class="form-group">
+                    <label for="sommaire2">sommaire 2</label>
+                    <input type="text" name="sommaire3" class="form-control" >
+                  </div> <div class="form-group">
+                    <label for="sommaire3">sommaire 3</label>
+                    <input type="text" name="sommaire4" class="form-control" >
+                  </div> <div class="form-group">
+                    <label for="sommaire4">sommaire 4</label>
+                    <input type="text" name="sommaire5" class="form-control" >
+                  </div> <div class="form-group">
+                    <label for="sommaire5">sommaire 5</label>
+                    <input type="text" name="title" class="form-control" >
+                  </div> <div class="form-group">
+                    <label for="sommaire6">sommaire 6</label>
+                    <input type="text" name="sommaire6" class="form-control" >
+                  </div> <div class="form-group">
+                    <label for="sommaire7">sommaire 7</label>
+                    <input type="text" name="sommaire7" class="form-control" >
+                  </div> <div class="form-group">
+                    <label for="sommaire8">sommaire 8</label>
+                    <input type="text" name="sommaire9" class="form-control" >
+                  </div> <div class="form-group">
+                    <label for="sommaire9">sommaire 9</label>
+                    <input type="text" name="sommaire9" class="form-control" >
+                  </div> <div class="form-group">
+                    <label for="sommaire10">sommaire 10</label>
+                    <input type="text" name="sommaire10" class="form-control" >
+                  </div>               
+
                
 {{--                   <div class="form-group">
                     <label for="image1">Somaire Image 1</label>
