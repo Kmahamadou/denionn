@@ -179,7 +179,7 @@ class productController extends Controller
 
 
                     return view('livre.show')->with('livre', $livre)
-                                             ->with('similaire',$similaire);
+                                             ->with('similaire',$similaire)
                                              ->with('sommaires',$somList);
                     }
 
