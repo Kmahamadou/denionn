@@ -191,6 +191,7 @@ $(document).ready(function(){
 
     let count     = 2;
     var countBtn  = 1;
+    console.log(count);
 
     for (var i = count; i <= i+1; i++) {
       var sommaire= "#sommaire"+count;
