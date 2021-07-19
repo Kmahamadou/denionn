@@ -134,7 +134,12 @@
                   <div class="form-group">
                     <label for="sommaire10">sommaire 10</label>
                     <input type="text" name="sommaire10" class="form-control" >
-                  </div>               
+                  </div>  
+
+
+                  <div class="form-group">
+                      <button id="btn" class="btn btn-primary">Ajouter sommaire</button>
+                  </div>             
                         
 {{--                   <div class="form-group">
                     <label for="image1">Somaire Image 1</label>
