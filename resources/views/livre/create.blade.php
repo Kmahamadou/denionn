@@ -91,49 +91,49 @@
                   </div>   
                    {{--  <div class="form-group">
                    <label for="sommaire">Sommaire</label><br/>
-                    <textarea cols="100%" rows="4" type="text" name="sommaire" wrap="hard" required></textarea>
+                    <textarea cols="100%" rows="4" type="text" id="sommaire" name="sommaire" wrap="hard" required></textarea>
                   </div> --}}
 
 
                     <div class="form-group">
                     <label for="sommaire1">sommaire 1</label>
-                    <input type="text" name="sommaire2" class="form-control" >
+                    <input type="text" id="sommaire1" name="sommaire2" class="form-control" >
                   </div> 
                   <div class="form-group">
                     <label for="sommaire2">sommaire 2</label>
-                    <input type="text" name="sommaire3" class="form-control" >
+                    <input type="text" id="sommaire2" name="sommaire3" class="form-control" >
                   </div> 
                   <div class="form-group">
                     <label for="sommaire3">sommaire 3</label>
-                    <input type="text" name="sommaire4" class="form-control" >
+                    <input type="text" id="sommaire3" name="sommaire4" class="form-control" >
                   </div> 
                   <div class="form-group">
                     <label for="sommaire4">sommaire 4</label>
-                    <input type="text" name="sommaire5" class="form-control" >
+                    <input type="text" id="sommaire4" name="sommaire5" class="form-control" >
                   </div> 
                   <div class="form-group">
                     <label for="sommaire5">sommaire 5</label>
-                    <input type="text" name="title" class="form-control" >
+                    <input type="text" id="sommaire5" name="sommaire5" class="form-control" >
                   </div> 
                   <div class="form-group">
                     <label for="sommaire6">sommaire 6</label>
-                    <input type="text" name="sommaire6" class="form-control" >
+                    <input type="text" id="sommaire6" name="sommaire6" class="form-control" >
                   </div> 
                   <div class="form-group">
                     <label for="sommaire7">sommaire 7</label>
-                    <input type="text" name="sommaire7" class="form-control" >
+                    <input type="text" id="sommaire7" name="sommaire7" class="form-control" >
                   </div> 
                   <div class="form-group">
                     <label for="sommaire8">sommaire 8</label>
-                    <input type="text" name="sommaire9" class="form-control" >
+                    <input type="text" id="sommaire8" name="sommaire8" class="form-control" >
                   </div> 
                   <div class="form-group">
                     <label for="sommaire9">sommaire 9</label>
-                    <input type="text" name="sommaire9" class="form-control" >
+                    <input type="text" id="sommaire9" name="sommaire9" class="form-control" >
                   </div> 
                   <div class="form-group">
                     <label for="sommaire10">sommaire 10</label>
-                    <input type="text" name="sommaire10" class="form-control" >
+                    <input type="text" id="sommaire10" name="sommaire10" class="form-control" >
                   </div>  
 
 
@@ -145,7 +145,7 @@
                     <label for="image1">Somaire Image 1</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="sommaire_image1" id="image1" required>
+                        <input type="file" class="custom-file-input" id="sommaire" name="sommaire_image1" id="image1" required>
                       </div>
                     </div>
                   </div>
@@ -155,7 +155,7 @@
                     <label for="image2">Sommaire Image 2</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="sommaire_image2" id="image2">
+                        <input type="file" class="custom-file-input" id="sommaire" name="sommaire_image2" id="image2">
                       </div>
                     </div>
                   </div>
@@ -164,7 +164,7 @@
                     <label for="image3">Sommaire Image 3</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="sommaire_image3" id="image3">
+                        <input type="file" class="custom-file-input" id="sommaire" name="sommaire_image3" id="image3">
                       </div>
                     </div>
                   </div> --}}
