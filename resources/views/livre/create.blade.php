@@ -28,19 +28,19 @@
                     <input type="text" name="title" class="form-control" required>
                   </div>
 
-                   {{-- <div class="form-group">
+                   <div class="form-group">
                     <label for="designation">Auteur</label>
                     <input type="text" name="auteur" class="form-control" id="">
-                  </div> --}}
+                  </div>
 
-                {{--   <div class="form-group">
+                  <div class="form-group">
                     <label for="designation">Mode</label>
                     <select class="form-control" name="mode" required>
                      <option></option>
                      <option value="Portrait">Portrait</option>
                      <option value="Paysage">Paysage</option>
                    </select>
-                  </div> --}}
+                  </div>
 
 
                  
