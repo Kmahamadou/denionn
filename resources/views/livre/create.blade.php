@@ -103,8 +103,8 @@
                     <label for="sommaire2">sommaire 2</label>
                     <input type="text"  name="sommaire2" class="form-control" >
                   </div> 
-                  <div class="form-group">
-                    <label for="sommaire3" id="sommaire3">sommaire 3</label>
+                  <div class="form-group" id="sommaire3">
+                    <label for="sommaire3" >sommaire 3</label>
                     <input type="text"  name="sommaire3" class="form-control" >
                   </div> 
                   <div class="form-group" id="sommaire4">
