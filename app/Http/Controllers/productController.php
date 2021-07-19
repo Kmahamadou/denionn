@@ -73,15 +73,15 @@ class productController extends Controller
                     $product->prix                     = $validatedData['prix'];
                     $product->quantite                 = $request->quantity;
                     $product->description              = $validatedData['description'];
-                    $product->sommaire1                = $request->sommaire1
-                    $product->sommaire2                = $request->sommaire2
-                    $product->sommaire3                = $request->sommaire3
-                    $product->sommaire4                = $request->sommaire4
-                    $product->sommaire5                = $request->sommaire5
-                    $product->sommaire6                = $request->sommaire6
-                    $product->sommaire7                = $request->sommaire7
-                    $product->sommaire8                = $request->sommaire8
-                    $product->sommaire9                = $request->sommaire9
+                    $product->sommaire1                = $request->sommaire1;
+                    $product->sommaire2                = $request->sommaire2;
+                    $product->sommaire3                = $request->sommaire3;
+                    $product->sommaire4                = $request->sommaire4;
+                    $product->sommaire5                = $request->sommaire5;
+                    $product->sommaire6                = $request->sommaire6;
+                    $product->sommaire7                = $request->sommaire7;
+                    $product->sommaire8                = $request->sommaire8;
+                    $product->sommaire9                = $request->sommaire9;
                     $product->sommaire10               = $request->sommaire10;
                     $product->mode                     = $validatedData['mode'];
 
