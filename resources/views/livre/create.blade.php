@@ -101,15 +101,15 @@
                   </div> 
                   <div class="form-group" id="sommaire2">
                     <label for="sommaire2">sommaire 2</label>
-                    <input type="text"  name="sommaire3" class="form-control" >
+                    <input type="text"  name="sommaire2" class="form-control" >
                   </div> 
                   <div class="form-group">
                     <label for="sommaire3" id="sommaire3">sommaire 3</label>
-                    <input type="text"  name="sommaire4" class="form-control" >
+                    <input type="text"  name="sommaire3" class="form-control" >
                   </div> 
                   <div class="form-group" id="sommaire4">
                     <label for="sommaire4">sommaire 4</label>
-                    <input type="text"  name="sommaire5" class="form-control" >
+                    <input type="text"  name="sommaire4" class="form-control" >
                   </div> 
                   <div class="form-group" id="sommaire5">
                     <label for="sommaire5">sommaire 5</label>
@@ -187,7 +187,7 @@
 
 $(document).ready(function(){ 
 
-  for (var i = 2; i < 11; i++) {
+  for (var i = 1; i < 11; i++) {
   var som = "#sommaire"+i;
   $(som).hide();
   };
