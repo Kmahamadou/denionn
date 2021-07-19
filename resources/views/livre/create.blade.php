@@ -184,36 +184,6 @@
 @include('layout/scriptjs')
 
 <script type="text/javascript">
-$(document).ready(function(){     
-    //Dès qu'on clique sur #b1, on applique hide() au titre
-      
-
-
-    let count     = 2;
-    var countBtn  = 1;
-    console.log(count);
-
-    for (var i = count; i <= i+1; i++) {
-      var sommaire= "#sommaire"+count;
-      sommaire = sommaire.toString();
-
-      var btn = "#btn"+countBtn;
-      btn = btn.toString();
-
-      $(btn).click(function(){
-          $(sommaire).show();
-      });
-
-      if(i == count + 1){
-        break;
-      }
-    }
-    count++;
-    countBtn++;
-
-  
-});
-
 
 $(document).ready(function(){ 
 
@@ -232,7 +202,7 @@ $(document).ready(function(){
       sommaire = sommaire.toString();
 
         $(sommaire).show();
-        count + = 1;
+        count += 1;
     });
 });
 
