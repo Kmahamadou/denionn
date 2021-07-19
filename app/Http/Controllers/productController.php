@@ -91,7 +91,8 @@ class productController extends Controller
                     $product->save();
 
                  
-                    return back()->with('success', 'livre ajouté avec succès.');             
+                    return back()->with('success', 'livre ajouté avec succès.');
+                }             
 
              else {
                 return back()->with('error', 'Un problème est survenu lors de l\'enregistrement du livre.');
