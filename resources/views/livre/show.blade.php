@@ -21,7 +21,7 @@
                          <hr>
                             <div class="container">
                 <div class="row justify-content-center mb-3 pb-3">
-          <div class="col-md-12 heading-section text-center ftco-animate">
+          <div class="col-md-12 heading-section ftco-animate">
             <h3 class="mb-4">De quoi est-il sujet dans ce livre?</h3>
                 @foreach($sommaires as $sommaire)
                     <p class="align-items-start mb-0 mt-0">{{ $sommaire }}</p>
