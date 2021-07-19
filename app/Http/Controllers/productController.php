@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\product;
 use Illuminate\Http\Request;
-
+use Session;
 class productController extends Controller
 {               //landingpage view
      public function index()
@@ -90,8 +90,8 @@ class productController extends Controller
                     
                     $product->save();
 
-                    //dd($product);
-             }
+                 
+                    return back()->with('success', 'livre ajouté avec succès.');             
 
              else {
                 return back()->with('error', 'Un problème est survenu lors de l\'enregistrement du livre.');
@@ -133,9 +133,10 @@ class productController extends Controller
             // $product->livre_sommaire_image2_aws_storage_path = $livre_sommaire_image2_aws_storage_path;
             // $product->livre_sommaire_image3_aws_storage_path = $livre_sommaire_image3_aws_storage_path;
 
-            $product->save();
+            // $product->save();
 
-             
+            //  else {
+            //     return back()->with('error', 'Un problème est survenu lors de l\'enregistrement du livre.');
             // $product = $this->storeProductFiles($product); 
 
             // Store product content
