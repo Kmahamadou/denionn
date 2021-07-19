@@ -173,7 +173,9 @@ class productController extends Controller
                     for ($i=1; $i < 10; $i++) { 
                         $som = "sommaire".$i; 
                         $sommaire   = $livre->$som;
-                        $somList[]  =  $sommaire;
+                        if (!empty($sommaire)) {
+                            $somList[]  =  $sommaire;
+                        }
                     }
 
 
