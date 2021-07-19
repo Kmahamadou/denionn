@@ -24,7 +24,16 @@ class CreateProductsTable extends Migration
             $table->integer('quantite')->nullable();
             $table->longtext('description');
             $table->string('image');
-            $table->longtext('sommaire');
+            $table->longtext('sommaire1')->nullable();
+            $table->longtext('sommaire2')->nullable();
+            $table->longtext('sommaire3')->nullable();
+            $table->longtext('sommaire4')->nullable();
+            $table->longtext('sommaire5')->nullable();
+            $table->longtext('sommaire6')->nullable();
+            $table->longtext('sommaire7')->nullable();
+            $table->longtext('sommaire8')->nullable();
+            $table->longtext('sommaire9')->nullable();
+            $table->longtext('sommaire10')->nullable();
             // $table->string('sommaire_image1');
             // $table->string('sommaire_image2')->nullable();
             // $table->string('sommaire_image3')->nullable();

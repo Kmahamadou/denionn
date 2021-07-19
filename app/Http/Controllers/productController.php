@@ -40,7 +40,6 @@ class productController extends Controller
                             'mode'                    =>'required',
                             'prix'                    =>'required',
                             'description'             =>'required',
-                            'sommaire'                =>'required',
                         
                         ]);
 
@@ -73,7 +72,16 @@ dd($validatedData);
                     $product->prix                     = $validatedData['prix'];
                     $product->quantite                 = $request->quantity;
                     $product->description              = $validatedData['description'];
-                    $product->sommaire              = $validatedData['sommaire'];
+                    $product->sommaire1                = $validatedData['sommaire1'];
+                    $product->sommaire2                = $validatedData['sommaire2'];
+                    $product->sommaire3                = $validatedData['sommaire3'];
+                    $product->sommaire4                = $validatedData['sommaire4'];
+                    $product->sommaire5                = $validatedData['sommaire5'];
+                    $product->sommaire6                = $validatedData['sommaire6'];
+                    $product->sommaire7                = $validatedData['sommaire7'];
+                    $product->sommaire8                = $validatedData['sommaire8'];
+                    $product->sommaire9                = $validatedData['sommaire9'];
+                    $product->sommaire10               = $validatedData['sommaire10'];
                     $product->mode                     = $validatedData['mode'];
 
                     $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
