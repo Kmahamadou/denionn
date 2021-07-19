@@ -45,7 +45,7 @@ class productController extends Controller
                         ]);
 
 
-dd($validatedData);
+//dd($validatedData);
         if(isset($validatedData['title'])){
             // Store product image and content
 
@@ -90,7 +90,7 @@ dd($validatedData);
                     
                     $product->save();
 
-                    dd($product);
+                    //dd($product);
              }
 
              else {
