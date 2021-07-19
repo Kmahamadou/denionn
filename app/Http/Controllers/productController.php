@@ -168,7 +168,19 @@ class productController extends Controller
                     $similaire=$livre->categorie;
                     
                     $similaire = product::where('categorie', $similaire)->inRandomOrder()->take(4)->get();
-                    return view('livre.show')->with('livre', $livre)->with('similaire',$similaire);
+
+                    $somList  = [];
+                    for ($i=1; $i < 10; $i++) { 
+                        $som = "sommaire".$i; 
+                        $sommaire   = $livre->$som;
+                        $somList[]  =  $sommaire;
+                    }
+
+
+
+                    return view('livre.show')->with('livre', $livre)
+                                             ->with('similaire',$similaire);
+                                             ->with('sommaires',$somList);
                     }
 
     public function category($id){

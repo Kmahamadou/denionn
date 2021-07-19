@@ -23,9 +23,9 @@
                 <div class="row justify-content-center mb-3 pb-3">
           <div class="col-md-12 heading-section text-center ftco-animate">
             <h3 class="mb-4">De quoi est-il sujet dans ce livre?</h3>
-            <p><ul>
-                <li><p><h5>{{$livre->sommaire}}</h5></p></li>
-            </ul></p>
+                @foreach($sommaires as $sommaire)
+                    <p>{{ $sommaire }}</p>
+                @endforeach
           </div>
         </div>          
         </div>
