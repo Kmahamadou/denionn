@@ -138,7 +138,7 @@
 
 
                   <div class="form-group">
-                      <button id="btn" class="btn btn-primary">Ajouter sommaire</button>
+                      <a id="btn" class="btn btn-primary">Ajouter sommaire</a>
                   </div>             
                         
 {{--                   <div class="form-group">
