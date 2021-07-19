@@ -28,6 +28,7 @@ class productController extends Controller
 
     public function store(Request $request)
     {   
+        
         dd($request);
        
          $validatedData = request()->validate([
