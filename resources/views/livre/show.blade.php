@@ -24,7 +24,7 @@
           <div class="col-md-12 heading-section text-center ftco-animate">
             <h3 class="mb-4">De quoi est-il sujet dans ce livre?</h3>
                 @foreach($sommaires as $sommaire)
-                    <p>{{ $sommaire }}</p>
+                    <p class="align-items-start mb-0 mt-0">{{ $sommaire }}</p>
                 @endforeach
           </div>
         </div>          
