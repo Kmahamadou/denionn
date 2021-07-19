@@ -28,17 +28,14 @@ class productController extends Controller
 
     public function store(Request $request)
     {   
-        //($request);
+        //dd($request);
        
          $validatedData = request()->validate([
 
                             'title'                   =>'required',
                             'auteur'                  =>'required',
                             'image'                   =>'required|file|image|max:4096',
-                            // 'sommaire_image1'         =>'required|file|image|max:4096',
-                            // 'sommaire_image2'         =>'file|image|max:4096',
-                            // 'sommaire_image3'         =>'file|image|max:4096',
-                            'livre'                   =>'required',
+                            'livre'                   =>'required|file|max:4096',
                             'categorie'               =>'required',
                             'mode'                    =>'required',
                             'prix'                    =>'required',
@@ -48,36 +45,11 @@ class productController extends Controller
                         ]);
 
 
-//dd($validatedData);
+dd($validatedData);
         if(isset($validatedData['title'])){
-            //Preparation image
-            $product = new product();
-
-            $product->title                    = $validatedData['title'];
-            $product->auteur                   = $validatedData['auteur'];
-            $product->image                    = $validatedData['image'];
-            // $product->sommaire_image1          = $validatedData['sommaire_image1'];
-            // $product->sommaire_image2          = $validatedData['sommaire_image2'];
-            // $product->sommaire_image3          = $validatedData['sommaire_image3'];
-            $product->livre                    = $validatedData['livre'];
-            $product->categorie                = $validatedData['categorie'];
-            $product->prix                     = $validatedData['prix'];
-            $product->quantite                 = $request->quantity;
-            $product->description              = $validatedData['description'];
-            $product->sommaire              = $validatedData['sommaire'];
-            $product->mode                     = $validatedData['mode'];
-            $product->save();
-
-            // $sommaire_image2        =$validatedData['sommaire_image2'];
-            // $sommaire_image3        =$validatedData['sommaire_image3'];
-            
-
             // Store product image and content
 
              $image           = $request->file('image');
-             // $sommaire_image1 = $request->file('sommaire_image1');
-             // $sommaire_image2 = $request->file('sommaire_image2');
-             // $sommaire_image3 = $request->file('sommaire_image3');
              $livre           = $request->file('livre');
         
              $livre_image_aws_storage_path   = 'denionn/livre/images/' . time() .'.'. $image->getClientOriginalExtension();
@@ -87,6 +59,40 @@ class productController extends Controller
              $livre_content_aws_storage_path = 'denionn/livre/livres/' . time() .'.'. $livre->getClientOriginalExtension();
 
              \Storage::disk('s3')->put($livre_content_aws_storage_path, fopen($validatedData['livre'], 'r+'));
+
+
+             if ($livre_image_aws_storage_path && $livre_content_aws_storage_path) {
+                    //dd('yeah');
+                    $product = new product();
+
+                    $product->title                    = $validatedData['title'];
+                    $product->auteur                   = $validatedData['auteur'];
+                    $product->image                    = $validatedData['image'];
+                    $product->livre                    = $validatedData['livre'];
+                    $product->categorie                = $validatedData['categorie'];
+                    $product->prix                     = $validatedData['prix'];
+                    $product->quantite                 = $request->quantity;
+                    $product->description              = $validatedData['description'];
+                    $product->sommaire              = $validatedData['sommaire'];
+                    $product->mode                     = $validatedData['mode'];
+
+                    $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
+                    $product->livre_content_aws_storage_path         = $livre_content_aws_storage_path;
+                    
+                    $product->save();
+
+                    dd($product);
+             }
+
+             else {
+                return back()->with('error', 'Un problème est survenu lors de l\'enregistrement du livre.');
+             }
+
+
+            // $sommaire_image2        =$validatedData['sommaire_image2'];
+            // $sommaire_image3        =$validatedData['sommaire_image3'];
+            
+
 
 
             //  // Sommaire images
@@ -113,8 +119,7 @@ class productController extends Controller
 
        
 
-            $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
-            $product->livre_content_aws_storage_path         = $livre_content_aws_storage_path;
+       
             // $product->livre_sommaire_image1_aws_storage_path = $livre_sommaire_image1_aws_storage_path;
             // $product->livre_sommaire_image2_aws_storage_path = $livre_sommaire_image2_aws_storage_path;
             // $product->livre_sommaire_image3_aws_storage_path = $livre_sommaire_image3_aws_storage_path;
@@ -171,12 +176,6 @@ class productController extends Controller
                 return view('livre.apropos');
 
                 }
-    public function contact(){
-
-
-                return view('livre.contact');
-
-                }
     private function storeProductImage($product)
     {
         if (request()->has('image')) {
@@ -203,4 +202,63 @@ class productController extends Controller
        return back();
     }
 
-}
+
+
+    public function contact(){
+
+                return view('livre.contact');
+
+    }
+
+    public function sendContactEmail(Request $request){
+            $request->validate([
+
+            'name' => 'required',
+
+            'email' => 'required|email',
+
+            'phone' => 'required|digits:15|numeric',
+
+            'subject' => 'required',
+
+            'message' => 'required',
+
+        ]);
+
+
+        $input = $request->all();
+
+
+        Contact::create($input);
+
+
+        //  Send mail to admin
+
+        \Mail::send('contactMail', array(
+
+            'name' => $input['name'],
+
+            'email' => $input['email'],
+
+            'phone' => $input['phone'],
+
+            'subject' => $input['subject'],
+
+            'message' => $input['message'],
+
+        ), function($message) use ($request){
+
+            $message->from($request->email);
+
+            $message->to('kmahamadou01@gmail.com', 'Admin')->subject($request->get('subject'));
+
+        });
+
+
+        return redirect()->back()->with(['contactFormSent' => 'Contact Form Submit Successfully']);
+
+    }
+
+
+
+    }

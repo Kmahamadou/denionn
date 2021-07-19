@@ -35,18 +35,21 @@
         </div>
         <div class="row block-9">
           <div class="col-md-8 align-items-center" style="margin-left: 18%;">
-            <form action="#" class="bg-white p-5 contact-form">
+            <form action="{{ route('send.contact') }}" class="bg-white p-5 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nom">
+                <input name="name" type="text" class="form-control" placeholder="Nom Complet">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email">
+                <input name="email" type="text" class="form-control" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Message">
+                <input name="phone" type="text" class="form-control" placeholder="Telephone">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <input name="subject" type="text" class="form-control" placeholder="Objet">
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Envoyer" class="btn btn-primary py-3 px-5">

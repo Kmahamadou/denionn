@@ -1,10 +1,26 @@
 @include('layout.header')
  <form role="form" action="{{route('livre.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
+
+                @if(Session::has('error'))
+
+                    <div class="alert alert-danger">
+
+                       {{ Session::get('error') }};
+
+                        @php
+
+                            Session::forget('error');
+
+                        @endphp
+
+                    </div>
+
+                @endif
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <div class="container ml-5">
+                <div class="container">
                 <div class="card">
-                <div class="card-header"><h1> Enregistrement des livres</h1> </div>
+                <div class="card-header"><h3> Enregistrement des livres</h3> </div>
                 <div class="card-body">
                 <div class="col-md-6 m-auto ml-5 justify-content-center">
                   <div class="form-group">
@@ -71,10 +87,11 @@
 
                   <div class="form-group">
                    <label for="description">Description</label><br/>
-                    <textarea cols="100%" rows="4" type="text" name="description" required></textarea>
+                    <textarea cols="50%" rows="4" type="text" name="description" required></textarea>
                   </div>   
                    {{--  <div class="form-group">
                    <label for="sommaire">Sommaire</label><br/>
+<<<<<<< HEAD
                     <textarea cols="100%" rows="4" type="text" name="sommaire" wrap="hard" required></textarea>
                   </div> --}}
 
@@ -111,6 +128,10 @@
                     <input type="text" name="sommaire10" class="form-control" >
                   </div>               
 
+=======
+                    <textarea cols="50%" rows="4" type="text" name="sommaire" wrap="hard" required></textarea>
+                  </div>                
+>>>>>>> ec3b45e8346b5d6cb310007710576144b491d96d
                
 {{--                   <div class="form-group">
                     <label for="image1">Somaire Image 1</label>

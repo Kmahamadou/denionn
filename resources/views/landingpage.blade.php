@@ -69,7 +69,7 @@
                    
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
-            <a href="{{ route('livre.category', "Entreprise") }}"> 
+            <a href="{{ route('livre.category', 'Entreprise') }}"> 
               <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
                     <span class="material-icons-outlined">E</span>
 
@@ -84,7 +84,7 @@
           
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
-          <a href="{{ route('livre.category',"Santé et bien être") }}">
+          <a href="{{ route('livre.category','Santé et bien être') }}">
               <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
                     <span class="material-icons-outlined">S&amp;B</span>
               </div>
@@ -97,7 +97,7 @@
           </div>
               <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
                 <div class="media block-6 services mb-md-0 mb-4">
-            <a href="{{ route('livre.category', "Developpement personnel") }}">
+            <a href="{{ route('livre.category', 'Developpement personnel') }}">
                   <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
                         <span class="material-icons-outlined">D</span>
                   </div>
@@ -110,7 +110,7 @@
               </div>
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services mb-md-0 mb-4">
-            <a href="{{ route('livre.category', "Marketing internet") }}">
+            <a href="{{ route('livre.category', 'Marketing internet') }}">
               <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
                    <span class="material-icons-outlined">M&amp;I</span>
               </div>
@@ -124,6 +124,23 @@
         </div>
             </div>
         </section>
+
+        @if(Session::has('contactFormSent'))
+
+            <div class="alert alert-success">
+
+                alert({{ Session::get('contactFormSent') }});
+
+                @php
+
+                    Session::forget('contactFormSent');
+
+                @endphp
+
+            </div>
+
+        @endif
+
 
         {{-- <section class="ftco-section ftco-category ftco-no-pt">
             <div class="container">
@@ -160,11 +177,6 @@
                     </div>
 
                     <div class="col-md-4">
-                        <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url('images/d3.png');">
-                            <div class="text px-3 py-1">
-                                <h2 class="mb-0"><a href="#">Autre</a></h2>
-                            </div>      
-                        </div>
                         <div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url('images/d4.png');">
                             <div class="text px-3 py-1">
                                 <h2 class="mb-0"><a href="#">Livre</a></h2>
@@ -271,24 +283,25 @@
         </div>
     </section>
 
-        <section class="page-section">
+        <section class="page-section mt-5">
         <div class="container">
                     <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
             
-            <h2 class="mb-4">Videos de Relaxation</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+            <h2 class="mb-4 mt-5">Videos de Relaxation</h2>
+            <p>Des vidéos de rélaxation, un passe-temps agréable...</p>
           </div>
         </div>
             <div class="row blog-listing">
             
                 <div class="col-md-6">
                     <article>
-                        <iframe width="100%" height="" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2>Video 1</h2>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jd8d71oEH5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2> Musique clame, Bruit de la pluie, DOMIR, se Relaxer</h2>
                         <hr class="title-underline">
                         <p>
-                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                            Relaxation, Musique douce, sous une pluie 
+                            pour Dormir ou se relaxer après une journée de travail
                         </p>
                         
                         
@@ -298,11 +311,11 @@
             
                     <div class="col-md-6">
                     <article>
-                        <iframe width="100%" height="" src="https://www.youtube.com/embed/ktEmA1PTNM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2>Musique Relaxante</h2>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ktEmA1PTNM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2> Beautiful Relaxing Music</h2>
                         <hr class="title-underline">
                         <p>
-                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                            Piano, Guitar Music for Relaxation, Sleep, Stress Relief, study and Meditation
                         </p>
                         
                         
@@ -311,11 +324,11 @@
                     </div>
                     <div class="col-md-6">
                     <article>
-                       <iframe width="100%" height="" src="https://www.youtube.com/embed/L7rpsiGn77M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2>Musique Relaxante</h2>
+                       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L7rpsiGn77M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2> Beautiful Relaxing Music</h2>
                         <hr class="title-underline">
                         <p>
-                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                            Calm Piano Music, Meditation Music, Sleep Music, Relaxation Music, Relaxing Music for studying, Stress Relief
                         </p>
                         
                         
@@ -325,11 +338,12 @@
 
                   <div class="col-md-6">
                     <article>
-                        <iframe width="100%" height="" src="https://www.youtube.com/embed/TRMtQbEZfJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2> Relaxing Music</h2>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TRMtQbEZfJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2> Relaxation</h2>
                         <hr class="title-underline">
                         <p>
-                            Ecoutez pendant 5 minutes et vous vous endormez aussitôt
+                            Relaxing Music, Calming Music
+                            Peaceful Music, Meditation music
                         </p>
                        
                     </article>
