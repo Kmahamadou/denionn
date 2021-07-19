@@ -28,7 +28,7 @@ class productController extends Controller
 
     public function store(Request $request)
     {   
-        //dd($request);
+        dd($request);
        
          $validatedData = request()->validate([
 
@@ -61,7 +61,7 @@ dd($validatedData);
 
 
              if ($livre_image_aws_storage_path && $livre_content_aws_storage_path) {
-                    //dd('yeah');
+                    
                     $product = new product();
 
                     $product->title                    = $validatedData['title'];
