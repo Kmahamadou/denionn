@@ -183,7 +183,7 @@
 
 @include('layout/scriptjs')
 
-<script>
+<script type="text/javascript">
 $(document).ready(function(){     
     //Dès qu'on clique sur #b1, on applique hide() au titre
       
@@ -193,7 +193,6 @@ $(document).ready(function(){
     var countBtn  = 1;
 
     for (var i = count; i <= i+1; i++) {
-      Things[i]
       var sommaire= "#sommaire"+count;
       sommaire = sommaire.toString();
 
