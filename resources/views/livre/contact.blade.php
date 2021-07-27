@@ -22,7 +22,7 @@
                     Session::forget('contactFormSent');
                 @endphp
             </div>
-            
+
         @endif
 
       </div>
@@ -43,7 +43,7 @@
           </div>
           <div class="col-md-4 d-flex">
           	<div class="info bg-white p-4">
-	            <p><a href="mailto:info@yoursite.com"> info@denionn.com</a></p>
+	            <p><a href="mailto:kmahamadou01@gmail.com"> info@denionn.com</a></p>
 	          </div>
           </div>
 
@@ -53,13 +53,13 @@
               <form method="POST" action="{{ route('send.contact') }}" class="bg-white p-5 contact-form">
                 @csrf
                 <div class="form-group">
-                  <input name="name" type="text" class="form-control" placeholder="Nom Complet">
+                  <input name="name" type="text" class="form-control" placeholder="Nom et prénom">
                 </div>
                 <div class="form-group">
                   <input name="email" type="text" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <input name="phone" type="text" class="form-control" placeholder="Telephone">
+                  <input name="phone" type="text" class="form-control" placeholder="Téléphone">
                 </div>
                 <div class="form-group">
                   <input name="subject" type="text" class="form-control" placeholder="Objet">
