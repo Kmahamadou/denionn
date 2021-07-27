@@ -236,10 +236,9 @@ class productController extends Controller
     }
 
     public function sendContactEmail(Request $request){
-            dd($request);
             $request->validate([
 
-            
+
             'name' => 'required',
 
             'email' => 'required|email',
@@ -257,8 +256,6 @@ class productController extends Controller
 
 
         $contact = Contact::create($input);
-
-        dd($contact);
 
         $email  = $input->email;
         $name  = $input->name;
