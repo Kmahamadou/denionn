@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{ asset('css/icomoon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   </head>
-  <body class="goto-here">
+  <body oncontextmenu="return false" class="goto-here">
         <div class="py-1 bg-primary">
         <div class="container">
             <div class="row no-gutters d-flex align-items-center align-items-center px-md-0">
