@@ -8,7 +8,7 @@
                     </div>
         </div>
         <div class="row mb-3">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 text-center">
               <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Denionn</h2>
                 <p>Lire délivre</p>
@@ -19,7 +19,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 text-center">
                <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Accès rapide</h2>
                 <div class="d-flex">
@@ -32,7 +32,7 @@
                   </div>
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 text-center">
               <div class="ftco-footer-widget mb-4">
                   <h2 class="ftco-heading-2">Qui sommes-nous?</h2>
                   <div class="block-23 mb-3">
