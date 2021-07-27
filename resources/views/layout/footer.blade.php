@@ -1,14 +1,13 @@
-       <footer class="ftco-footer ftco-section mt-5">
-      <div class="container justify-content-center">
-        <div class="row">
+       <footer class="ftco-footer ftco-section mt-3">
+      <div class="container">
+        <div class="row mb-3">
             <div class="mouse">
                         <a href="#" class="mouse-icon">
                             <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
                         </a>
                     </div>
         </div>
-        <div class="row mb-5">
-          <div class="col-md">
+        <div class="row mb-3">
             <div class="col-12 col-md-4">
               <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Denionn</h2>
@@ -44,20 +43,18 @@
                     </ul>
                   </div>
               </div>
-            </div>
           </div>
         </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
+        <div class="row mb-3">
+          <div class="col-md-12 text-center">
 
-              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits reservés | Denionn <i class="icon-heart color-danger" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>.  <a href="https://themeslab.org/" target="_blank"></a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          </p>
-            </div>
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits reservés | Denionn <i class="icon-heart color-danger" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>.  <a href="https://themeslab.org/" target="_blank"></a>
+                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
           </div>
         </div>
-      </div>
+        </div>
     </footer>
     
   
