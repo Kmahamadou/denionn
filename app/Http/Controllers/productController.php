@@ -254,7 +254,9 @@ class productController extends Controller
         $input = $request->all();
 
 
-        Contact::create($input);
+        $contact = Contact::create($input);
+
+        dd($contact);
 
         $email  = $input->email;
         $name  = $input->name;
