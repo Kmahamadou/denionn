@@ -1,13 +1,13 @@
 @include('layout.header')
 
 
- <div class="hero-wrap hero-bread" style="background-image: url('../images/show.jpg');">
+ <div class="hero-wrap hero-bread" style="background-image: url('../img/denionn-bg-show.png');">
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Denionn</a></span> <span class="mr-2"><a href="index.html">Product</a></span> <span>Product Single</span></p>
-            <h1 class="mb-0 bread">{{$livre->categorie}}</h1>
-          </div>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html"></a></span> <span class="mr-2"><a href="index.html"></a></span> <span></span></p>
+{{--             <h1 class="mb-0 bread">{{$livre->categorie}}</h1>
+ --}}          </div>
         </div>
       </div>
     </div>
@@ -21,11 +21,14 @@
                          <hr>
                             <div class="container">
                 <div class="row justify-content-center mb-3 pb-3">
-          <div class="col-md-12 heading-section text-center ftco-animate">
+          <div class="col-md-12 heading-section ftco-animate">
             <h3 class="mb-4">De quoi est-il sujet dans ce livre?</h3>
-            <p><ul>
-                <li><p><h5>{{$livre->sommaire}}</h5></p></li>
-            </ul></p>
+                @foreach($sommaires as $sommaire)
+                    <h5 class="align-items-start mb-0 mt-0">
+                        <span>&#9734;</span>
+                        {{ $sommaire }}
+                    </h5>
+                @endforeach
           </div>
         </div>          
         </div>

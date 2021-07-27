@@ -89,16 +89,63 @@
                    <label for="description">Description</label><br/>
                     <textarea cols="50%" rows="4" type="text" name="description" required></textarea>
                   </div>   
-                    <div class="form-group">
+                   {{--  <div class="form-group">
                    <label for="sommaire">Sommaire</label><br/>
-                    <textarea cols="50%" rows="4" type="text" name="sommaire" wrap="hard" required></textarea>
-                  </div>                
-               
+                    <textarea cols="100%" rows="4" type="text" id="sommaire" name="sommaire" wrap="hard" required></textarea>
+                  </div> --}}
+
+
+                    <div class="form-group" id="sommaire1">
+                    <label for="sommaire1">sommaire 1</label>
+                    <input type="text"  name="sommaire1" class="form-control" >
+                  </div> 
+                  <div class="form-group" id="sommaire2">
+                    <label for="sommaire2">sommaire 2</label>
+                    <input type="text"  name="sommaire2" class="form-control" >
+                  </div> 
+                  <div class="form-group" id="sommaire3">
+                    <label for="sommaire3" >sommaire 3</label>
+                    <input type="text"  name="sommaire3" class="form-control" >
+                  </div> 
+                  <div class="form-group" id="sommaire4">
+                    <label for="sommaire4">sommaire 4</label>
+                    <input type="text"  name="sommaire4" class="form-control" >
+                  </div> 
+                  <div class="form-group" id="sommaire5">
+                    <label for="sommaire5">sommaire 5</label>
+                    <input type="text"  name="sommaire5" class="form-control" >
+                  </div> 
+                  <div class="form-group" id="sommaire6">
+                    <label for="sommaire6">sommaire 6</label>
+                    <input type="text"  name="sommaire6" class="form-control" >
+                  </div> 
+                  <div class="form-group" id="sommaire7">
+                    <label for="sommaire7">sommaire 7</label>
+                    <input type="text"  name="sommaire7" class="form-control" >
+                  </div> 
+                  <div class="form-group" id="sommaire8">
+                    <label for="sommaire8">sommaire 8</label>
+                    <input type="text"  name="sommaire8" class="form-control" >
+                  </div> 
+                  <div class="form-group" id="sommaire9">
+                    <label for="sommaire9">sommaire 9</label>
+                    <input type="text"  name="sommaire9" class="form-control" >
+                  </div> 
+                  <div class="form-group" id="sommaire10">
+                    <label for="sommaire10">sommaire 10</label>
+                    <input type="text"  name="sommaire10" class="form-control" >
+                  </div>  
+
+
+                  <div class="form-group">
+                      <a id="btn" class="btn btn-primary">Ajouter sommaire</a>
+                  </div>             
+                        
 {{--                   <div class="form-group">
                     <label for="image1">Somaire Image 1</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="sommaire_image1" id="image1" required>
+                        <input type="file" class="custom-file-input" id="sommaire" name="sommaire_image1" id="image1" required>
                       </div>
                     </div>
                   </div>
@@ -108,7 +155,7 @@
                     <label for="image2">Sommaire Image 2</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="sommaire_image2" id="image2">
+                        <input type="file" class="custom-file-input" id="sommaire" name="sommaire_image2" id="image2">
                       </div>
                     </div>
                   </div>
@@ -117,7 +164,7 @@
                     <label for="image3">Sommaire Image 3</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="sommaire_image3" id="image3">
+                        <input type="file" class="custom-file-input" id="sommaire" name="sommaire_image3" id="image3">
                       </div>
                     </div>
                   </div> --}}
@@ -135,3 +182,32 @@
 @include('layout/footer')
 
 @include('layout/scriptjs')
+
+<script type="text/javascript">
+
+$(document).ready(function(){ 
+
+  for (var i = 2; i < 11; i++) {
+  var som = "#sommaire"+i;
+  $(som).hide();
+  };
+
+
+    let count     = 2;
+    var countBtn  = 1;
+
+    $("#btn").click(function(){
+
+      var sommaire= "#sommaire"+count;
+      sommaire = sommaire.toString();
+
+        $(sommaire).show();
+        count += 1;
+    });
+});
+
+
+
+
+
+</script>

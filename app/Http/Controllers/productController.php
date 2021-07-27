@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\product;
 use Illuminate\Http\Request;
-
+use Session;
 class productController extends Controller
 {               //landingpage view
      public function index()
@@ -28,6 +28,7 @@ class productController extends Controller
 
     public function store(Request $request)
     {   
+        
         //dd($request);
        
          $validatedData = request()->validate([
@@ -40,12 +41,11 @@ class productController extends Controller
                             'mode'                    =>'required',
                             'prix'                    =>'required',
                             'description'             =>'required',
-                            'sommaire'                =>'required',
                         
                         ]);
 
 
-dd($validatedData);
+//dd($validatedData);
         if(isset($validatedData['title'])){
             // Store product image and content
 
@@ -62,7 +62,7 @@ dd($validatedData);
 
 
              if ($livre_image_aws_storage_path && $livre_content_aws_storage_path) {
-                    //dd('yeah');
+                    
                     $product = new product();
 
                     $product->title                    = $validatedData['title'];
@@ -73,7 +73,16 @@ dd($validatedData);
                     $product->prix                     = $validatedData['prix'];
                     $product->quantite                 = $request->quantity;
                     $product->description              = $validatedData['description'];
-                    $product->sommaire              = $validatedData['sommaire'];
+                    $product->sommaire1                = $request->sommaire1;
+                    $product->sommaire2                = $request->sommaire2;
+                    $product->sommaire3                = $request->sommaire3;
+                    $product->sommaire4                = $request->sommaire4;
+                    $product->sommaire5                = $request->sommaire5;
+                    $product->sommaire6                = $request->sommaire6;
+                    $product->sommaire7                = $request->sommaire7;
+                    $product->sommaire8                = $request->sommaire8;
+                    $product->sommaire9                = $request->sommaire9;
+                    $product->sommaire10               = $request->sommaire10;
                     $product->mode                     = $validatedData['mode'];
 
                     $product->livre_image_aws_storage_path           = $livre_image_aws_storage_path;
@@ -81,8 +90,9 @@ dd($validatedData);
                     
                     $product->save();
 
-                    dd($product);
-             }
+                 
+                    return back()->with('success', 'livre ajouté avec succès.');
+                }             
 
              else {
                 return back()->with('error', 'Un problème est survenu lors de l\'enregistrement du livre.');
@@ -124,9 +134,10 @@ dd($validatedData);
             // $product->livre_sommaire_image2_aws_storage_path = $livre_sommaire_image2_aws_storage_path;
             // $product->livre_sommaire_image3_aws_storage_path = $livre_sommaire_image3_aws_storage_path;
 
-            $product->save();
+            // $product->save();
 
-             
+            //  else {
+            //     return back()->with('error', 'Un problème est survenu lors de l\'enregistrement du livre.');
             // $product = $this->storeProductFiles($product); 
 
             // Store product content
@@ -159,7 +170,21 @@ dd($validatedData);
                     $similaire=$livre->categorie;
                     
                     $similaire = product::where('categorie', $similaire)->inRandomOrder()->take(4)->get();
-                    return view('livre.show')->with('livre', $livre)->with('similaire',$similaire);
+
+                    $somList  = [];
+                    for ($i=1; $i < 10; $i++) { 
+                        $som = "sommaire".$i; 
+                        $sommaire   = $livre->$som;
+                        if (!empty($sommaire)) {
+                            $somList[]  =  $sommaire;
+                        }
+                    }
+
+
+
+                    return view('livre.show')->with('livre', $livre)
+                                             ->with('similaire',$similaire)
+                                             ->with('sommaires',$somList);
                     }
 
     public function category($id){
