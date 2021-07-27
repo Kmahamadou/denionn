@@ -256,31 +256,19 @@ class productController extends Controller
 
         Contact::create($input);
 
+        $email  = $input->email;
+        $name  = $input->name;
 
-        //  Send mail to admin
-
-        \Mail::send('contactMail', array(
-
-            'name' => $input['name'],
-
-            'email' => $input['email'],
-
-            'phone' => $input['phone'],
-
-            'subject' => $input['subject'],
-
-            'message' => $input['message'],
-
-        ), function($message) use ($request){
-
-            $message->from($request->email);
-
-            $message->to('kmahamadou01@gmail.com', 'Admin')->subject($request->get('subject'));
-
-        });
+        $data = array('name'=>"DenionnExperts");
+        Mail::send('mail', $data, function($message) {
+             $message->to($email, $name)->subject
+                ('DenionnExperts accuse bonne reception de votre mail');
+             $message->from('kmahamadou01@gmail.com','DenionnExperts');
+          });
 
 
-        return redirect()->back()->with(['contactFormSent' => 'Contact Form Submit Successfully']);
+
+        return redirect()->back()->with(['contactFormSent' => 'Votre message a bien été envoyé. Nous vous contacterons très prochainement.']);
 
     }
 

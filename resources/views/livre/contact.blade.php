@@ -34,8 +34,7 @@
 
         </div>
         <div class="row">
-          <div class="col-12">
-            <div class="col-md-8 align-items-center" style="margin-left: 18%;">
+            <div class="col-md-12 align-items-center" style="margin-left: 18%;">
               <form action="{{ route('send.contact') }}" class="bg-white p-5 contact-form">
                 <div class="form-group">
                   <input name="name" type="text" class="form-control" placeholder="Nom Complet">
@@ -56,8 +55,6 @@
                   <input type="submit" value="Envoyer" class="btn btn-primary py-3 px-5">
                 </div>
               </form>
-            
-            </div>
           </div>
 
          {{--  <div class="col-md-6 d-flex">
