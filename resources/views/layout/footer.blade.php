@@ -22,7 +22,7 @@
             <div class="col-12 col-md-4 text-center">
                <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Accès rapide</h2>
-                <div class="d-flex">
+                <div>
                     <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
                       <li><a href="{{ route('livre.category', 'Entreprise') }}" class="py-2 d-block">Entreprise</a></li>
                       <li><a href="{{ route('livre.category', 'Santé et bien être') }}" class="py-2 d-block">Santé &amp; Bien être</a></li>
