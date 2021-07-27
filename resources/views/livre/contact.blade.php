@@ -12,6 +12,21 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-12">
+        @if(Session::has('contactFormSent'))
+
+            <div class="alert alert-danger">
+               {{ Session::get('contactFormSent') }};
+                @php
+                    Session::forget('contactFormSent');
+                @endphp
+            </div>
+            
+        @endif
+
+      </div>
+    </div>
     <section class="ftco-section contact-section bg-light">
       <div class="container">
       	<div class="row d-flex mb-5 contact-info">
