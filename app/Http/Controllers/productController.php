@@ -236,9 +236,9 @@ class productController extends Controller
     }
 
     public function sendContactEmail(Request $request){
+            dd($request);
             $request->validate([
 
-            dd($request);
             
             'name' => 'required',
 
