@@ -35,7 +35,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-              <form action="{{ route('send.contact') }}" class="bg-white p-5 contact-form">
+              <form method="POST" action="{{ route('send.contact') }}" class="bg-white p-5 contact-form">
                 @csrf
                 <div class="form-group">
                   <input name="name" type="text" class="form-control" placeholder="Nom Complet">
