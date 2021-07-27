@@ -32,7 +32,7 @@
                 </div>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Qui sommes-nous?</h2>
                 <div class="block-23 mb-3">
