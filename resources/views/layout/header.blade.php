@@ -63,12 +63,10 @@
               <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Boutique</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="{{ route('livre.category', "Entreprise") }}">Entreprise</a>
-                <a class="dropdown-item" href="{{ route('livre.category', "Marketing internet") }}">Marketing Internet</a>
-                <a class="dropdown-item" href="{{ route('livre.category', "Sante bien-etre") }}">Santé et bien être</a>
-                <a class="dropdown-item" href="{{ route('livre.category', "Developpement personnel") }}">Développement personnel</a>
-                <a class="dropdown-item" href="{{ route('livre.category', "Religion") }}">Réligion</a>
-                 <a class="dropdown-item" href="{{route('livre.indexAll')}}">Autres</a>
+                <a class="dropdown-item" href="{{ route('livre.category', 'Entreprise') }}">Entreprise</a>
+                <a class="dropdown-item" href="{{ route('livre.category', 'Marketing internet') }}">Marketing Internet</a>
+                <a class="dropdown-item" href="{{ route('livre.category', 'Sante bien-etre') }}">Santé et bien être</a>
+                <a class="dropdown-item" href="{{ route('livre.category', 'Developpement personnel') }}">Développement personnel</a>
               </div>
             </li>
               <li class="nav-item"><a href="{{ route ('index.apropos') }}" class="nav-link">A-Propos</a></li>
