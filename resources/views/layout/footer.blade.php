@@ -8,7 +8,7 @@
                     </div>
         </div>
         <div class="row mb-5">
-          <div class="col-md justify-content-center">
+          <div class="col-12">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Denionn</h2>
               <p>Lire délivre</p>
