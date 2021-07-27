@@ -11,7 +11,7 @@
             <div class="col-12 col-md-4 text-center">
               <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Denionn</h2>
-                <p>Lire délivre</p>
+                <p>Lire, car lire délivre</p>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                   <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                   <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
