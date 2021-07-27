@@ -238,6 +238,8 @@ class productController extends Controller
     public function sendContactEmail(Request $request){
             $request->validate([
 
+            dd($request);
+            
             'name' => 'required',
 
             'email' => 'required|email',
