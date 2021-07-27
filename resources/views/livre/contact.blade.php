@@ -48,7 +48,7 @@
           </div>
 
         </div>
-        <div class="row">
+      {{--  <div class="row">
             <div class="col-12 text-center">
               <form method="POST" action="{{ route('send.contact') }}" class="bg-white p-5 contact-form">
                 @csrf
@@ -73,10 +73,10 @@
               </form>
           </div>
 
-         {{--  <div class="col-md-6 d-flex">
+           <div class="col-md-6 d-flex">
           	<div id="map" class="bg-white"></div>
-          </div> --}}
-        </div>
+          </div> 
+        </div>--}}
       </div>
     </section>
     @include('layout/footer')
