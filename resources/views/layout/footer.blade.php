@@ -8,7 +8,7 @@
                     </div>
         </div>
         <div class="row mb-5">
-          <div class="col-md">
+          <div class="col-md justify-content-center">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Denionn</h2>
               <p>Lire délivre</p>
@@ -28,10 +28,6 @@
                     <li><a href="{{ route('livre.category', 'Santé et bien être') }}" class="py-2 d-block">Santé &amp; Bien être</a></li>
                     <li><a href="{{ route('livre.category', 'Marketing internet') }}" class="py-2 d-block">Marketing Internet</a></li>
                     <li><a href="{{ route('livre.category', 'Developpement personnel') }}" class="py-2 d-block">Développement personnel</a></li>
-                  </ul>
-                  <ul class="list-unstyled">
-                    <li><a href="#" class="py-2 d-block">FAQs</a></li>
-                    <li><a href="#" class="py-2 d-block">Contact</a></li>
                   </ul>
                 </div>
             </div>
