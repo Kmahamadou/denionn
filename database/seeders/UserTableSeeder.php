@@ -25,7 +25,7 @@ class UserTableSeeder extends Seeder
         $adminRole      = Role::where('role','admin')->first();
         $editorRole     = Role::where('role','editor')->first();
         $guestRole      = Role::where('role','guest')->first();
-    }
+    
 
 
     $admin = User::create([
@@ -47,4 +47,6 @@ class UserTableSeeder extends Seeder
     $admin->roles()->attach($adminRole);
     $editor->roles()->attach($editorRole);
     $guest->roles()->attach($guestRole);
+
+    }
 }
