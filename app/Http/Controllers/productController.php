@@ -91,11 +91,11 @@ class productController extends Controller
                     $product->save();
 
                  
-                    return back()->with('success', 'Livre ajouté avec succès.');
+                    return redirect()->route('livre.create')->with('success', 'Livre ajouté avec succès.');
                 }             
 
              else {
-                return back()->with('error', 'Un problème est survenu lors de l\'enregistrement du livre.');
+                return redirect()->route('livre.create')->with('error', 'Un problème est survenu lors de l\'enregistrement du livre.');
              }
 
 
