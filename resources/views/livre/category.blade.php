@@ -18,7 +18,8 @@
                     <ul class="product-category">
                         <li><a href="{{route('livre.indexAll')}}" class="{{ Request::path() ==  '/livreAll' ? 'active' : ''  }}">Tout</a></li>
                         <li><a href="{{ route('livre.category', "Entreprise") }}" class="{{ Request::path() ==  'category/Entreprise' ? 'active' : ''  }}">Entreprise</a></li>
-                        <li><a href="{{ route('livre.category', "Marketing internet") }}"class="{{ Request::path() ==  'category/Marketing%20internet' ? 'active' : ''  }}">Marketing</a></li>
+                        <li><a href="{{ route('livre.category', "Marketing internet") }}"class="{{ Request::path() ==  'category/Marketing%20internet' ? 'active' : ''  }}">Marketing &amp; 
+                            Internet</a></li>
                         <li><a href="{{ route('livre.category', "Sante bien-etre") }}" class="{{ Request::path() ==  'category/Sante%20bien-etre' ? 'active' : ''  }}">Santé &amp; Bien être</a></li>
                         <li><a href="{{ route('livre.category', "Developpement personnel") }}"class="{{ Request::path() ==  'category/Developpement%20personnel' ? 'active' : ''  }}">Développement personnel</a></li>
                     </ul>
@@ -32,7 +33,7 @@
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 pb-4 px-3 text-center">
-                            <h3><a href="#">{{$product->title}}</a></h3>
+                            <h3><a href="{{Route('livre.detail', $product->id)}}">{{$product->title}}</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
                                     <p class="price"><span class="price-sale">{{$product->prix}} f cfa</span></p>

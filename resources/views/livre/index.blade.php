@@ -32,7 +32,7 @@
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 pb-4 px-3 text-center">
-                            <h3><a href="#">{{$product->title}}</a></h3>
+                            <h3><a href="{{Route('livre.detail', $product->id)}}">{{$product->title}}</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
                                     <p class="price"><span class="price-sale">{{$product->prix}} fcfa</span></p>
@@ -40,15 +40,15 @@
                             </div>
                             <div class="bottom-area d-flex px-3">
                                 <div class="m-auto d-flex">
-                                    <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+                                    <!-- <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
                                         <span><i class="ion-ios-menu"></i></span>
-                                    </a>
+                                    </a> -->
                                     <a href="{{Route('livre.detail', $product->id)}}" class="buy-now d-flex justify-content-center align-items-center mx-1">
                                         <span><i class="ion-ios-cart"></i></span>
-                                    </a>
+                                    <!-- </a>
                                     <a href="#" class="heart d-flex justify-content-center align-items-center ">
                                         <span><i class="ion-ios-heart"></i></span>
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>
@@ -56,8 +56,8 @@
                 </div>
             @endforeach
             </div>
-            <div class="row mt-5">
-{{--           <div class="col text-center">
+{{--            <div class="row mt-5">
+           <div class="col text-center">
             <div class="block-27">
               <ul>
                 <li><a href="#">&lt;</a></li>
