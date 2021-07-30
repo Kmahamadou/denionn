@@ -91,7 +91,7 @@ class productController extends Controller
                     $product->save();
 
                  
-                    return back()->with('success', 'livre ajouté avec succès.');
+                    return back()->with('success', 'Livre ajouté avec succès.');
                 }             
 
              else {

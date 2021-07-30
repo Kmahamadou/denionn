@@ -17,6 +17,22 @@
                     </div>
 
                 @endif
+
+                @if(Session::has('success'))
+
+                    <div class="alert alert-danger">
+
+                       {{ Session::get('success') }};
+
+                        @php
+
+                            Session::forget('success');
+
+                        @endphp
+
+                    </div>
+
+                @endif
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="container">
                 <div class="card">
