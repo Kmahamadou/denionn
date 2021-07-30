@@ -20,7 +20,7 @@
 
                 @if(Session::has('success'))
 
-                    <div class="alert alert-danger">
+                    <div class="alert alert-success mx-auto">
 
                        {{ Session::get('success') }};
 
