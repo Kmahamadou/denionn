@@ -25,7 +25,7 @@ class productController extends Controller
      public function create()
     {
         if (Gate::denies('admin')) {
-            return redirect(route('index'))
+            return redirect(route('index'));
         }
         return view('livre.create');
     }
