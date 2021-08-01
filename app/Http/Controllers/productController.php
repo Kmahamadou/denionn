@@ -35,7 +35,7 @@ class productController extends Controller
         
         //dd($request);
          if (Gate::denies('admin')) {
-            return redirect(route('index'))
+            return redirect(route('index'));
         }
          $validatedData = request()->validate([
 
@@ -210,7 +210,7 @@ class productController extends Controller
     private function storeProductImage($product)
     {
         if (Gate::denies('admin')) {
-            return redirect(route('index'))
+            return redirect(route('index'));
         }
 
         if (request()->has('image')) {
@@ -225,7 +225,7 @@ class productController extends Controller
     public function adminIndex()
     {  
         if (Gate::denies('admin')) {
-            return redirect(route('index'))
+            return redirect(route('index'));
         }
        $product = product::all();
        return view('livre.adminIndex')->with('products',$product);
@@ -236,7 +236,7 @@ class productController extends Controller
     public function delete($id)
     {  
         if (Gate::denies('admin')) {
-            return redirect(route('index'))
+            return redirect(route('index'));
         }
        $livre = product::findOrFail($id);
        $livre->delete();
