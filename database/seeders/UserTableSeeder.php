@@ -22,9 +22,9 @@ class UserTableSeeder extends Seeder
         //User::truncate();
         //DB::table('role_user')->truncate();
 
-        $adminRole      = Role::where('role','admin')->first();
-        $editorRole     = Role::where('role','editor')->first();
-        $guestRole      = Role::where('role','guest')->first();
+        $adminRole      = Role::where('role','adminsh')->first();
+        $editorRole     = Role::where('role','editorsh')->first();
+        $guestRole      = Role::where('role','usersh')->first();
     
 
 

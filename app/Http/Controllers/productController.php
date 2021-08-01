@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\product;
 use Illuminate\Http\Request;
 use Session;
+use Illuminate\Support\Facades\Gate;
 class productController extends Controller
 {               //landingpage view
      public function index()
@@ -23,6 +24,9 @@ class productController extends Controller
 
      public function create()
     {
+        if (Gate::denies('admin')) {
+            return redirect(route('index'))
+        }
         return view('livre.create');
     }
 
@@ -30,7 +34,9 @@ class productController extends Controller
     {   
         
         //dd($request);
-       
+         if (Gate::denies('admin')) {
+            return redirect(route('index'))
+        }
          $validatedData = request()->validate([
 
                             'title'                   =>'required',
@@ -160,7 +166,7 @@ class productController extends Controller
                         
         };
         
-        $base= product::all();
+        //$base= product::all();
     }
 
 
@@ -203,6 +209,10 @@ class productController extends Controller
                 }
     private function storeProductImage($product)
     {
+        if (Gate::denies('admin')) {
+            return redirect(route('index'))
+        }
+
         if (request()->has('image')) {
             $product->update([
                 'image' => request()->image->store('livre/image', 's3'),
@@ -214,6 +224,9 @@ class productController extends Controller
                        //show all products for Admin
     public function adminIndex()
     {  
+        if (Gate::denies('admin')) {
+            return redirect(route('index'))
+        }
        $product = product::all();
        return view('livre.adminIndex')->with('products',$product);
     }
@@ -222,6 +235,9 @@ class productController extends Controller
 
     public function delete($id)
     {  
+        if (Gate::denies('admin')) {
+            return redirect(route('index'))
+        }
        $livre = product::findOrFail($id);
        $livre->delete();
        return back();

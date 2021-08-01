@@ -20,15 +20,15 @@ class RolesTableSeeder extends Seeder
         //Role::truncate;
 
         Role::create([
-            'role' => 'admin'
+            'role' => 'adminsh'
         ]);
 
         Role::create([
-            'role' => 'guest'
+            'role' => 'editorsh'
         ]);
 
         Role::create([
-            'role' => 'editor'
+            'role' => 'usersh'
         ]);
     }
 }
