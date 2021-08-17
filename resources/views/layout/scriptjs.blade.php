@@ -1,6 +1,6 @@
 
     <!-- Initiate Fancybox/Lightbox for Videos -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(document).ready(function () {
             /*
              *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
@@ -39,11 +39,12 @@
              return false;
           }
         }
-    </script><script type="text/javascript">
+    </script> -->
+    <!-- <script type="text/javascript">
         document.addEventListener('contextmenu', function(e) {
           e.preventDefault();
         });
-    </script>
+    </script> -->
 
     
   <script src="{{ asset('js/jquery.min.js') }}"></script>
